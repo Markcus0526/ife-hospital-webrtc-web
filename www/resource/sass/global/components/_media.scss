@@ -1,0 +1,107 @@
+﻿#media_upload_tab {
+	.dropzone .dz-default.dz-message {
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		content: 'ここをクリックするとか、ファイルをドロップしてください。';
+		font-size: $font-family-sans-serif;
+	}
+}
+
+.media-tab-content {
+	min-height: 600px;
+
+	#media_list_tab {
+		position: relative;
+	}
+	.media-list {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		right: 320px;
+		bottom: 0px;
+		overflow: auto;
+
+		.media-item {
+			display: block;
+			float: left;
+			padding: 5px;
+			border: solid 1px #ccc;
+			margin: 5px;
+			height: 150px;
+			position: relative;
+			cursor: pointer;
+
+			img {
+				width: 100% \9;
+	    		max-width: 100px;
+	    		max-height: 100px;
+			}
+
+			h3 {
+				margin-bottom: 0;
+				margin-top: 5px;
+				font-size: 13px;
+			}
+
+			h3, p {
+				width: 100px;
+	            white-space: nowrap; 
+	            text-overflow: ellipsis; 
+	            overflow:hidden;
+			}
+
+			&.selected {
+				background: $brand-primary;
+				h3, p {
+					color: white;
+				}
+			}
+		}
+
+		.pagination {
+			clear: left;
+		}
+
+		&.popup {
+			padding-bottom: 40px;
+
+			.pagination {
+				position: fixed;
+				bottom: 18px;
+				left: 0px;
+				right: 360px;
+				padding-left: 10px;
+				padding-top: 10px;
+				background: white;
+			}
+		}
+	}
+
+	.media-info-bar {
+		position: absolute;
+		background: #f3f3f3;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		width: 300px;
+		padding: 0px 15px;
+
+		#image_thumb {
+			width: 100% \9;
+			max-width: 100%;
+			padding-bottom: 10px;
+		}
+
+		h1 {
+			font-size: 18px;
+		}
+
+		ul {
+			li {
+				list-style: none;
+				margin-left: 20px;
+			}
+		}
+	}
+}

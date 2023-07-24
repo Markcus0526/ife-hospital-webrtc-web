@@ -1,0 +1,91 @@
+#!/bin/bash
+#
+#	/etc/rc.d/init.d/teleclinic_batch
+#
+# Starts the teleclinic_batch daemon
+#
+# chkconfig: 345 44 56
+# description: execute batch service for teleclinic_batch
+# processname: teleclinic_batch
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+[ -x /usr/sbin/teleclinic_batch.sh ] || exit 0
+
+RETVAL=0
+
+#
+# See how we were called.
+#
+
+start() {
+	# Check if it is already running
+	if [ ! -f /var/lock/subsys/teleclinic_batch ]; then
+	    echo -n $"Starting teleclinic_batch batch daemon: "
+	    daemon /usr/sbin/teleclinic_batch.sh
+	    RETVAL=$?
+	    [ $RETVAL -eq 0 ] && touch /var/lock/subsys/teleclinic_batch
+	    echo
+	fi
+	return $RETVAL
+}
+
+stop() {
+	echo -n $"Stopping teleclinic_batch batch daemon: "
+	killproc /usr/sbin/teleclinic_batch.sh
+	RETVAL=$?
+	[ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/teleclinic_batch
+	echo
+    return $RETVAL
+}
+
+
+restart() {
+	stop
+	start
+}	
+
+reload() {
+	trap "" SIGHUP
+	killall -HUP teleclinic_batch.sh
+}	
+
+backup() {
+	echo -n $"Backup teleclinic_batch data: "
+    daemon /usr/sbin/teleclinic_batch_backup.sh
+    RETVAL=$?
+    echo
+    return $RETVAL
+}
+
+case "$1" in
+start)
+	start
+	;;
+stop)
+	stop
+	;;
+reload)
+	reload
+	;;
+restart)
+	restart
+	;;
+condrestart)
+	if [ -f /var/lock/subsys/teleclinic_batch ]; then
+	    restart
+	fi
+	;;
+status)
+	status teleclinic_batch.sh
+	;;
+backup)
+	backup
+	;;
+*)
+	echo $"Usage: $0 {start|stop|status|restart|condrestart|reload|backup}"
+	exit 1
+esac
+
+exit $RETVAL

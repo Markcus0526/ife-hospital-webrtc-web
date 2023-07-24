@@ -1,0 +1,4425 @@
+$linear-font-path        : "../fonts/";
+$linear-font-family      : "linear-icons";
+$linear-icon-prefix      : ln-icon-;
+
+//Fonts
+@font-face {
+  font-family: '#{$linear-font-family}';
+  src:  url('#{$linear-font-path}Linearicons.eot?v=2.2.2');
+  src:  url('#{$linear-font-path}Linearicons.eot?#iefix&v=2.2.2') format('embedded-opentype'),
+        url('#{$linear-font-path}Linearicons.ttf?v=2.2.2') format('truetype'),
+        url('#{$linear-font-path}Linearicons.woff2?v=2.2.2') format('woff2'),
+        url('#{$linear-font-path}Linearicons.woff?v=2.2.2') format('woff'),
+        url('#{$linear-font-path}Linearicons.svg?v=2.2.2#linear-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.#{$linear-icon-prefix}home,
+.#{$linear-icon-prefix}home2,
+.#{$linear-icon-prefix}home3,
+.#{$linear-icon-prefix}home4,
+.#{$linear-icon-prefix}home5,
+.#{$linear-icon-prefix}home6,
+.#{$linear-icon-prefix}bathtub,
+.#{$linear-icon-prefix}toothbrush,
+.#{$linear-icon-prefix}bed,
+.#{$linear-icon-prefix}couch,
+.#{$linear-icon-prefix}chair,
+.#{$linear-icon-prefix}city,
+.#{$linear-icon-prefix}apartment,
+.#{$linear-icon-prefix}pencil,
+.#{$linear-icon-prefix}pencil2,
+.#{$linear-icon-prefix}pen,
+.#{$linear-icon-prefix}pencil3,
+.#{$linear-icon-prefix}eraser,
+.#{$linear-icon-prefix}pencil4,
+.#{$linear-icon-prefix}pencil5,
+.#{$linear-icon-prefix}feather,
+.#{$linear-icon-prefix}feather2,
+.#{$linear-icon-prefix}feather3,
+.#{$linear-icon-prefix}pen2,
+.#{$linear-icon-prefix}pen-add,
+.#{$linear-icon-prefix}pen-remove,
+.#{$linear-icon-prefix}vector,
+.#{$linear-icon-prefix}pen3,
+.#{$linear-icon-prefix}blog,
+.#{$linear-icon-prefix}brush,
+.#{$linear-icon-prefix}brush2,
+.#{$linear-icon-prefix}spray,
+.#{$linear-icon-prefix}paint-roller,
+.#{$linear-icon-prefix}stamp,
+.#{$linear-icon-prefix}tape,
+.#{$linear-icon-prefix}desk-tape,
+.#{$linear-icon-prefix}texture,
+.#{$linear-icon-prefix}eye-dropper,
+.#{$linear-icon-prefix}palette,
+.#{$linear-icon-prefix}color-sampler,
+.#{$linear-icon-prefix}bucket,
+.#{$linear-icon-prefix}gradient,
+.#{$linear-icon-prefix}gradient2,
+.#{$linear-icon-prefix}magic-wand,
+.#{$linear-icon-prefix}magnet,
+.#{$linear-icon-prefix}pencil-ruler,
+.#{$linear-icon-prefix}pencil-ruler2,
+.#{$linear-icon-prefix}compass,
+.#{$linear-icon-prefix}aim,
+.#{$linear-icon-prefix}gun,
+.#{$linear-icon-prefix}bottle,
+.#{$linear-icon-prefix}drop,
+.#{$linear-icon-prefix}drop-crossed,
+.#{$linear-icon-prefix}drop2,
+.#{$linear-icon-prefix}snow,
+.#{$linear-icon-prefix}snow2,
+.#{$linear-icon-prefix}fire,
+.#{$linear-icon-prefix}lighter,
+.#{$linear-icon-prefix}knife,
+.#{$linear-icon-prefix}dagger,
+.#{$linear-icon-prefix}tissue,
+.#{$linear-icon-prefix}toilet-paper,
+.#{$linear-icon-prefix}poop,
+.#{$linear-icon-prefix}umbrella,
+.#{$linear-icon-prefix}umbrella2,
+.#{$linear-icon-prefix}rain,
+.#{$linear-icon-prefix}tornado,
+.#{$linear-icon-prefix}wind,
+.#{$linear-icon-prefix}fan,
+.#{$linear-icon-prefix}contrast,
+.#{$linear-icon-prefix}sun-small,
+.#{$linear-icon-prefix}sun,
+.#{$linear-icon-prefix}sun2,
+.#{$linear-icon-prefix}moon,
+.#{$linear-icon-prefix}cloud,
+.#{$linear-icon-prefix}cloud-upload,
+.#{$linear-icon-prefix}cloud-download,
+.#{$linear-icon-prefix}cloud-rain,
+.#{$linear-icon-prefix}cloud-hailstones,
+.#{$linear-icon-prefix}cloud-snow,
+.#{$linear-icon-prefix}cloud-windy,
+.#{$linear-icon-prefix}sun-wind,
+.#{$linear-icon-prefix}cloud-fog,
+.#{$linear-icon-prefix}cloud-sun,
+.#{$linear-icon-prefix}cloud-lightning,
+.#{$linear-icon-prefix}cloud-sync,
+.#{$linear-icon-prefix}cloud-lock,
+.#{$linear-icon-prefix}cloud-gear,
+.#{$linear-icon-prefix}cloud-alert,
+.#{$linear-icon-prefix}cloud-check,
+.#{$linear-icon-prefix}cloud-cross,
+.#{$linear-icon-prefix}cloud-crossed,
+.#{$linear-icon-prefix}cloud-database,
+.#{$linear-icon-prefix}database,
+.#{$linear-icon-prefix}database-add,
+.#{$linear-icon-prefix}database-remove,
+.#{$linear-icon-prefix}database-lock,
+.#{$linear-icon-prefix}database-refresh,
+.#{$linear-icon-prefix}database-check,
+.#{$linear-icon-prefix}database-history,
+.#{$linear-icon-prefix}database-upload,
+.#{$linear-icon-prefix}database-download,
+.#{$linear-icon-prefix}server,
+.#{$linear-icon-prefix}shield,
+.#{$linear-icon-prefix}shield-check,
+.#{$linear-icon-prefix}shield-alert,
+.#{$linear-icon-prefix}shield-cross,
+.#{$linear-icon-prefix}lock,
+.#{$linear-icon-prefix}rotation-lock,
+.#{$linear-icon-prefix}unlock,
+.#{$linear-icon-prefix}key,
+.#{$linear-icon-prefix}key-hole,
+.#{$linear-icon-prefix}toggle-off,
+.#{$linear-icon-prefix}toggle-on,
+.#{$linear-icon-prefix}cog,
+.#{$linear-icon-prefix}cog2,
+.#{$linear-icon-prefix}wrench,
+.#{$linear-icon-prefix}screwdriver,
+.#{$linear-icon-prefix}hammer-wrench,
+.#{$linear-icon-prefix}hammer,
+.#{$linear-icon-prefix}saw,
+.#{$linear-icon-prefix}axe,
+.#{$linear-icon-prefix}axe2,
+.#{$linear-icon-prefix}shovel,
+.#{$linear-icon-prefix}pickaxe,
+.#{$linear-icon-prefix}factory,
+.#{$linear-icon-prefix}factory2,
+.#{$linear-icon-prefix}recycle,
+.#{$linear-icon-prefix}trash,
+.#{$linear-icon-prefix}trash2,
+.#{$linear-icon-prefix}trash3,
+.#{$linear-icon-prefix}broom,
+.#{$linear-icon-prefix}game,
+.#{$linear-icon-prefix}gamepad,
+.#{$linear-icon-prefix}joystick,
+.#{$linear-icon-prefix}dice,
+.#{$linear-icon-prefix}spades,
+.#{$linear-icon-prefix}diamonds,
+.#{$linear-icon-prefix}clubs,
+.#{$linear-icon-prefix}hearts,
+.#{$linear-icon-prefix}heart,
+.#{$linear-icon-prefix}star,
+.#{$linear-icon-prefix}star-half,
+.#{$linear-icon-prefix}star-empty,
+.#{$linear-icon-prefix}flag,
+.#{$linear-icon-prefix}flag2,
+.#{$linear-icon-prefix}flag3,
+.#{$linear-icon-prefix}mailbox-full,
+.#{$linear-icon-prefix}mailbox-empty,
+.#{$linear-icon-prefix}at-sign,
+.#{$linear-icon-prefix}envelope,
+.#{$linear-icon-prefix}envelope-open,
+.#{$linear-icon-prefix}paperclip,
+.#{$linear-icon-prefix}paper-plane,
+.#{$linear-icon-prefix}reply,
+.#{$linear-icon-prefix}reply-all,
+.#{$linear-icon-prefix}inbox,
+.#{$linear-icon-prefix}inbox2,
+.#{$linear-icon-prefix}outbox,
+.#{$linear-icon-prefix}box,
+.#{$linear-icon-prefix}archive,
+.#{$linear-icon-prefix}archive2,
+.#{$linear-icon-prefix}drawers,
+.#{$linear-icon-prefix}drawers2,
+.#{$linear-icon-prefix}drawers3,
+.#{$linear-icon-prefix}eye,
+.#{$linear-icon-prefix}eye-crossed,
+.#{$linear-icon-prefix}eye-plus,
+.#{$linear-icon-prefix}eye-minus,
+.#{$linear-icon-prefix}binoculars,
+.#{$linear-icon-prefix}binoculars2,
+.#{$linear-icon-prefix}hdd,
+.#{$linear-icon-prefix}hdd-down,
+.#{$linear-icon-prefix}hdd-up,
+.#{$linear-icon-prefix}floppy-disk,
+.#{$linear-icon-prefix}disc,
+.#{$linear-icon-prefix}tape2,
+.#{$linear-icon-prefix}printer,
+.#{$linear-icon-prefix}shredder,
+.#{$linear-icon-prefix}file-empty,
+.#{$linear-icon-prefix}file-add,
+.#{$linear-icon-prefix}file-check,
+.#{$linear-icon-prefix}file-lock,
+.#{$linear-icon-prefix}files,
+.#{$linear-icon-prefix}copy,
+.#{$linear-icon-prefix}compare,
+.#{$linear-icon-prefix}folder,
+.#{$linear-icon-prefix}folder-search,
+.#{$linear-icon-prefix}folder-plus,
+.#{$linear-icon-prefix}folder-minus,
+.#{$linear-icon-prefix}folder-download,
+.#{$linear-icon-prefix}folder-upload,
+.#{$linear-icon-prefix}folder-star,
+.#{$linear-icon-prefix}folder-heart,
+.#{$linear-icon-prefix}folder-user,
+.#{$linear-icon-prefix}folder-shared,
+.#{$linear-icon-prefix}folder-music,
+.#{$linear-icon-prefix}folder-picture,
+.#{$linear-icon-prefix}folder-film,
+.#{$linear-icon-prefix}scissors,
+.#{$linear-icon-prefix}paste,
+.#{$linear-icon-prefix}clipboard-empty,
+.#{$linear-icon-prefix}clipboard-pencil,
+.#{$linear-icon-prefix}clipboard-text,
+.#{$linear-icon-prefix}clipboard-check,
+.#{$linear-icon-prefix}clipboard-down,
+.#{$linear-icon-prefix}clipboard-left,
+.#{$linear-icon-prefix}clipboard-alert,
+.#{$linear-icon-prefix}clipboard-user,
+.#{$linear-icon-prefix}register,
+.#{$linear-icon-prefix}enter,
+.#{$linear-icon-prefix}exit,
+.#{$linear-icon-prefix}papers,
+.#{$linear-icon-prefix}news,
+.#{$linear-icon-prefix}reading,
+.#{$linear-icon-prefix}typewriter,
+.#{$linear-icon-prefix}document,
+.#{$linear-icon-prefix}document2,
+.#{$linear-icon-prefix}graduation-hat,
+.#{$linear-icon-prefix}license,
+.#{$linear-icon-prefix}license2,
+.#{$linear-icon-prefix}medal-empty,
+.#{$linear-icon-prefix}medal-first,
+.#{$linear-icon-prefix}medal-second,
+.#{$linear-icon-prefix}medal-third,
+.#{$linear-icon-prefix}podium,
+.#{$linear-icon-prefix}trophy,
+.#{$linear-icon-prefix}trophy2,
+.#{$linear-icon-prefix}music-note,
+.#{$linear-icon-prefix}music-note2,
+.#{$linear-icon-prefix}music-note3,
+.#{$linear-icon-prefix}playlist,
+.#{$linear-icon-prefix}playlist-add,
+.#{$linear-icon-prefix}guitar,
+.#{$linear-icon-prefix}trumpet,
+.#{$linear-icon-prefix}album,
+.#{$linear-icon-prefix}shuffle,
+.#{$linear-icon-prefix}repeat-one,
+.#{$linear-icon-prefix}repeat,
+.#{$linear-icon-prefix}headphones,
+.#{$linear-icon-prefix}headset,
+.#{$linear-icon-prefix}loudspeaker,
+.#{$linear-icon-prefix}equalizer,
+.#{$linear-icon-prefix}theater,
+.#{$linear-icon-prefix}3d-glasses,
+.#{$linear-icon-prefix}ticket,
+.#{$linear-icon-prefix}presentation,
+.#{$linear-icon-prefix}play,
+.#{$linear-icon-prefix}film-play,
+.#{$linear-icon-prefix}clapboard-play,
+.#{$linear-icon-prefix}media,
+.#{$linear-icon-prefix}film,
+.#{$linear-icon-prefix}film2,
+.#{$linear-icon-prefix}surveillance,
+.#{$linear-icon-prefix}surveillance2,
+.#{$linear-icon-prefix}camera,
+.#{$linear-icon-prefix}camera-crossed,
+.#{$linear-icon-prefix}camera-play,
+.#{$linear-icon-prefix}time-lapse,
+.#{$linear-icon-prefix}record,
+.#{$linear-icon-prefix}camera2,
+.#{$linear-icon-prefix}camera-flip,
+.#{$linear-icon-prefix}panorama,
+.#{$linear-icon-prefix}time-lapse2,
+.#{$linear-icon-prefix}shutter,
+.#{$linear-icon-prefix}shutter2,
+.#{$linear-icon-prefix}face-detection,
+.#{$linear-icon-prefix}flare,
+.#{$linear-icon-prefix}convex,
+.#{$linear-icon-prefix}concave,
+.#{$linear-icon-prefix}picture,
+.#{$linear-icon-prefix}picture2,
+.#{$linear-icon-prefix}picture3,
+.#{$linear-icon-prefix}pictures,
+.#{$linear-icon-prefix}book,
+.#{$linear-icon-prefix}audio-book,
+.#{$linear-icon-prefix}book2,
+.#{$linear-icon-prefix}bookmark,
+.#{$linear-icon-prefix}bookmark2,
+.#{$linear-icon-prefix}label,
+.#{$linear-icon-prefix}library,
+.#{$linear-icon-prefix}library2,
+.#{$linear-icon-prefix}contacts,
+.#{$linear-icon-prefix}profile,
+.#{$linear-icon-prefix}portrait,
+.#{$linear-icon-prefix}portrait2,
+.#{$linear-icon-prefix}user,
+.#{$linear-icon-prefix}user-plus,
+.#{$linear-icon-prefix}user-minus,
+.#{$linear-icon-prefix}user-lock,
+.#{$linear-icon-prefix}users,
+.#{$linear-icon-prefix}users2,
+.#{$linear-icon-prefix}users-plus,
+.#{$linear-icon-prefix}users-minus,
+.#{$linear-icon-prefix}group-work,
+.#{$linear-icon-prefix}woman,
+.#{$linear-icon-prefix}man,
+.#{$linear-icon-prefix}baby,
+.#{$linear-icon-prefix}baby2,
+.#{$linear-icon-prefix}baby3,
+.#{$linear-icon-prefix}baby-bottle,
+.#{$linear-icon-prefix}walk,
+.#{$linear-icon-prefix}hand-waving,
+.#{$linear-icon-prefix}jump,
+.#{$linear-icon-prefix}run,
+.#{$linear-icon-prefix}woman2,
+.#{$linear-icon-prefix}man2,
+.#{$linear-icon-prefix}man-woman,
+.#{$linear-icon-prefix}height,
+.#{$linear-icon-prefix}weight,
+.#{$linear-icon-prefix}scale,
+.#{$linear-icon-prefix}button,
+.#{$linear-icon-prefix}bow-tie,
+.#{$linear-icon-prefix}tie,
+.#{$linear-icon-prefix}socks,
+.#{$linear-icon-prefix}shoe,
+.#{$linear-icon-prefix}shoes,
+.#{$linear-icon-prefix}hat,
+.#{$linear-icon-prefix}pants,
+.#{$linear-icon-prefix}shorts,
+.#{$linear-icon-prefix}flip-flops,
+.#{$linear-icon-prefix}shirt,
+.#{$linear-icon-prefix}hanger,
+.#{$linear-icon-prefix}laundry,
+.#{$linear-icon-prefix}store,
+.#{$linear-icon-prefix}haircut,
+.#{$linear-icon-prefix}store-24,
+.#{$linear-icon-prefix}barcode,
+.#{$linear-icon-prefix}barcode2,
+.#{$linear-icon-prefix}barcode3,
+.#{$linear-icon-prefix}cashier,
+.#{$linear-icon-prefix}bag,
+.#{$linear-icon-prefix}bag2,
+.#{$linear-icon-prefix}cart,
+.#{$linear-icon-prefix}cart-empty,
+.#{$linear-icon-prefix}cart-full,
+.#{$linear-icon-prefix}cart-plus,
+.#{$linear-icon-prefix}cart-plus2,
+.#{$linear-icon-prefix}cart-add,
+.#{$linear-icon-prefix}cart-remove,
+.#{$linear-icon-prefix}cart-exchange,
+.#{$linear-icon-prefix}tag,
+.#{$linear-icon-prefix}tags,
+.#{$linear-icon-prefix}receipt,
+.#{$linear-icon-prefix}wallet,
+.#{$linear-icon-prefix}credit-card,
+.#{$linear-icon-prefix}cash-dollar,
+.#{$linear-icon-prefix}cash-euro,
+.#{$linear-icon-prefix}cash-pound,
+.#{$linear-icon-prefix}cash-yen,
+.#{$linear-icon-prefix}bag-dollar,
+.#{$linear-icon-prefix}bag-euro,
+.#{$linear-icon-prefix}bag-pound,
+.#{$linear-icon-prefix}bag-yen,
+.#{$linear-icon-prefix}coin-dollar,
+.#{$linear-icon-prefix}coin-euro,
+.#{$linear-icon-prefix}coin-pound,
+.#{$linear-icon-prefix}coin-yen,
+.#{$linear-icon-prefix}calculator,
+.#{$linear-icon-prefix}calculator2,
+.#{$linear-icon-prefix}abacus,
+.#{$linear-icon-prefix}vault,
+.#{$linear-icon-prefix}telephone,
+.#{$linear-icon-prefix}phone-lock,
+.#{$linear-icon-prefix}phone-wave,
+.#{$linear-icon-prefix}phone-pause,
+.#{$linear-icon-prefix}phone-outgoing,
+.#{$linear-icon-prefix}phone-incoming,
+.#{$linear-icon-prefix}phone-in-out,
+.#{$linear-icon-prefix}phone-error,
+.#{$linear-icon-prefix}phone-sip,
+.#{$linear-icon-prefix}phone-plus,
+.#{$linear-icon-prefix}phone-minus,
+.#{$linear-icon-prefix}voicemail,
+.#{$linear-icon-prefix}dial,
+.#{$linear-icon-prefix}telephone2,
+.#{$linear-icon-prefix}pushpin,
+.#{$linear-icon-prefix}pushpin2,
+.#{$linear-icon-prefix}map-marker,
+.#{$linear-icon-prefix}map-marker-user,
+.#{$linear-icon-prefix}map-marker-down,
+.#{$linear-icon-prefix}map-marker-check,
+.#{$linear-icon-prefix}map-marker-crossed,
+.#{$linear-icon-prefix}radar,
+.#{$linear-icon-prefix}compass2,
+.#{$linear-icon-prefix}map,
+.#{$linear-icon-prefix}map2,
+.#{$linear-icon-prefix}location,
+.#{$linear-icon-prefix}road-sign,
+.#{$linear-icon-prefix}calendar-empty,
+.#{$linear-icon-prefix}calendar-check,
+.#{$linear-icon-prefix}calendar-cross,
+.#{$linear-icon-prefix}calendar-31,
+.#{$linear-icon-prefix}calendar-full,
+.#{$linear-icon-prefix}calendar-insert,
+.#{$linear-icon-prefix}calendar-text,
+.#{$linear-icon-prefix}calendar-user,
+.#{$linear-icon-prefix}mouse,
+.#{$linear-icon-prefix}mouse-left,
+.#{$linear-icon-prefix}mouse-right,
+.#{$linear-icon-prefix}mouse-both,
+.#{$linear-icon-prefix}keyboard,
+.#{$linear-icon-prefix}keyboard-up,
+.#{$linear-icon-prefix}keyboard-down,
+.#{$linear-icon-prefix}delete,
+.#{$linear-icon-prefix}spell-check,
+.#{$linear-icon-prefix}escape,
+.#{$linear-icon-prefix}enter2,
+.#{$linear-icon-prefix}screen,
+.#{$linear-icon-prefix}aspect-ratio,
+.#{$linear-icon-prefix}signal,
+.#{$linear-icon-prefix}signal-lock,
+.#{$linear-icon-prefix}signal-80,
+.#{$linear-icon-prefix}signal-60,
+.#{$linear-icon-prefix}signal-40,
+.#{$linear-icon-prefix}signal-20,
+.#{$linear-icon-prefix}signal-0,
+.#{$linear-icon-prefix}signal-blocked,
+.#{$linear-icon-prefix}sim,
+.#{$linear-icon-prefix}flash-memory,
+.#{$linear-icon-prefix}usb-drive,
+.#{$linear-icon-prefix}phone,
+.#{$linear-icon-prefix}smartphone,
+.#{$linear-icon-prefix}smartphone-notification,
+.#{$linear-icon-prefix}smartphone-vibration,
+.#{$linear-icon-prefix}smartphone-embed,
+.#{$linear-icon-prefix}smartphone-waves,
+.#{$linear-icon-prefix}tablet,
+.#{$linear-icon-prefix}tablet2,
+.#{$linear-icon-prefix}laptop,
+.#{$linear-icon-prefix}laptop-phone,
+.#{$linear-icon-prefix}desktop,
+.#{$linear-icon-prefix}launch,
+.#{$linear-icon-prefix}new-tab,
+.#{$linear-icon-prefix}window,
+.#{$linear-icon-prefix}cable,
+.#{$linear-icon-prefix}cable2,
+.#{$linear-icon-prefix}tv,
+.#{$linear-icon-prefix}radio,
+.#{$linear-icon-prefix}remote-control,
+.#{$linear-icon-prefix}power-switch,
+.#{$linear-icon-prefix}power,
+.#{$linear-icon-prefix}power-crossed,
+.#{$linear-icon-prefix}flash-auto,
+.#{$linear-icon-prefix}lamp,
+.#{$linear-icon-prefix}flashlight,
+.#{$linear-icon-prefix}lampshade,
+.#{$linear-icon-prefix}cord,
+.#{$linear-icon-prefix}outlet,
+.#{$linear-icon-prefix}battery-power,
+.#{$linear-icon-prefix}battery-empty,
+.#{$linear-icon-prefix}battery-alert,
+.#{$linear-icon-prefix}battery-error,
+.#{$linear-icon-prefix}battery-low1,
+.#{$linear-icon-prefix}battery-low2,
+.#{$linear-icon-prefix}battery-low3,
+.#{$linear-icon-prefix}battery-mid1,
+.#{$linear-icon-prefix}battery-mid2,
+.#{$linear-icon-prefix}battery-mid3,
+.#{$linear-icon-prefix}battery-full,
+.#{$linear-icon-prefix}battery-charging,
+.#{$linear-icon-prefix}battery-charging2,
+.#{$linear-icon-prefix}battery-charging3,
+.#{$linear-icon-prefix}battery-charging4,
+.#{$linear-icon-prefix}battery-charging5,
+.#{$linear-icon-prefix}battery-charging6,
+.#{$linear-icon-prefix}battery-charging7,
+.#{$linear-icon-prefix}chip,
+.#{$linear-icon-prefix}chip-x64,
+.#{$linear-icon-prefix}chip-x86,
+.#{$linear-icon-prefix}bubble,
+.#{$linear-icon-prefix}bubbles,
+.#{$linear-icon-prefix}bubble-dots,
+.#{$linear-icon-prefix}bubble-alert,
+.#{$linear-icon-prefix}bubble-question,
+.#{$linear-icon-prefix}bubble-text,
+.#{$linear-icon-prefix}bubble-pencil,
+.#{$linear-icon-prefix}bubble-picture,
+.#{$linear-icon-prefix}bubble-video,
+.#{$linear-icon-prefix}bubble-user,
+.#{$linear-icon-prefix}bubble-quote,
+.#{$linear-icon-prefix}bubble-heart,
+.#{$linear-icon-prefix}bubble-emoticon,
+.#{$linear-icon-prefix}bubble-attachment,
+.#{$linear-icon-prefix}phone-bubble,
+.#{$linear-icon-prefix}quote-open,
+.#{$linear-icon-prefix}quote-close,
+.#{$linear-icon-prefix}dna,
+.#{$linear-icon-prefix}heart-pulse,
+.#{$linear-icon-prefix}pulse,
+.#{$linear-icon-prefix}syringe,
+.#{$linear-icon-prefix}pills,
+.#{$linear-icon-prefix}first-aid,
+.#{$linear-icon-prefix}lifebuoy,
+.#{$linear-icon-prefix}bandage,
+.#{$linear-icon-prefix}bandages,
+.#{$linear-icon-prefix}thermometer,
+.#{$linear-icon-prefix}microscope,
+.#{$linear-icon-prefix}brain,
+.#{$linear-icon-prefix}beaker,
+.#{$linear-icon-prefix}skull,
+.#{$linear-icon-prefix}bone,
+.#{$linear-icon-prefix}construction,
+.#{$linear-icon-prefix}construction-cone,
+.#{$linear-icon-prefix}pie-chart,
+.#{$linear-icon-prefix}pie-chart2,
+.#{$linear-icon-prefix}graph,
+.#{$linear-icon-prefix}chart-growth,
+.#{$linear-icon-prefix}chart-bars,
+.#{$linear-icon-prefix}chart-settings,
+.#{$linear-icon-prefix}cake,
+.#{$linear-icon-prefix}gift,
+.#{$linear-icon-prefix}balloon,
+.#{$linear-icon-prefix}rank,
+.#{$linear-icon-prefix}rank2,
+.#{$linear-icon-prefix}rank3,
+.#{$linear-icon-prefix}crown,
+.#{$linear-icon-prefix}lotus,
+.#{$linear-icon-prefix}diamond,
+.#{$linear-icon-prefix}diamond2,
+.#{$linear-icon-prefix}diamond3,
+.#{$linear-icon-prefix}diamond4,
+.#{$linear-icon-prefix}linearicons,
+.#{$linear-icon-prefix}teacup,
+.#{$linear-icon-prefix}teapot,
+.#{$linear-icon-prefix}glass,
+.#{$linear-icon-prefix}bottle2,
+.#{$linear-icon-prefix}glass-cocktail,
+.#{$linear-icon-prefix}glass2,
+.#{$linear-icon-prefix}dinner,
+.#{$linear-icon-prefix}dinner2,
+.#{$linear-icon-prefix}chef,
+.#{$linear-icon-prefix}scale2,
+.#{$linear-icon-prefix}egg,
+.#{$linear-icon-prefix}egg2,
+.#{$linear-icon-prefix}eggs,
+.#{$linear-icon-prefix}platter,
+.#{$linear-icon-prefix}steak,
+.#{$linear-icon-prefix}hamburger,
+.#{$linear-icon-prefix}hotdog,
+.#{$linear-icon-prefix}pizza,
+.#{$linear-icon-prefix}sausage,
+.#{$linear-icon-prefix}chicken,
+.#{$linear-icon-prefix}fish,
+.#{$linear-icon-prefix}carrot,
+.#{$linear-icon-prefix}cheese,
+.#{$linear-icon-prefix}bread,
+.#{$linear-icon-prefix}ice-cream,
+.#{$linear-icon-prefix}ice-cream2,
+.#{$linear-icon-prefix}candy,
+.#{$linear-icon-prefix}lollipop,
+.#{$linear-icon-prefix}coffee-bean,
+.#{$linear-icon-prefix}coffee-cup,
+.#{$linear-icon-prefix}cherry,
+.#{$linear-icon-prefix}grapes,
+.#{$linear-icon-prefix}citrus,
+.#{$linear-icon-prefix}apple,
+.#{$linear-icon-prefix}leaf,
+.#{$linear-icon-prefix}landscape,
+.#{$linear-icon-prefix}pine-tree,
+.#{$linear-icon-prefix}tree,
+.#{$linear-icon-prefix}cactus,
+.#{$linear-icon-prefix}paw,
+.#{$linear-icon-prefix}footprint,
+.#{$linear-icon-prefix}speed-slow,
+.#{$linear-icon-prefix}speed-medium,
+.#{$linear-icon-prefix}speed-fast,
+.#{$linear-icon-prefix}rocket,
+.#{$linear-icon-prefix}hammer2,
+.#{$linear-icon-prefix}balance,
+.#{$linear-icon-prefix}briefcase,
+.#{$linear-icon-prefix}luggage-weight,
+.#{$linear-icon-prefix}dolly,
+.#{$linear-icon-prefix}plane,
+.#{$linear-icon-prefix}plane-crossed,
+.#{$linear-icon-prefix}helicopter,
+.#{$linear-icon-prefix}traffic-lights,
+.#{$linear-icon-prefix}siren,
+.#{$linear-icon-prefix}road,
+.#{$linear-icon-prefix}engine,
+.#{$linear-icon-prefix}oil-pressure,
+.#{$linear-icon-prefix}coolant-temperature,
+.#{$linear-icon-prefix}car-battery,
+.#{$linear-icon-prefix}gas,
+.#{$linear-icon-prefix}gallon,
+.#{$linear-icon-prefix}transmission,
+.#{$linear-icon-prefix}car,
+.#{$linear-icon-prefix}car-wash,
+.#{$linear-icon-prefix}car-wash2,
+.#{$linear-icon-prefix}bus,
+.#{$linear-icon-prefix}bus2,
+.#{$linear-icon-prefix}car2,
+.#{$linear-icon-prefix}parking,
+.#{$linear-icon-prefix}car-lock,
+.#{$linear-icon-prefix}taxi,
+.#{$linear-icon-prefix}car-siren,
+.#{$linear-icon-prefix}car-wash3,
+.#{$linear-icon-prefix}car-wash4,
+.#{$linear-icon-prefix}ambulance,
+.#{$linear-icon-prefix}truck,
+.#{$linear-icon-prefix}trailer,
+.#{$linear-icon-prefix}scale-truck,
+.#{$linear-icon-prefix}train,
+.#{$linear-icon-prefix}ship,
+.#{$linear-icon-prefix}ship2,
+.#{$linear-icon-prefix}anchor,
+.#{$linear-icon-prefix}boat,
+.#{$linear-icon-prefix}bicycle,
+.#{$linear-icon-prefix}bicycle2,
+.#{$linear-icon-prefix}dumbbell,
+.#{$linear-icon-prefix}bench-press,
+.#{$linear-icon-prefix}swim,
+.#{$linear-icon-prefix}football,
+.#{$linear-icon-prefix}baseball-bat,
+.#{$linear-icon-prefix}baseball,
+.#{$linear-icon-prefix}tennis,
+.#{$linear-icon-prefix}tennis2,
+.#{$linear-icon-prefix}ping-pong,
+.#{$linear-icon-prefix}hockey,
+.#{$linear-icon-prefix}8ball,
+.#{$linear-icon-prefix}bowling,
+.#{$linear-icon-prefix}bowling-pins,
+.#{$linear-icon-prefix}golf,
+.#{$linear-icon-prefix}golf2,
+.#{$linear-icon-prefix}archery,
+.#{$linear-icon-prefix}slingshot,
+.#{$linear-icon-prefix}soccer,
+.#{$linear-icon-prefix}basketball,
+.#{$linear-icon-prefix}cube,
+.#{$linear-icon-prefix}3d-rotate,
+.#{$linear-icon-prefix}puzzle,
+.#{$linear-icon-prefix}glasses,
+.#{$linear-icon-prefix}glasses2,
+.#{$linear-icon-prefix}accessibility,
+.#{$linear-icon-prefix}wheelchair,
+.#{$linear-icon-prefix}wall,
+.#{$linear-icon-prefix}fence,
+.#{$linear-icon-prefix}wall2,
+.#{$linear-icon-prefix}icons,
+.#{$linear-icon-prefix}resize-handle,
+.#{$linear-icon-prefix}icons2,
+.#{$linear-icon-prefix}select,
+.#{$linear-icon-prefix}select2,
+.#{$linear-icon-prefix}site-map,
+.#{$linear-icon-prefix}earth,
+.#{$linear-icon-prefix}earth-lock,
+.#{$linear-icon-prefix}network,
+.#{$linear-icon-prefix}network-lock,
+.#{$linear-icon-prefix}planet,
+.#{$linear-icon-prefix}happy,
+.#{$linear-icon-prefix}smile,
+.#{$linear-icon-prefix}grin,
+.#{$linear-icon-prefix}tongue,
+.#{$linear-icon-prefix}sad,
+.#{$linear-icon-prefix}wink,
+.#{$linear-icon-prefix}dream,
+.#{$linear-icon-prefix}shocked,
+.#{$linear-icon-prefix}shocked2,
+.#{$linear-icon-prefix}tongue2,
+.#{$linear-icon-prefix}neutral,
+.#{$linear-icon-prefix}happy-grin,
+.#{$linear-icon-prefix}cool,
+.#{$linear-icon-prefix}mad,
+.#{$linear-icon-prefix}grin-evil,
+.#{$linear-icon-prefix}evil,
+.#{$linear-icon-prefix}wow,
+.#{$linear-icon-prefix}annoyed,
+.#{$linear-icon-prefix}wondering,
+.#{$linear-icon-prefix}confused,
+.#{$linear-icon-prefix}zipped,
+.#{$linear-icon-prefix}grumpy,
+.#{$linear-icon-prefix}mustache,
+.#{$linear-icon-prefix}tombstone-hipster,
+.#{$linear-icon-prefix}tombstone,
+.#{$linear-icon-prefix}ghost,
+.#{$linear-icon-prefix}ghost-hipster,
+.#{$linear-icon-prefix}halloween,
+.#{$linear-icon-prefix}christmas,
+.#{$linear-icon-prefix}easter-egg,
+.#{$linear-icon-prefix}mustache2,
+.#{$linear-icon-prefix}mustache-glasses,
+.#{$linear-icon-prefix}pipe,
+.#{$linear-icon-prefix}alarm,
+.#{$linear-icon-prefix}alarm-add,
+.#{$linear-icon-prefix}alarm-snooze,
+.#{$linear-icon-prefix}alarm-ringing,
+.#{$linear-icon-prefix}bullhorn,
+.#{$linear-icon-prefix}hearing,
+.#{$linear-icon-prefix}volume-high,
+.#{$linear-icon-prefix}volume-medium,
+.#{$linear-icon-prefix}volume-low,
+.#{$linear-icon-prefix}volume,
+.#{$linear-icon-prefix}mute,
+.#{$linear-icon-prefix}lan,
+.#{$linear-icon-prefix}lan2,
+.#{$linear-icon-prefix}wifi,
+.#{$linear-icon-prefix}wifi-lock,
+.#{$linear-icon-prefix}wifi-blocked,
+.#{$linear-icon-prefix}wifi-mid,
+.#{$linear-icon-prefix}wifi-low,
+.#{$linear-icon-prefix}wifi-low2,
+.#{$linear-icon-prefix}wifi-alert,
+.#{$linear-icon-prefix}wifi-alert-mid,
+.#{$linear-icon-prefix}wifi-alert-low,
+.#{$linear-icon-prefix}wifi-alert-low2,
+.#{$linear-icon-prefix}stream,
+.#{$linear-icon-prefix}stream-check,
+.#{$linear-icon-prefix}stream-error,
+.#{$linear-icon-prefix}stream-alert,
+.#{$linear-icon-prefix}communication,
+.#{$linear-icon-prefix}communication-crossed,
+.#{$linear-icon-prefix}broadcast,
+.#{$linear-icon-prefix}antenna,
+.#{$linear-icon-prefix}satellite,
+.#{$linear-icon-prefix}satellite2,
+.#{$linear-icon-prefix}mic,
+.#{$linear-icon-prefix}mic-mute,
+.#{$linear-icon-prefix}mic2,
+.#{$linear-icon-prefix}spotlights,
+.#{$linear-icon-prefix}hourglass,
+.#{$linear-icon-prefix}loading,
+.#{$linear-icon-prefix}loading2,
+.#{$linear-icon-prefix}loading3,
+.#{$linear-icon-prefix}refresh,
+.#{$linear-icon-prefix}refresh2,
+.#{$linear-icon-prefix}undo,
+.#{$linear-icon-prefix}redo,
+.#{$linear-icon-prefix}jump2,
+.#{$linear-icon-prefix}undo2,
+.#{$linear-icon-prefix}redo2,
+.#{$linear-icon-prefix}sync,
+.#{$linear-icon-prefix}repeat-one2,
+.#{$linear-icon-prefix}sync-crossed,
+.#{$linear-icon-prefix}sync2,
+.#{$linear-icon-prefix}repeat-one3,
+.#{$linear-icon-prefix}sync-crossed2,
+.#{$linear-icon-prefix}return,
+.#{$linear-icon-prefix}return2,
+.#{$linear-icon-prefix}refund,
+.#{$linear-icon-prefix}history,
+.#{$linear-icon-prefix}history2,
+.#{$linear-icon-prefix}self-timer,
+.#{$linear-icon-prefix}clock,
+.#{$linear-icon-prefix}clock2,
+.#{$linear-icon-prefix}clock3,
+.#{$linear-icon-prefix}watch,
+.#{$linear-icon-prefix}alarm2,
+.#{$linear-icon-prefix}alarm-add2,
+.#{$linear-icon-prefix}alarm-remove,
+.#{$linear-icon-prefix}alarm-check,
+.#{$linear-icon-prefix}alarm-error,
+.#{$linear-icon-prefix}timer,
+.#{$linear-icon-prefix}timer-crossed,
+.#{$linear-icon-prefix}timer2,
+.#{$linear-icon-prefix}timer-crossed2,
+.#{$linear-icon-prefix}download,
+.#{$linear-icon-prefix}upload,
+.#{$linear-icon-prefix}download2,
+.#{$linear-icon-prefix}upload2,
+.#{$linear-icon-prefix}enter-up,
+.#{$linear-icon-prefix}enter-down,
+.#{$linear-icon-prefix}enter-left,
+.#{$linear-icon-prefix}enter-right,
+.#{$linear-icon-prefix}exit-up,
+.#{$linear-icon-prefix}exit-down,
+.#{$linear-icon-prefix}exit-left,
+.#{$linear-icon-prefix}exit-right,
+.#{$linear-icon-prefix}enter-up2,
+.#{$linear-icon-prefix}enter-down2,
+.#{$linear-icon-prefix}enter-vertical,
+.#{$linear-icon-prefix}enter-left2,
+.#{$linear-icon-prefix}enter-right2,
+.#{$linear-icon-prefix}enter-horizontal,
+.#{$linear-icon-prefix}exit-up2,
+.#{$linear-icon-prefix}exit-down2,
+.#{$linear-icon-prefix}exit-left2,
+.#{$linear-icon-prefix}exit-right2,
+.#{$linear-icon-prefix}cli,
+.#{$linear-icon-prefix}bug,
+.#{$linear-icon-prefix}code,
+.#{$linear-icon-prefix}file-code,
+.#{$linear-icon-prefix}file-image,
+.#{$linear-icon-prefix}file-zip,
+.#{$linear-icon-prefix}file-audio,
+.#{$linear-icon-prefix}file-video,
+.#{$linear-icon-prefix}file-preview,
+.#{$linear-icon-prefix}file-charts,
+.#{$linear-icon-prefix}file-stats,
+.#{$linear-icon-prefix}file-spreadsheet,
+.#{$linear-icon-prefix}link,
+.#{$linear-icon-prefix}unlink,
+.#{$linear-icon-prefix}link2,
+.#{$linear-icon-prefix}unlink2,
+.#{$linear-icon-prefix}thumbs-up,
+.#{$linear-icon-prefix}thumbs-down,
+.#{$linear-icon-prefix}thumbs-up2,
+.#{$linear-icon-prefix}thumbs-down2,
+.#{$linear-icon-prefix}thumbs-up3,
+.#{$linear-icon-prefix}thumbs-down3,
+.#{$linear-icon-prefix}share,
+.#{$linear-icon-prefix}share2,
+.#{$linear-icon-prefix}share3,
+.#{$linear-icon-prefix}magnifier,
+.#{$linear-icon-prefix}file-search,
+.#{$linear-icon-prefix}find-replace,
+.#{$linear-icon-prefix}zoom-in,
+.#{$linear-icon-prefix}zoom-out,
+.#{$linear-icon-prefix}loupe,
+.#{$linear-icon-prefix}loupe-zoom-in,
+.#{$linear-icon-prefix}loupe-zoom-out,
+.#{$linear-icon-prefix}cross,
+.#{$linear-icon-prefix}menu,
+.#{$linear-icon-prefix}list,
+.#{$linear-icon-prefix}list2,
+.#{$linear-icon-prefix}list3,
+.#{$linear-icon-prefix}menu2,
+.#{$linear-icon-prefix}list4,
+.#{$linear-icon-prefix}menu3,
+.#{$linear-icon-prefix}exclamation,
+.#{$linear-icon-prefix}question,
+.#{$linear-icon-prefix}check,
+.#{$linear-icon-prefix}cross2,
+.#{$linear-icon-prefix}plus,
+.#{$linear-icon-prefix}minus,
+.#{$linear-icon-prefix}percent,
+.#{$linear-icon-prefix}chevron-up,
+.#{$linear-icon-prefix}chevron-down,
+.#{$linear-icon-prefix}chevron-left,
+.#{$linear-icon-prefix}chevron-right,
+.#{$linear-icon-prefix}chevrons-expand-vertical,
+.#{$linear-icon-prefix}chevrons-expand-horizontal,
+.#{$linear-icon-prefix}chevrons-contract-vertical,
+.#{$linear-icon-prefix}chevrons-contract-horizontal,
+.#{$linear-icon-prefix}arrow-up,
+.#{$linear-icon-prefix}arrow-down,
+.#{$linear-icon-prefix}arrow-left,
+.#{$linear-icon-prefix}arrow-right,
+.#{$linear-icon-prefix}arrow-up-right,
+.#{$linear-icon-prefix}arrows-merge,
+.#{$linear-icon-prefix}arrows-split,
+.#{$linear-icon-prefix}arrow-divert,
+.#{$linear-icon-prefix}arrow-return,
+.#{$linear-icon-prefix}expand,
+.#{$linear-icon-prefix}contract,
+.#{$linear-icon-prefix}expand2,
+.#{$linear-icon-prefix}contract2,
+.#{$linear-icon-prefix}move,
+.#{$linear-icon-prefix}tab,
+.#{$linear-icon-prefix}arrow-wave,
+.#{$linear-icon-prefix}expand3,
+.#{$linear-icon-prefix}expand4,
+.#{$linear-icon-prefix}contract3,
+.#{$linear-icon-prefix}notification,
+.#{$linear-icon-prefix}warning,
+.#{$linear-icon-prefix}notification-circle,
+.#{$linear-icon-prefix}question-circle,
+.#{$linear-icon-prefix}menu-circle,
+.#{$linear-icon-prefix}checkmark-circle,
+.#{$linear-icon-prefix}cross-circle,
+.#{$linear-icon-prefix}plus-circle,
+.#{$linear-icon-prefix}circle-minus,
+.#{$linear-icon-prefix}percent-circle,
+.#{$linear-icon-prefix}arrow-up-circle,
+.#{$linear-icon-prefix}arrow-down-circle,
+.#{$linear-icon-prefix}arrow-left-circle,
+.#{$linear-icon-prefix}arrow-right-circle,
+.#{$linear-icon-prefix}chevron-up-circle,
+.#{$linear-icon-prefix}chevron-down-circle,
+.#{$linear-icon-prefix}chevron-left-circle,
+.#{$linear-icon-prefix}chevron-right-circle,
+.#{$linear-icon-prefix}backward-circle,
+.#{$linear-icon-prefix}first-circle,
+.#{$linear-icon-prefix}previous-circle,
+.#{$linear-icon-prefix}stop-circle,
+.#{$linear-icon-prefix}play-circle,
+.#{$linear-icon-prefix}pause-circle,
+.#{$linear-icon-prefix}next-circle,
+.#{$linear-icon-prefix}last-circle,
+.#{$linear-icon-prefix}forward-circle,
+.#{$linear-icon-prefix}eject-circle,
+.#{$linear-icon-prefix}crop,
+.#{$linear-icon-prefix}frame-expand,
+.#{$linear-icon-prefix}frame-contract,
+.#{$linear-icon-prefix}focus,
+.#{$linear-icon-prefix}transform,
+.#{$linear-icon-prefix}grid,
+.#{$linear-icon-prefix}grid-crossed,
+.#{$linear-icon-prefix}layers,
+.#{$linear-icon-prefix}layers-crossed,
+.#{$linear-icon-prefix}toggle,
+.#{$linear-icon-prefix}rulers,
+.#{$linear-icon-prefix}ruler,
+.#{$linear-icon-prefix}funnel,
+.#{$linear-icon-prefix}flip-horizontal,
+.#{$linear-icon-prefix}flip-vertical,
+.#{$linear-icon-prefix}flip-horizontal2,
+.#{$linear-icon-prefix}flip-vertical2,
+.#{$linear-icon-prefix}angle,
+.#{$linear-icon-prefix}angle2,
+.#{$linear-icon-prefix}subtract,
+.#{$linear-icon-prefix}combine,
+.#{$linear-icon-prefix}intersect,
+.#{$linear-icon-prefix}exclude,
+.#{$linear-icon-prefix}align-center-vertical,
+.#{$linear-icon-prefix}align-right,
+.#{$linear-icon-prefix}align-bottom,
+.#{$linear-icon-prefix}align-left,
+.#{$linear-icon-prefix}align-center-horizontal,
+.#{$linear-icon-prefix}align-top,
+.#{$linear-icon-prefix}square,
+.#{$linear-icon-prefix}plus-square,
+.#{$linear-icon-prefix}minus-square,
+.#{$linear-icon-prefix}percent-square,
+.#{$linear-icon-prefix}arrow-up-square,
+.#{$linear-icon-prefix}arrow-down-square,
+.#{$linear-icon-prefix}arrow-left-square,
+.#{$linear-icon-prefix}arrow-right-square,
+.#{$linear-icon-prefix}chevron-up-square,
+.#{$linear-icon-prefix}chevron-down-square,
+.#{$linear-icon-prefix}chevron-left-square,
+.#{$linear-icon-prefix}chevron-right-square,
+.#{$linear-icon-prefix}check-square,
+.#{$linear-icon-prefix}cross-square,
+.#{$linear-icon-prefix}menu-square,
+.#{$linear-icon-prefix}prohibited,
+.#{$linear-icon-prefix}circle,
+.#{$linear-icon-prefix}radio-button,
+.#{$linear-icon-prefix}ligature,
+.#{$linear-icon-prefix}text-format,
+.#{$linear-icon-prefix}text-format-remove,
+.#{$linear-icon-prefix}text-size,
+.#{$linear-icon-prefix}bold,
+.#{$linear-icon-prefix}italic,
+.#{$linear-icon-prefix}underline,
+.#{$linear-icon-prefix}strikethrough,
+.#{$linear-icon-prefix}highlight,
+.#{$linear-icon-prefix}text-align-left,
+.#{$linear-icon-prefix}text-align-center,
+.#{$linear-icon-prefix}text-align-right,
+.#{$linear-icon-prefix}text-align-justify,
+.#{$linear-icon-prefix}line-spacing,
+.#{$linear-icon-prefix}indent-increase,
+.#{$linear-icon-prefix}indent-decrease,
+.#{$linear-icon-prefix}text-wrap,
+.#{$linear-icon-prefix}pilcrow,
+.#{$linear-icon-prefix}direction-ltr,
+.#{$linear-icon-prefix}direction-rtl,
+.#{$linear-icon-prefix}page-break,
+.#{$linear-icon-prefix}page-break2,
+.#{$linear-icon-prefix}sort-alpha-asc,
+.#{$linear-icon-prefix}sort-alpha-desc,
+.#{$linear-icon-prefix}sort-numeric-asc,
+.#{$linear-icon-prefix}sort-numeric-desc,
+.#{$linear-icon-prefix}sort-amount-asc,
+.#{$linear-icon-prefix}sort-amount-desc,
+.#{$linear-icon-prefix}sort-time-asc,
+.#{$linear-icon-prefix}sort-time-desc,
+.#{$linear-icon-prefix}sigma,
+.#{$linear-icon-prefix}pencil-line,
+.#{$linear-icon-prefix}hand,
+.#{$linear-icon-prefix}pointer-up,
+.#{$linear-icon-prefix}pointer-right,
+.#{$linear-icon-prefix}pointer-down,
+.#{$linear-icon-prefix}pointer-left,
+.#{$linear-icon-prefix}finger-tap,
+.#{$linear-icon-prefix}fingers-tap,
+.#{$linear-icon-prefix}reminder,
+.#{$linear-icon-prefix}fingers-crossed,
+.#{$linear-icon-prefix}fingers-victory,
+.#{$linear-icon-prefix}gesture-zoom,
+.#{$linear-icon-prefix}gesture-pinch,
+.#{$linear-icon-prefix}fingers-scroll-horizontal,
+.#{$linear-icon-prefix}fingers-scroll-vertical,
+.#{$linear-icon-prefix}fingers-scroll-left,
+.#{$linear-icon-prefix}fingers-scroll-right,
+.#{$linear-icon-prefix}hand2,
+.#{$linear-icon-prefix}pointer-up2,
+.#{$linear-icon-prefix}pointer-right2,
+.#{$linear-icon-prefix}pointer-down2,
+.#{$linear-icon-prefix}pointer-left2,
+.#{$linear-icon-prefix}finger-tap2,
+.#{$linear-icon-prefix}fingers-tap2,
+.#{$linear-icon-prefix}reminder2,
+.#{$linear-icon-prefix}gesture-zoom2,
+.#{$linear-icon-prefix}gesture-pinch2,
+.#{$linear-icon-prefix}fingers-scroll-horizontal2,
+.#{$linear-icon-prefix}fingers-scroll-vertical2,
+.#{$linear-icon-prefix}fingers-scroll-left2,
+.#{$linear-icon-prefix}fingers-scroll-right2,
+.#{$linear-icon-prefix}fingers-scroll-vertical3,
+.#{$linear-icon-prefix}border-style,
+.#{$linear-icon-prefix}border-all,
+.#{$linear-icon-prefix}border-outer,
+.#{$linear-icon-prefix}border-inner,
+.#{$linear-icon-prefix}border-top,
+.#{$linear-icon-prefix}border-horizontal,
+.#{$linear-icon-prefix}border-bottom,
+.#{$linear-icon-prefix}border-left,
+.#{$linear-icon-prefix}border-vertical,
+.#{$linear-icon-prefix}border-right,
+.#{$linear-icon-prefix}border-none,
+.#{$linear-icon-prefix}ellipsis,
+.#{$linear-icon-prefix}uni21,
+.#{$linear-icon-prefix}uni22,
+.#{$linear-icon-prefix}uni23,
+.#{$linear-icon-prefix}uni24,
+.#{$linear-icon-prefix}uni25,
+.#{$linear-icon-prefix}uni26,
+.#{$linear-icon-prefix}uni27,
+.#{$linear-icon-prefix}uni28,
+.#{$linear-icon-prefix}uni29,
+.#{$linear-icon-prefix}uni2a,
+.#{$linear-icon-prefix}uni2b,
+.#{$linear-icon-prefix}uni2c,
+.#{$linear-icon-prefix}uni2d,
+.#{$linear-icon-prefix}uni2e,
+.#{$linear-icon-prefix}uni2f,
+.#{$linear-icon-prefix}uni30,
+.#{$linear-icon-prefix}uni31,
+.#{$linear-icon-prefix}uni32,
+.#{$linear-icon-prefix}uni33,
+.#{$linear-icon-prefix}uni34,
+.#{$linear-icon-prefix}uni35,
+.#{$linear-icon-prefix}uni36,
+.#{$linear-icon-prefix}uni37,
+.#{$linear-icon-prefix}uni38,
+.#{$linear-icon-prefix}uni39,
+.#{$linear-icon-prefix}uni3a,
+.#{$linear-icon-prefix}uni3b,
+.#{$linear-icon-prefix}uni3c,
+.#{$linear-icon-prefix}uni3d,
+.#{$linear-icon-prefix}uni3e,
+.#{$linear-icon-prefix}uni3f,
+.#{$linear-icon-prefix}uni40,
+.#{$linear-icon-prefix}uni41,
+.#{$linear-icon-prefix}uni42,
+.#{$linear-icon-prefix}uni43,
+.#{$linear-icon-prefix}uni44,
+.#{$linear-icon-prefix}uni45,
+.#{$linear-icon-prefix}uni46,
+.#{$linear-icon-prefix}uni47,
+.#{$linear-icon-prefix}uni48,
+.#{$linear-icon-prefix}uni49,
+.#{$linear-icon-prefix}uni4a,
+.#{$linear-icon-prefix}uni4b,
+.#{$linear-icon-prefix}uni4c,
+.#{$linear-icon-prefix}uni4d,
+.#{$linear-icon-prefix}uni4e,
+.#{$linear-icon-prefix}uni4f,
+.#{$linear-icon-prefix}uni50,
+.#{$linear-icon-prefix}uni51,
+.#{$linear-icon-prefix}uni52,
+.#{$linear-icon-prefix}uni53,
+.#{$linear-icon-prefix}uni54,
+.#{$linear-icon-prefix}uni55,
+.#{$linear-icon-prefix}uni56,
+.#{$linear-icon-prefix}uni57,
+.#{$linear-icon-prefix}uni58,
+.#{$linear-icon-prefix}uni59,
+.#{$linear-icon-prefix}uni5a,
+.#{$linear-icon-prefix}uni5b,
+.#{$linear-icon-prefix}uni5c,
+.#{$linear-icon-prefix}uni5d,
+.#{$linear-icon-prefix}uni5e,
+.#{$linear-icon-prefix}uni5f,
+.#{$linear-icon-prefix}uni60,
+.#{$linear-icon-prefix}uni61,
+.#{$linear-icon-prefix}uni62,
+.#{$linear-icon-prefix}uni63,
+.#{$linear-icon-prefix}uni64,
+.#{$linear-icon-prefix}uni65,
+.#{$linear-icon-prefix}uni66,
+.#{$linear-icon-prefix}uni67,
+.#{$linear-icon-prefix}uni68,
+.#{$linear-icon-prefix}uni69,
+.#{$linear-icon-prefix}uni6a,
+.#{$linear-icon-prefix}uni6b,
+.#{$linear-icon-prefix}uni6c,
+.#{$linear-icon-prefix}uni6d,
+.#{$linear-icon-prefix}uni6e,
+.#{$linear-icon-prefix}uni6f,
+.#{$linear-icon-prefix}uni70,
+.#{$linear-icon-prefix}uni71,
+.#{$linear-icon-prefix}uni72,
+.#{$linear-icon-prefix}uni73,
+.#{$linear-icon-prefix}uni74,
+.#{$linear-icon-prefix}uni75,
+.#{$linear-icon-prefix}uni76,
+.#{$linear-icon-prefix}uni77,
+.#{$linear-icon-prefix}uni78,
+.#{$linear-icon-prefix}uni79,
+.#{$linear-icon-prefix}uni7a,
+.#{$linear-icon-prefix}uni7b,
+.#{$linear-icon-prefix}uni7c,
+.#{$linear-icon-prefix}uni7d,
+.#{$linear-icon-prefix}uni7e,
+.#{$linear-icon-prefix}copyright {
+    font-family: '#{$linear-font-family}';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.#{$linear-icon-prefix}home:before {
+    content: "\e600";
+}
+.#{$linear-icon-prefix}home2:before {
+    content: "\e601";
+}
+.#{$linear-icon-prefix}home3:before {
+    content: "\e602";
+}
+.#{$linear-icon-prefix}home4:before {
+    content: "\e603";
+}
+.#{$linear-icon-prefix}home5:before {
+    content: "\e604";
+}
+.#{$linear-icon-prefix}home6:before {
+    content: "\e605";
+}
+.#{$linear-icon-prefix}bathtub:before {
+    content: "\e606";
+}
+.#{$linear-icon-prefix}toothbrush:before {
+    content: "\e607";
+}
+.#{$linear-icon-prefix}bed:before {
+    content: "\e608";
+}
+.#{$linear-icon-prefix}couch:before {
+    content: "\e609";
+}
+.#{$linear-icon-prefix}chair:before {
+    content: "\e60a";
+}
+.#{$linear-icon-prefix}city:before {
+    content: "\e60b";
+}
+.#{$linear-icon-prefix}apartment:before {
+    content: "\e60c";
+}
+.#{$linear-icon-prefix}pencil:before {
+    content: "\e60d";
+}
+.#{$linear-icon-prefix}pencil2:before {
+    content: "\e60e";
+}
+.#{$linear-icon-prefix}pen:before {
+    content: "\e60f";
+}
+.#{$linear-icon-prefix}pencil3:before {
+    content: "\e610";
+}
+.#{$linear-icon-prefix}eraser:before {
+    content: "\e611";
+}
+.#{$linear-icon-prefix}pencil4:before {
+    content: "\e612";
+}
+.#{$linear-icon-prefix}pencil5:before {
+    content: "\e613";
+}
+.#{$linear-icon-prefix}feather:before {
+    content: "\e614";
+}
+.#{$linear-icon-prefix}feather2:before {
+    content: "\e615";
+}
+.#{$linear-icon-prefix}feather3:before {
+    content: "\e616";
+}
+.#{$linear-icon-prefix}pen2:before {
+    content: "\e617";
+}
+.#{$linear-icon-prefix}pen-add:before {
+    content: "\e618";
+}
+.#{$linear-icon-prefix}pen-remove:before {
+    content: "\e619";
+}
+.#{$linear-icon-prefix}vector:before {
+    content: "\e61a";
+}
+.#{$linear-icon-prefix}pen3:before {
+    content: "\e61b";
+}
+.#{$linear-icon-prefix}blog:before {
+    content: "\e61c";
+}
+.#{$linear-icon-prefix}brush:before {
+    content: "\e61d";
+}
+.#{$linear-icon-prefix}brush2:before {
+    content: "\e61e";
+}
+.#{$linear-icon-prefix}spray:before {
+    content: "\e61f";
+}
+.#{$linear-icon-prefix}paint-roller:before {
+    content: "\e620";
+}
+.#{$linear-icon-prefix}stamp:before {
+    content: "\e621";
+}
+.#{$linear-icon-prefix}tape:before {
+    content: "\e622";
+}
+.#{$linear-icon-prefix}desk-tape:before {
+    content: "\e623";
+}
+.#{$linear-icon-prefix}texture:before {
+    content: "\e624";
+}
+.#{$linear-icon-prefix}eye-dropper:before {
+    content: "\e625";
+}
+.#{$linear-icon-prefix}palette:before {
+    content: "\e626";
+}
+.#{$linear-icon-prefix}color-sampler:before {
+    content: "\e627";
+}
+.#{$linear-icon-prefix}bucket:before {
+    content: "\e628";
+}
+.#{$linear-icon-prefix}gradient:before {
+    content: "\e629";
+}
+.#{$linear-icon-prefix}gradient2:before {
+    content: "\e62a";
+}
+.#{$linear-icon-prefix}magic-wand:before {
+    content: "\e62b";
+}
+.#{$linear-icon-prefix}magnet:before {
+    content: "\e62c";
+}
+.#{$linear-icon-prefix}pencil-ruler:before {
+    content: "\e62d";
+}
+.#{$linear-icon-prefix}pencil-ruler2:before {
+    content: "\e62e";
+}
+.#{$linear-icon-prefix}compass:before {
+    content: "\e62f";
+}
+.#{$linear-icon-prefix}aim:before {
+    content: "\e630";
+}
+.#{$linear-icon-prefix}gun:before {
+    content: "\e631";
+}
+.#{$linear-icon-prefix}bottle:before {
+    content: "\e632";
+}
+.#{$linear-icon-prefix}drop:before {
+    content: "\e633";
+}
+.#{$linear-icon-prefix}drop-crossed:before {
+    content: "\e634";
+}
+.#{$linear-icon-prefix}drop2:before {
+    content: "\e635";
+}
+.#{$linear-icon-prefix}snow:before {
+    content: "\e636";
+}
+.#{$linear-icon-prefix}snow2:before {
+    content: "\e637";
+}
+.#{$linear-icon-prefix}fire:before {
+    content: "\e638";
+}
+.#{$linear-icon-prefix}lighter:before {
+    content: "\e639";
+}
+.#{$linear-icon-prefix}knife:before {
+    content: "\e63a";
+}
+.#{$linear-icon-prefix}dagger:before {
+    content: "\e63b";
+}
+.#{$linear-icon-prefix}tissue:before {
+    content: "\e63c";
+}
+.#{$linear-icon-prefix}toilet-paper:before {
+    content: "\e63d";
+}
+.#{$linear-icon-prefix}poop:before {
+    content: "\e63e";
+}
+.#{$linear-icon-prefix}umbrella:before {
+    content: "\e63f";
+}
+.#{$linear-icon-prefix}umbrella2:before {
+    content: "\e640";
+}
+.#{$linear-icon-prefix}rain:before {
+    content: "\e641";
+}
+.#{$linear-icon-prefix}tornado:before {
+    content: "\e642";
+}
+.#{$linear-icon-prefix}wind:before {
+    content: "\e643";
+}
+.#{$linear-icon-prefix}fan:before {
+    content: "\e644";
+}
+.#{$linear-icon-prefix}contrast:before {
+    content: "\e645";
+}
+.#{$linear-icon-prefix}sun-small:before {
+    content: "\e646";
+}
+.#{$linear-icon-prefix}sun:before {
+    content: "\e647";
+}
+.#{$linear-icon-prefix}sun2:before {
+    content: "\e648";
+}
+.#{$linear-icon-prefix}moon:before {
+    content: "\e649";
+}
+.#{$linear-icon-prefix}cloud:before {
+    content: "\e64a";
+}
+.#{$linear-icon-prefix}cloud-upload:before {
+    content: "\e64b";
+}
+.#{$linear-icon-prefix}cloud-download:before {
+    content: "\e64c";
+}
+.#{$linear-icon-prefix}cloud-rain:before {
+    content: "\e64d";
+}
+.#{$linear-icon-prefix}cloud-hailstones:before {
+    content: "\e64e";
+}
+.#{$linear-icon-prefix}cloud-snow:before {
+    content: "\e64f";
+}
+.#{$linear-icon-prefix}cloud-windy:before {
+    content: "\e650";
+}
+.#{$linear-icon-prefix}sun-wind:before {
+    content: "\e651";
+}
+.#{$linear-icon-prefix}cloud-fog:before {
+    content: "\e652";
+}
+.#{$linear-icon-prefix}cloud-sun:before {
+    content: "\e653";
+}
+.#{$linear-icon-prefix}cloud-lightning:before {
+    content: "\e654";
+}
+.#{$linear-icon-prefix}cloud-sync:before {
+    content: "\e655";
+}
+.#{$linear-icon-prefix}cloud-lock:before {
+    content: "\e656";
+}
+.#{$linear-icon-prefix}cloud-gear:before {
+    content: "\e657";
+}
+.#{$linear-icon-prefix}cloud-alert:before {
+    content: "\e658";
+}
+.#{$linear-icon-prefix}cloud-check:before {
+    content: "\e659";
+}
+.#{$linear-icon-prefix}cloud-cross:before {
+    content: "\e65a";
+}
+.#{$linear-icon-prefix}cloud-crossed:before {
+    content: "\e65b";
+}
+.#{$linear-icon-prefix}cloud-database:before {
+    content: "\e65c";
+}
+.#{$linear-icon-prefix}database:before {
+    content: "\e65d";
+}
+.#{$linear-icon-prefix}database-add:before {
+    content: "\e65e";
+}
+.#{$linear-icon-prefix}database-remove:before {
+    content: "\e65f";
+}
+.#{$linear-icon-prefix}database-lock:before {
+    content: "\e660";
+}
+.#{$linear-icon-prefix}database-refresh:before {
+    content: "\e661";
+}
+.#{$linear-icon-prefix}database-check:before {
+    content: "\e662";
+}
+.#{$linear-icon-prefix}database-history:before {
+    content: "\e663";
+}
+.#{$linear-icon-prefix}database-upload:before {
+    content: "\e664";
+}
+.#{$linear-icon-prefix}database-download:before {
+    content: "\e665";
+}
+.#{$linear-icon-prefix}server:before {
+    content: "\e666";
+}
+.#{$linear-icon-prefix}shield:before {
+    content: "\e667";
+}
+.#{$linear-icon-prefix}shield-check:before {
+    content: "\e668";
+}
+.#{$linear-icon-prefix}shield-alert:before {
+    content: "\e669";
+}
+.#{$linear-icon-prefix}shield-cross:before {
+    content: "\e66a";
+}
+.#{$linear-icon-prefix}lock:before {
+    content: "\e66b";
+}
+.#{$linear-icon-prefix}rotation-lock:before {
+    content: "\e66c";
+}
+.#{$linear-icon-prefix}unlock:before {
+    content: "\e66d";
+}
+.#{$linear-icon-prefix}key:before {
+    content: "\e66e";
+}
+.#{$linear-icon-prefix}key-hole:before {
+    content: "\e66f";
+}
+.#{$linear-icon-prefix}toggle-off:before {
+    content: "\e670";
+}
+.#{$linear-icon-prefix}toggle-on:before {
+    content: "\e671";
+}
+.#{$linear-icon-prefix}cog:before {
+    content: "\e672";
+}
+.#{$linear-icon-prefix}cog2:before {
+    content: "\e673";
+}
+.#{$linear-icon-prefix}wrench:before {
+    content: "\e674";
+}
+.#{$linear-icon-prefix}screwdriver:before {
+    content: "\e675";
+}
+.#{$linear-icon-prefix}hammer-wrench:before {
+    content: "\e676";
+}
+.#{$linear-icon-prefix}hammer:before {
+    content: "\e677";
+}
+.#{$linear-icon-prefix}saw:before {
+    content: "\e678";
+}
+.#{$linear-icon-prefix}axe:before {
+    content: "\e679";
+}
+.#{$linear-icon-prefix}axe2:before {
+    content: "\e67a";
+}
+.#{$linear-icon-prefix}shovel:before {
+    content: "\e67b";
+}
+.#{$linear-icon-prefix}pickaxe:before {
+    content: "\e67c";
+}
+.#{$linear-icon-prefix}factory:before {
+    content: "\e67d";
+}
+.#{$linear-icon-prefix}factory2:before {
+    content: "\e67e";
+}
+.#{$linear-icon-prefix}recycle:before {
+    content: "\e67f";
+}
+.#{$linear-icon-prefix}trash:before {
+    content: "\e680";
+}
+.#{$linear-icon-prefix}trash2:before {
+    content: "\e681";
+}
+.#{$linear-icon-prefix}trash3:before {
+    content: "\e682";
+}
+.#{$linear-icon-prefix}broom:before {
+    content: "\e683";
+}
+.#{$linear-icon-prefix}game:before {
+    content: "\e684";
+}
+.#{$linear-icon-prefix}gamepad:before {
+    content: "\e685";
+}
+.#{$linear-icon-prefix}joystick:before {
+    content: "\e686";
+}
+.#{$linear-icon-prefix}dice:before {
+    content: "\e687";
+}
+.#{$linear-icon-prefix}spades:before {
+    content: "\e688";
+}
+.#{$linear-icon-prefix}diamonds:before {
+    content: "\e689";
+}
+.#{$linear-icon-prefix}clubs:before {
+    content: "\e68a";
+}
+.#{$linear-icon-prefix}hearts:before {
+    content: "\e68b";
+}
+.#{$linear-icon-prefix}heart:before {
+    content: "\e68c";
+}
+.#{$linear-icon-prefix}star:before {
+    content: "\e68d";
+}
+.#{$linear-icon-prefix}star-half:before {
+    content: "\e68e";
+}
+.#{$linear-icon-prefix}star-empty:before {
+    content: "\e68f";
+}
+.#{$linear-icon-prefix}flag:before {
+    content: "\e690";
+}
+.#{$linear-icon-prefix}flag2:before {
+    content: "\e691";
+}
+.#{$linear-icon-prefix}flag3:before {
+    content: "\e692";
+}
+.#{$linear-icon-prefix}mailbox-full:before {
+    content: "\e693";
+}
+.#{$linear-icon-prefix}mailbox-empty:before {
+    content: "\e694";
+}
+.#{$linear-icon-prefix}at-sign:before {
+    content: "\e695";
+}
+.#{$linear-icon-prefix}envelope:before {
+    content: "\e696";
+}
+.#{$linear-icon-prefix}envelope-open:before {
+    content: "\e697";
+}
+.#{$linear-icon-prefix}paperclip:before {
+    content: "\e698";
+}
+.#{$linear-icon-prefix}paper-plane:before {
+    content: "\e699";
+}
+.#{$linear-icon-prefix}reply:before {
+    content: "\e69a";
+}
+.#{$linear-icon-prefix}reply-all:before {
+    content: "\e69b";
+}
+.#{$linear-icon-prefix}inbox:before {
+    content: "\e69c";
+}
+.#{$linear-icon-prefix}inbox2:before {
+    content: "\e69d";
+}
+.#{$linear-icon-prefix}outbox:before {
+    content: "\e69e";
+}
+.#{$linear-icon-prefix}box:before {
+    content: "\e69f";
+}
+.#{$linear-icon-prefix}archive:before {
+    content: "\e6a0";
+}
+.#{$linear-icon-prefix}archive2:before {
+    content: "\e6a1";
+}
+.#{$linear-icon-prefix}drawers:before {
+    content: "\e6a2";
+}
+.#{$linear-icon-prefix}drawers2:before {
+    content: "\e6a3";
+}
+.#{$linear-icon-prefix}drawers3:before {
+    content: "\e6a4";
+}
+.#{$linear-icon-prefix}eye:before {
+    content: "\e6a5";
+}
+.#{$linear-icon-prefix}eye-crossed:before {
+    content: "\e6a6";
+}
+.#{$linear-icon-prefix}eye-plus:before {
+    content: "\e6a7";
+}
+.#{$linear-icon-prefix}eye-minus:before {
+    content: "\e6a8";
+}
+.#{$linear-icon-prefix}binoculars:before {
+    content: "\e6a9";
+}
+.#{$linear-icon-prefix}binoculars2:before {
+    content: "\e6aa";
+}
+.#{$linear-icon-prefix}hdd:before {
+    content: "\e6ab";
+}
+.#{$linear-icon-prefix}hdd-down:before {
+    content: "\e6ac";
+}
+.#{$linear-icon-prefix}hdd-up:before {
+    content: "\e6ad";
+}
+.#{$linear-icon-prefix}floppy-disk:before {
+    content: "\e6ae";
+}
+.#{$linear-icon-prefix}disc:before {
+    content: "\e6af";
+}
+.#{$linear-icon-prefix}tape2:before {
+    content: "\e6b0";
+}
+.#{$linear-icon-prefix}printer:before {
+    content: "\e6b1";
+}
+.#{$linear-icon-prefix}shredder:before {
+    content: "\e6b2";
+}
+.#{$linear-icon-prefix}file-empty:before {
+    content: "\e6b3";
+}
+.#{$linear-icon-prefix}file-add:before {
+    content: "\e6b4";
+}
+.#{$linear-icon-prefix}file-check:before {
+    content: "\e6b5";
+}
+.#{$linear-icon-prefix}file-lock:before {
+    content: "\e6b6";
+}
+.#{$linear-icon-prefix}files:before {
+    content: "\e6b7";
+}
+.#{$linear-icon-prefix}copy:before {
+    content: "\e6b8";
+}
+.#{$linear-icon-prefix}compare:before {
+    content: "\e6b9";
+}
+.#{$linear-icon-prefix}folder:before {
+    content: "\e6ba";
+}
+.#{$linear-icon-prefix}folder-search:before {
+    content: "\e6bb";
+}
+.#{$linear-icon-prefix}folder-plus:before {
+    content: "\e6bc";
+}
+.#{$linear-icon-prefix}folder-minus:before {
+    content: "\e6bd";
+}
+.#{$linear-icon-prefix}folder-download:before {
+    content: "\e6be";
+}
+.#{$linear-icon-prefix}folder-upload:before {
+    content: "\e6bf";
+}
+.#{$linear-icon-prefix}folder-star:before {
+    content: "\e6c0";
+}
+.#{$linear-icon-prefix}folder-heart:before {
+    content: "\e6c1";
+}
+.#{$linear-icon-prefix}folder-user:before {
+    content: "\e6c2";
+}
+.#{$linear-icon-prefix}folder-shared:before {
+    content: "\e6c3";
+}
+.#{$linear-icon-prefix}folder-music:before {
+    content: "\e6c4";
+}
+.#{$linear-icon-prefix}folder-picture:before {
+    content: "\e6c5";
+}
+.#{$linear-icon-prefix}folder-film:before {
+    content: "\e6c6";
+}
+.#{$linear-icon-prefix}scissors:before {
+    content: "\e6c7";
+}
+.#{$linear-icon-prefix}paste:before {
+    content: "\e6c8";
+}
+.#{$linear-icon-prefix}clipboard-empty:before {
+    content: "\e6c9";
+}
+.#{$linear-icon-prefix}clipboard-pencil:before {
+    content: "\e6ca";
+}
+.#{$linear-icon-prefix}clipboard-text:before {
+    content: "\e6cb";
+}
+.#{$linear-icon-prefix}clipboard-check:before {
+    content: "\e6cc";
+}
+.#{$linear-icon-prefix}clipboard-down:before {
+    content: "\e6cd";
+}
+.#{$linear-icon-prefix}clipboard-left:before {
+    content: "\e6ce";
+}
+.#{$linear-icon-prefix}clipboard-alert:before {
+    content: "\e6cf";
+}
+.#{$linear-icon-prefix}clipboard-user:before {
+    content: "\e6d0";
+}
+.#{$linear-icon-prefix}register:before {
+    content: "\e6d1";
+}
+.#{$linear-icon-prefix}enter:before {
+    content: "\e6d2";
+}
+.#{$linear-icon-prefix}exit:before {
+    content: "\e6d3";
+}
+.#{$linear-icon-prefix}papers:before {
+    content: "\e6d4";
+}
+.#{$linear-icon-prefix}news:before {
+    content: "\e6d5";
+}
+.#{$linear-icon-prefix}reading:before {
+    content: "\e6d6";
+}
+.#{$linear-icon-prefix}typewriter:before {
+    content: "\e6d7";
+}
+.#{$linear-icon-prefix}document:before {
+    content: "\e6d8";
+}
+.#{$linear-icon-prefix}document2:before {
+    content: "\e6d9";
+}
+.#{$linear-icon-prefix}graduation-hat:before {
+    content: "\e6da";
+}
+.#{$linear-icon-prefix}license:before {
+    content: "\e6db";
+}
+.#{$linear-icon-prefix}license2:before {
+    content: "\e6dc";
+}
+.#{$linear-icon-prefix}medal-empty:before {
+    content: "\e6dd";
+}
+.#{$linear-icon-prefix}medal-first:before {
+    content: "\e6de";
+}
+.#{$linear-icon-prefix}medal-second:before {
+    content: "\e6df";
+}
+.#{$linear-icon-prefix}medal-third:before {
+    content: "\e6e0";
+}
+.#{$linear-icon-prefix}podium:before {
+    content: "\e6e1";
+}
+.#{$linear-icon-prefix}trophy:before {
+    content: "\e6e2";
+}
+.#{$linear-icon-prefix}trophy2:before {
+    content: "\e6e3";
+}
+.#{$linear-icon-prefix}music-note:before {
+    content: "\e6e4";
+}
+.#{$linear-icon-prefix}music-note2:before {
+    content: "\e6e5";
+}
+.#{$linear-icon-prefix}music-note3:before {
+    content: "\e6e6";
+}
+.#{$linear-icon-prefix}playlist:before {
+    content: "\e6e7";
+}
+.#{$linear-icon-prefix}playlist-add:before {
+    content: "\e6e8";
+}
+.#{$linear-icon-prefix}guitar:before {
+    content: "\e6e9";
+}
+.#{$linear-icon-prefix}trumpet:before {
+    content: "\e6ea";
+}
+.#{$linear-icon-prefix}album:before {
+    content: "\e6eb";
+}
+.#{$linear-icon-prefix}shuffle:before {
+    content: "\e6ec";
+}
+.#{$linear-icon-prefix}repeat-one:before {
+    content: "\e6ed";
+}
+.#{$linear-icon-prefix}repeat:before {
+    content: "\e6ee";
+}
+.#{$linear-icon-prefix}headphones:before {
+    content: "\e6ef";
+}
+.#{$linear-icon-prefix}headset:before {
+    content: "\e6f0";
+}
+.#{$linear-icon-prefix}loudspeaker:before {
+    content: "\e6f1";
+}
+.#{$linear-icon-prefix}equalizer:before {
+    content: "\e6f2";
+}
+.#{$linear-icon-prefix}theater:before {
+    content: "\e6f3";
+}
+.#{$linear-icon-prefix}3d-glasses:before {
+    content: "\e6f4";
+}
+.#{$linear-icon-prefix}ticket:before {
+    content: "\e6f5";
+}
+.#{$linear-icon-prefix}presentation:before {
+    content: "\e6f6";
+}
+.#{$linear-icon-prefix}play:before {
+    content: "\e6f7";
+}
+.#{$linear-icon-prefix}film-play:before {
+    content: "\e6f8";
+}
+.#{$linear-icon-prefix}clapboard-play:before {
+    content: "\e6f9";
+}
+.#{$linear-icon-prefix}media:before {
+    content: "\e6fa";
+}
+.#{$linear-icon-prefix}film:before {
+    content: "\e6fb";
+}
+.#{$linear-icon-prefix}film2:before {
+    content: "\e6fc";
+}
+.#{$linear-icon-prefix}surveillance:before {
+    content: "\e6fd";
+}
+.#{$linear-icon-prefix}surveillance2:before {
+    content: "\e6fe";
+}
+.#{$linear-icon-prefix}camera:before {
+    content: "\e6ff";
+}
+.#{$linear-icon-prefix}camera-crossed:before {
+    content: "\e700";
+}
+.#{$linear-icon-prefix}camera-play:before {
+    content: "\e701";
+}
+.#{$linear-icon-prefix}time-lapse:before {
+    content: "\e702";
+}
+.#{$linear-icon-prefix}record:before {
+    content: "\e703";
+}
+.#{$linear-icon-prefix}camera2:before {
+    content: "\e704";
+}
+.#{$linear-icon-prefix}camera-flip:before {
+    content: "\e705";
+}
+.#{$linear-icon-prefix}panorama:before {
+    content: "\e706";
+}
+.#{$linear-icon-prefix}time-lapse2:before {
+    content: "\e707";
+}
+.#{$linear-icon-prefix}shutter:before {
+    content: "\e708";
+}
+.#{$linear-icon-prefix}shutter2:before {
+    content: "\e709";
+}
+.#{$linear-icon-prefix}face-detection:before {
+    content: "\e70a";
+}
+.#{$linear-icon-prefix}flare:before {
+    content: "\e70b";
+}
+.#{$linear-icon-prefix}convex:before {
+    content: "\e70c";
+}
+.#{$linear-icon-prefix}concave:before {
+    content: "\e70d";
+}
+.#{$linear-icon-prefix}picture:before {
+    content: "\e70e";
+}
+.#{$linear-icon-prefix}picture2:before {
+    content: "\e70f";
+}
+.#{$linear-icon-prefix}picture3:before {
+    content: "\e710";
+}
+.#{$linear-icon-prefix}pictures:before {
+    content: "\e711";
+}
+.#{$linear-icon-prefix}book:before {
+    content: "\e712";
+}
+.#{$linear-icon-prefix}audio-book:before {
+    content: "\e713";
+}
+.#{$linear-icon-prefix}book2:before {
+    content: "\e714";
+}
+.#{$linear-icon-prefix}bookmark:before {
+    content: "\e715";
+}
+.#{$linear-icon-prefix}bookmark2:before {
+    content: "\e716";
+}
+.#{$linear-icon-prefix}label:before {
+    content: "\e717";
+}
+.#{$linear-icon-prefix}library:before {
+    content: "\e718";
+}
+.#{$linear-icon-prefix}library2:before {
+    content: "\e719";
+}
+.#{$linear-icon-prefix}contacts:before {
+    content: "\e71a";
+}
+.#{$linear-icon-prefix}profile:before {
+    content: "\e71b";
+}
+.#{$linear-icon-prefix}portrait:before {
+    content: "\e71c";
+}
+.#{$linear-icon-prefix}portrait2:before {
+    content: "\e71d";
+}
+.#{$linear-icon-prefix}user:before {
+    content: "\e71e";
+}
+.#{$linear-icon-prefix}user-plus:before {
+    content: "\e71f";
+}
+.#{$linear-icon-prefix}user-minus:before {
+    content: "\e720";
+}
+.#{$linear-icon-prefix}user-lock:before {
+    content: "\e721";
+}
+.#{$linear-icon-prefix}users:before {
+    content: "\e722";
+}
+.#{$linear-icon-prefix}users2:before {
+    content: "\e723";
+}
+.#{$linear-icon-prefix}users-plus:before {
+    content: "\e724";
+}
+.#{$linear-icon-prefix}users-minus:before {
+    content: "\e725";
+}
+.#{$linear-icon-prefix}group-work:before {
+    content: "\e726";
+}
+.#{$linear-icon-prefix}woman:before {
+    content: "\e727";
+}
+.#{$linear-icon-prefix}man:before {
+    content: "\e728";
+}
+.#{$linear-icon-prefix}baby:before {
+    content: "\e729";
+}
+.#{$linear-icon-prefix}baby2:before {
+    content: "\e72a";
+}
+.#{$linear-icon-prefix}baby3:before {
+    content: "\e72b";
+}
+.#{$linear-icon-prefix}baby-bottle:before {
+    content: "\e72c";
+}
+.#{$linear-icon-prefix}walk:before {
+    content: "\e72d";
+}
+.#{$linear-icon-prefix}hand-waving:before {
+    content: "\e72e";
+}
+.#{$linear-icon-prefix}jump:before {
+    content: "\e72f";
+}
+.#{$linear-icon-prefix}run:before {
+    content: "\e730";
+}
+.#{$linear-icon-prefix}woman2:before {
+    content: "\e731";
+}
+.#{$linear-icon-prefix}man2:before {
+    content: "\e732";
+}
+.#{$linear-icon-prefix}man-woman:before {
+    content: "\e733";
+}
+.#{$linear-icon-prefix}height:before {
+    content: "\e734";
+}
+.#{$linear-icon-prefix}weight:before {
+    content: "\e735";
+}
+.#{$linear-icon-prefix}scale:before {
+    content: "\e736";
+}
+.#{$linear-icon-prefix}button:before {
+    content: "\e737";
+}
+.#{$linear-icon-prefix}bow-tie:before {
+    content: "\e738";
+}
+.#{$linear-icon-prefix}tie:before {
+    content: "\e739";
+}
+.#{$linear-icon-prefix}socks:before {
+    content: "\e73a";
+}
+.#{$linear-icon-prefix}shoe:before {
+    content: "\e73b";
+}
+.#{$linear-icon-prefix}shoes:before {
+    content: "\e73c";
+}
+.#{$linear-icon-prefix}hat:before {
+    content: "\e73d";
+}
+.#{$linear-icon-prefix}pants:before {
+    content: "\e73e";
+}
+.#{$linear-icon-prefix}shorts:before {
+    content: "\e73f";
+}
+.#{$linear-icon-prefix}flip-flops:before {
+    content: "\e740";
+}
+.#{$linear-icon-prefix}shirt:before {
+    content: "\e741";
+}
+.#{$linear-icon-prefix}hanger:before {
+    content: "\e742";
+}
+.#{$linear-icon-prefix}laundry:before {
+    content: "\e743";
+}
+.#{$linear-icon-prefix}store:before {
+    content: "\e744";
+}
+.#{$linear-icon-prefix}haircut:before {
+    content: "\e745";
+}
+.#{$linear-icon-prefix}store-24:before {
+    content: "\e746";
+}
+.#{$linear-icon-prefix}barcode:before {
+    content: "\e747";
+}
+.#{$linear-icon-prefix}barcode2:before {
+    content: "\e748";
+}
+.#{$linear-icon-prefix}barcode3:before {
+    content: "\e749";
+}
+.#{$linear-icon-prefix}cashier:before {
+    content: "\e74a";
+}
+.#{$linear-icon-prefix}bag:before {
+    content: "\e74b";
+}
+.#{$linear-icon-prefix}bag2:before {
+    content: "\e74c";
+}
+.#{$linear-icon-prefix}cart:before {
+    content: "\e74d";
+}
+.#{$linear-icon-prefix}cart-empty:before {
+    content: "\e74e";
+}
+.#{$linear-icon-prefix}cart-full:before {
+    content: "\e74f";
+}
+.#{$linear-icon-prefix}cart-plus:before {
+    content: "\e750";
+}
+.#{$linear-icon-prefix}cart-plus2:before {
+    content: "\e751";
+}
+.#{$linear-icon-prefix}cart-add:before {
+    content: "\e752";
+}
+.#{$linear-icon-prefix}cart-remove:before {
+    content: "\e753";
+}
+.#{$linear-icon-prefix}cart-exchange:before {
+    content: "\e754";
+}
+.#{$linear-icon-prefix}tag:before {
+    content: "\e755";
+}
+.#{$linear-icon-prefix}tags:before {
+    content: "\e756";
+}
+.#{$linear-icon-prefix}receipt:before {
+    content: "\e757";
+}
+.#{$linear-icon-prefix}wallet:before {
+    content: "\e758";
+}
+.#{$linear-icon-prefix}credit-card:before {
+    content: "\e759";
+}
+.#{$linear-icon-prefix}cash-dollar:before {
+    content: "\e75a";
+}
+.#{$linear-icon-prefix}cash-euro:before {
+    content: "\e75b";
+}
+.#{$linear-icon-prefix}cash-pound:before {
+    content: "\e75c";
+}
+.#{$linear-icon-prefix}cash-yen:before {
+    content: "\e75d";
+}
+.#{$linear-icon-prefix}bag-dollar:before {
+    content: "\e75e";
+}
+.#{$linear-icon-prefix}bag-euro:before {
+    content: "\e75f";
+}
+.#{$linear-icon-prefix}bag-pound:before {
+    content: "\e760";
+}
+.#{$linear-icon-prefix}bag-yen:before {
+    content: "\e761";
+}
+.#{$linear-icon-prefix}coin-dollar:before {
+    content: "\e762";
+}
+.#{$linear-icon-prefix}coin-euro:before {
+    content: "\e763";
+}
+.#{$linear-icon-prefix}coin-pound:before {
+    content: "\e764";
+}
+.#{$linear-icon-prefix}coin-yen:before {
+    content: "\e765";
+}
+.#{$linear-icon-prefix}calculator:before {
+    content: "\e766";
+}
+.#{$linear-icon-prefix}calculator2:before {
+    content: "\e767";
+}
+.#{$linear-icon-prefix}abacus:before {
+    content: "\e768";
+}
+.#{$linear-icon-prefix}vault:before {
+    content: "\e769";
+}
+.#{$linear-icon-prefix}telephone:before {
+    content: "\e76a";
+}
+.#{$linear-icon-prefix}phone-lock:before {
+    content: "\e76b";
+}
+.#{$linear-icon-prefix}phone-wave:before {
+    content: "\e76c";
+}
+.#{$linear-icon-prefix}phone-pause:before {
+    content: "\e76d";
+}
+.#{$linear-icon-prefix}phone-outgoing:before {
+    content: "\e76e";
+}
+.#{$linear-icon-prefix}phone-incoming:before {
+    content: "\e76f";
+}
+.#{$linear-icon-prefix}phone-in-out:before {
+    content: "\e770";
+}
+.#{$linear-icon-prefix}phone-error:before {
+    content: "\e771";
+}
+.#{$linear-icon-prefix}phone-sip:before {
+    content: "\e772";
+}
+.#{$linear-icon-prefix}phone-plus:before {
+    content: "\e773";
+}
+.#{$linear-icon-prefix}phone-minus:before {
+    content: "\e774";
+}
+.#{$linear-icon-prefix}voicemail:before {
+    content: "\e775";
+}
+.#{$linear-icon-prefix}dial:before {
+    content: "\e776";
+}
+.#{$linear-icon-prefix}telephone2:before {
+    content: "\e777";
+}
+.#{$linear-icon-prefix}pushpin:before {
+    content: "\e778";
+}
+.#{$linear-icon-prefix}pushpin2:before {
+    content: "\e779";
+}
+.#{$linear-icon-prefix}map-marker:before {
+    content: "\e77a";
+}
+.#{$linear-icon-prefix}map-marker-user:before {
+    content: "\e77b";
+}
+.#{$linear-icon-prefix}map-marker-down:before {
+    content: "\e77c";
+}
+.#{$linear-icon-prefix}map-marker-check:before {
+    content: "\e77d";
+}
+.#{$linear-icon-prefix}map-marker-crossed:before {
+    content: "\e77e";
+}
+.#{$linear-icon-prefix}radar:before {
+    content: "\e77f";
+}
+.#{$linear-icon-prefix}compass2:before {
+    content: "\e780";
+}
+.#{$linear-icon-prefix}map:before {
+    content: "\e781";
+}
+.#{$linear-icon-prefix}map2:before {
+    content: "\e782";
+}
+.#{$linear-icon-prefix}location:before {
+    content: "\e783";
+}
+.#{$linear-icon-prefix}road-sign:before {
+    content: "\e784";
+}
+.#{$linear-icon-prefix}calendar-empty:before {
+    content: "\e785";
+}
+.#{$linear-icon-prefix}calendar-check:before {
+    content: "\e786";
+}
+.#{$linear-icon-prefix}calendar-cross:before {
+    content: "\e787";
+}
+.#{$linear-icon-prefix}calendar-31:before {
+    content: "\e788";
+}
+.#{$linear-icon-prefix}calendar-full:before {
+    content: "\e789";
+}
+.#{$linear-icon-prefix}calendar-insert:before {
+    content: "\e78a";
+}
+.#{$linear-icon-prefix}calendar-text:before {
+    content: "\e78b";
+}
+.#{$linear-icon-prefix}calendar-user:before {
+    content: "\e78c";
+}
+.#{$linear-icon-prefix}mouse:before {
+    content: "\e78d";
+}
+.#{$linear-icon-prefix}mouse-left:before {
+    content: "\e78e";
+}
+.#{$linear-icon-prefix}mouse-right:before {
+    content: "\e78f";
+}
+.#{$linear-icon-prefix}mouse-both:before {
+    content: "\e790";
+}
+.#{$linear-icon-prefix}keyboard:before {
+    content: "\e791";
+}
+.#{$linear-icon-prefix}keyboard-up:before {
+    content: "\e792";
+}
+.#{$linear-icon-prefix}keyboard-down:before {
+    content: "\e793";
+}
+.#{$linear-icon-prefix}delete:before {
+    content: "\e794";
+}
+.#{$linear-icon-prefix}spell-check:before {
+    content: "\e795";
+}
+.#{$linear-icon-prefix}escape:before {
+    content: "\e796";
+}
+.#{$linear-icon-prefix}enter2:before {
+    content: "\e797";
+}
+.#{$linear-icon-prefix}screen:before {
+    content: "\e798";
+}
+.#{$linear-icon-prefix}aspect-ratio:before {
+    content: "\e799";
+}
+.#{$linear-icon-prefix}signal:before {
+    content: "\e79a";
+}
+.#{$linear-icon-prefix}signal-lock:before {
+    content: "\e79b";
+}
+.#{$linear-icon-prefix}signal-80:before {
+    content: "\e79c";
+}
+.#{$linear-icon-prefix}signal-60:before {
+    content: "\e79d";
+}
+.#{$linear-icon-prefix}signal-40:before {
+    content: "\e79e";
+}
+.#{$linear-icon-prefix}signal-20:before {
+    content: "\e79f";
+}
+.#{$linear-icon-prefix}signal-0:before {
+    content: "\e7a0";
+}
+.#{$linear-icon-prefix}signal-blocked:before {
+    content: "\e7a1";
+}
+.#{$linear-icon-prefix}sim:before {
+    content: "\e7a2";
+}
+.#{$linear-icon-prefix}flash-memory:before {
+    content: "\e7a3";
+}
+.#{$linear-icon-prefix}usb-drive:before {
+    content: "\e7a4";
+}
+.#{$linear-icon-prefix}phone:before {
+    content: "\e7a5";
+}
+.#{$linear-icon-prefix}smartphone:before {
+    content: "\e7a6";
+}
+.#{$linear-icon-prefix}smartphone-notification:before {
+    content: "\e7a7";
+}
+.#{$linear-icon-prefix}smartphone-vibration:before {
+    content: "\e7a8";
+}
+.#{$linear-icon-prefix}smartphone-embed:before {
+    content: "\e7a9";
+}
+.#{$linear-icon-prefix}smartphone-waves:before {
+    content: "\e7aa";
+}
+.#{$linear-icon-prefix}tablet:before {
+    content: "\e7ab";
+}
+.#{$linear-icon-prefix}tablet2:before {
+    content: "\e7ac";
+}
+.#{$linear-icon-prefix}laptop:before {
+    content: "\e7ad";
+}
+.#{$linear-icon-prefix}laptop-phone:before {
+    content: "\e7ae";
+}
+.#{$linear-icon-prefix}desktop:before {
+    content: "\e7af";
+}
+.#{$linear-icon-prefix}launch:before {
+    content: "\e7b0";
+}
+.#{$linear-icon-prefix}new-tab:before {
+    content: "\e7b1";
+}
+.#{$linear-icon-prefix}window:before {
+    content: "\e7b2";
+}
+.#{$linear-icon-prefix}cable:before {
+    content: "\e7b3";
+}
+.#{$linear-icon-prefix}cable2:before {
+    content: "\e7b4";
+}
+.#{$linear-icon-prefix}tv:before {
+    content: "\e7b5";
+}
+.#{$linear-icon-prefix}radio:before {
+    content: "\e7b6";
+}
+.#{$linear-icon-prefix}remote-control:before {
+    content: "\e7b7";
+}
+.#{$linear-icon-prefix}power-switch:before {
+    content: "\e7b8";
+}
+.#{$linear-icon-prefix}power:before {
+    content: "\e7b9";
+}
+.#{$linear-icon-prefix}power-crossed:before {
+    content: "\e7ba";
+}
+.#{$linear-icon-prefix}flash-auto:before {
+    content: "\e7bb";
+}
+.#{$linear-icon-prefix}lamp:before {
+    content: "\e7bc";
+}
+.#{$linear-icon-prefix}flashlight:before {
+    content: "\e7bd";
+}
+.#{$linear-icon-prefix}lampshade:before {
+    content: "\e7be";
+}
+.#{$linear-icon-prefix}cord:before {
+    content: "\e7bf";
+}
+.#{$linear-icon-prefix}outlet:before {
+    content: "\e7c0";
+}
+.#{$linear-icon-prefix}battery-power:before {
+    content: "\e7c1";
+}
+.#{$linear-icon-prefix}battery-empty:before {
+    content: "\e7c2";
+}
+.#{$linear-icon-prefix}battery-alert:before {
+    content: "\e7c3";
+}
+.#{$linear-icon-prefix}battery-error:before {
+    content: "\e7c4";
+}
+.#{$linear-icon-prefix}battery-low1:before {
+    content: "\e7c5";
+}
+.#{$linear-icon-prefix}battery-low2:before {
+    content: "\e7c6";
+}
+.#{$linear-icon-prefix}battery-low3:before {
+    content: "\e7c7";
+}
+.#{$linear-icon-prefix}battery-mid1:before {
+    content: "\e7c8";
+}
+.#{$linear-icon-prefix}battery-mid2:before {
+    content: "\e7c9";
+}
+.#{$linear-icon-prefix}battery-mid3:before {
+    content: "\e7ca";
+}
+.#{$linear-icon-prefix}battery-full:before {
+    content: "\e7cb";
+}
+.#{$linear-icon-prefix}battery-charging:before {
+    content: "\e7cc";
+}
+.#{$linear-icon-prefix}battery-charging2:before {
+    content: "\e7cd";
+}
+.#{$linear-icon-prefix}battery-charging3:before {
+    content: "\e7ce";
+}
+.#{$linear-icon-prefix}battery-charging4:before {
+    content: "\e7cf";
+}
+.#{$linear-icon-prefix}battery-charging5:before {
+    content: "\e7d0";
+}
+.#{$linear-icon-prefix}battery-charging6:before {
+    content: "\e7d1";
+}
+.#{$linear-icon-prefix}battery-charging7:before {
+    content: "\e7d2";
+}
+.#{$linear-icon-prefix}chip:before {
+    content: "\e7d3";
+}
+.#{$linear-icon-prefix}chip-x64:before {
+    content: "\e7d4";
+}
+.#{$linear-icon-prefix}chip-x86:before {
+    content: "\e7d5";
+}
+.#{$linear-icon-prefix}bubble:before {
+    content: "\e7d6";
+}
+.#{$linear-icon-prefix}bubbles:before {
+    content: "\e7d7";
+}
+.#{$linear-icon-prefix}bubble-dots:before {
+    content: "\e7d8";
+}
+.#{$linear-icon-prefix}bubble-alert:before {
+    content: "\e7d9";
+}
+.#{$linear-icon-prefix}bubble-question:before {
+    content: "\e7da";
+}
+.#{$linear-icon-prefix}bubble-text:before {
+    content: "\e7db";
+}
+.#{$linear-icon-prefix}bubble-pencil:before {
+    content: "\e7dc";
+}
+.#{$linear-icon-prefix}bubble-picture:before {
+    content: "\e7dd";
+}
+.#{$linear-icon-prefix}bubble-video:before {
+    content: "\e7de";
+}
+.#{$linear-icon-prefix}bubble-user:before {
+    content: "\e7df";
+}
+.#{$linear-icon-prefix}bubble-quote:before {
+    content: "\e7e0";
+}
+.#{$linear-icon-prefix}bubble-heart:before {
+    content: "\e7e1";
+}
+.#{$linear-icon-prefix}bubble-emoticon:before {
+    content: "\e7e2";
+}
+.#{$linear-icon-prefix}bubble-attachment:before {
+    content: "\e7e3";
+}
+.#{$linear-icon-prefix}phone-bubble:before {
+    content: "\e7e4";
+}
+.#{$linear-icon-prefix}quote-open:before {
+    content: "\e7e5";
+}
+.#{$linear-icon-prefix}quote-close:before {
+    content: "\e7e6";
+}
+.#{$linear-icon-prefix}dna:before {
+    content: "\e7e7";
+}
+.#{$linear-icon-prefix}heart-pulse:before {
+    content: "\e7e8";
+}
+.#{$linear-icon-prefix}pulse:before {
+    content: "\e7e9";
+}
+.#{$linear-icon-prefix}syringe:before {
+    content: "\e7ea";
+}
+.#{$linear-icon-prefix}pills:before {
+    content: "\e7eb";
+}
+.#{$linear-icon-prefix}first-aid:before {
+    content: "\e7ec";
+}
+.#{$linear-icon-prefix}lifebuoy:before {
+    content: "\e7ed";
+}
+.#{$linear-icon-prefix}bandage:before {
+    content: "\e7ee";
+}
+.#{$linear-icon-prefix}bandages:before {
+    content: "\e7ef";
+}
+.#{$linear-icon-prefix}thermometer:before {
+    content: "\e7f0";
+}
+.#{$linear-icon-prefix}microscope:before {
+    content: "\e7f1";
+}
+.#{$linear-icon-prefix}brain:before {
+    content: "\e7f2";
+}
+.#{$linear-icon-prefix}beaker:before {
+    content: "\e7f3";
+}
+.#{$linear-icon-prefix}skull:before {
+    content: "\e7f4";
+}
+.#{$linear-icon-prefix}bone:before {
+    content: "\e7f5";
+}
+.#{$linear-icon-prefix}construction:before {
+    content: "\e7f6";
+}
+.#{$linear-icon-prefix}construction-cone:before {
+    content: "\e7f7";
+}
+.#{$linear-icon-prefix}pie-chart:before {
+    content: "\e7f8";
+}
+.#{$linear-icon-prefix}pie-chart2:before {
+    content: "\e7f9";
+}
+.#{$linear-icon-prefix}graph:before {
+    content: "\e7fa";
+}
+.#{$linear-icon-prefix}chart-growth:before {
+    content: "\e7fb";
+}
+.#{$linear-icon-prefix}chart-bars:before {
+    content: "\e7fc";
+}
+.#{$linear-icon-prefix}chart-settings:before {
+    content: "\e7fd";
+}
+.#{$linear-icon-prefix}cake:before {
+    content: "\e7fe";
+}
+.#{$linear-icon-prefix}gift:before {
+    content: "\e7ff";
+}
+.#{$linear-icon-prefix}balloon:before {
+    content: "\e800";
+}
+.#{$linear-icon-prefix}rank:before {
+    content: "\e801";
+}
+.#{$linear-icon-prefix}rank2:before {
+    content: "\e802";
+}
+.#{$linear-icon-prefix}rank3:before {
+    content: "\e803";
+}
+.#{$linear-icon-prefix}crown:before {
+    content: "\e804";
+}
+.#{$linear-icon-prefix}lotus:before {
+    content: "\e805";
+}
+.#{$linear-icon-prefix}diamond:before {
+    content: "\e806";
+}
+.#{$linear-icon-prefix}diamond2:before {
+    content: "\e807";
+}
+.#{$linear-icon-prefix}diamond3:before {
+    content: "\e808";
+}
+.#{$linear-icon-prefix}diamond4:before {
+    content: "\e809";
+}
+.#{$linear-icon-prefix}linearicons:before {
+    content: "\e80a";
+}
+.#{$linear-icon-prefix}teacup:before {
+    content: "\e80b";
+}
+.#{$linear-icon-prefix}teapot:before {
+    content: "\e80c";
+}
+.#{$linear-icon-prefix}glass:before {
+    content: "\e80d";
+}
+.#{$linear-icon-prefix}bottle2:before {
+    content: "\e80e";
+}
+.#{$linear-icon-prefix}glass-cocktail:before {
+    content: "\e80f";
+}
+.#{$linear-icon-prefix}glass2:before {
+    content: "\e810";
+}
+.#{$linear-icon-prefix}dinner:before {
+    content: "\e811";
+}
+.#{$linear-icon-prefix}dinner2:before {
+    content: "\e812";
+}
+.#{$linear-icon-prefix}chef:before {
+    content: "\e813";
+}
+.#{$linear-icon-prefix}scale2:before {
+    content: "\e814";
+}
+.#{$linear-icon-prefix}egg:before {
+    content: "\e815";
+}
+.#{$linear-icon-prefix}egg2:before {
+    content: "\e816";
+}
+.#{$linear-icon-prefix}eggs:before {
+    content: "\e817";
+}
+.#{$linear-icon-prefix}platter:before {
+    content: "\e818";
+}
+.#{$linear-icon-prefix}steak:before {
+    content: "\e819";
+}
+.#{$linear-icon-prefix}hamburger:before {
+    content: "\e81a";
+}
+.#{$linear-icon-prefix}hotdog:before {
+    content: "\e81b";
+}
+.#{$linear-icon-prefix}pizza:before {
+    content: "\e81c";
+}
+.#{$linear-icon-prefix}sausage:before {
+    content: "\e81d";
+}
+.#{$linear-icon-prefix}chicken:before {
+    content: "\e81e";
+}
+.#{$linear-icon-prefix}fish:before {
+    content: "\e81f";
+}
+.#{$linear-icon-prefix}carrot:before {
+    content: "\e820";
+}
+.#{$linear-icon-prefix}cheese:before {
+    content: "\e821";
+}
+.#{$linear-icon-prefix}bread:before {
+    content: "\e822";
+}
+.#{$linear-icon-prefix}ice-cream:before {
+    content: "\e823";
+}
+.#{$linear-icon-prefix}ice-cream2:before {
+    content: "\e824";
+}
+.#{$linear-icon-prefix}candy:before {
+    content: "\e825";
+}
+.#{$linear-icon-prefix}lollipop:before {
+    content: "\e826";
+}
+.#{$linear-icon-prefix}coffee-bean:before {
+    content: "\e827";
+}
+.#{$linear-icon-prefix}coffee-cup:before {
+    content: "\e828";
+}
+.#{$linear-icon-prefix}cherry:before {
+    content: "\e829";
+}
+.#{$linear-icon-prefix}grapes:before {
+    content: "\e82a";
+}
+.#{$linear-icon-prefix}citrus:before {
+    content: "\e82b";
+}
+.#{$linear-icon-prefix}apple:before {
+    content: "\e82c";
+}
+.#{$linear-icon-prefix}leaf:before {
+    content: "\e82d";
+}
+.#{$linear-icon-prefix}landscape:before {
+    content: "\e82e";
+}
+.#{$linear-icon-prefix}pine-tree:before {
+    content: "\e82f";
+}
+.#{$linear-icon-prefix}tree:before {
+    content: "\e830";
+}
+.#{$linear-icon-prefix}cactus:before {
+    content: "\e831";
+}
+.#{$linear-icon-prefix}paw:before {
+    content: "\e832";
+}
+.#{$linear-icon-prefix}footprint:before {
+    content: "\e833";
+}
+.#{$linear-icon-prefix}speed-slow:before {
+    content: "\e834";
+}
+.#{$linear-icon-prefix}speed-medium:before {
+    content: "\e835";
+}
+.#{$linear-icon-prefix}speed-fast:before {
+    content: "\e836";
+}
+.#{$linear-icon-prefix}rocket:before {
+    content: "\e837";
+}
+.#{$linear-icon-prefix}hammer2:before {
+    content: "\e838";
+}
+.#{$linear-icon-prefix}balance:before {
+    content: "\e839";
+}
+.#{$linear-icon-prefix}briefcase:before {
+    content: "\e83a";
+}
+.#{$linear-icon-prefix}luggage-weight:before {
+    content: "\e83b";
+}
+.#{$linear-icon-prefix}dolly:before {
+    content: "\e83c";
+}
+.#{$linear-icon-prefix}plane:before {
+    content: "\e83d";
+}
+.#{$linear-icon-prefix}plane-crossed:before {
+    content: "\e83e";
+}
+.#{$linear-icon-prefix}helicopter:before {
+    content: "\e83f";
+}
+.#{$linear-icon-prefix}traffic-lights:before {
+    content: "\e840";
+}
+.#{$linear-icon-prefix}siren:before {
+    content: "\e841";
+}
+.#{$linear-icon-prefix}road:before {
+    content: "\e842";
+}
+.#{$linear-icon-prefix}engine:before {
+    content: "\e843";
+}
+.#{$linear-icon-prefix}oil-pressure:before {
+    content: "\e844";
+}
+.#{$linear-icon-prefix}coolant-temperature:before {
+    content: "\e845";
+}
+.#{$linear-icon-prefix}car-battery:before {
+    content: "\e846";
+}
+.#{$linear-icon-prefix}gas:before {
+    content: "\e847";
+}
+.#{$linear-icon-prefix}gallon:before {
+    content: "\e848";
+}
+.#{$linear-icon-prefix}transmission:before {
+    content: "\e849";
+}
+.#{$linear-icon-prefix}car:before {
+    content: "\e84a";
+}
+.#{$linear-icon-prefix}car-wash:before {
+    content: "\e84b";
+}
+.#{$linear-icon-prefix}car-wash2:before {
+    content: "\e84c";
+}
+.#{$linear-icon-prefix}bus:before {
+    content: "\e84d";
+}
+.#{$linear-icon-prefix}bus2:before {
+    content: "\e84e";
+}
+.#{$linear-icon-prefix}car2:before {
+    content: "\e84f";
+}
+.#{$linear-icon-prefix}parking:before {
+    content: "\e850";
+}
+.#{$linear-icon-prefix}car-lock:before {
+    content: "\e851";
+}
+.#{$linear-icon-prefix}taxi:before {
+    content: "\e852";
+}
+.#{$linear-icon-prefix}car-siren:before {
+    content: "\e853";
+}
+.#{$linear-icon-prefix}car-wash3:before {
+    content: "\e854";
+}
+.#{$linear-icon-prefix}car-wash4:before {
+    content: "\e855";
+}
+.#{$linear-icon-prefix}ambulance:before {
+    content: "\e856";
+}
+.#{$linear-icon-prefix}truck:before {
+    content: "\e857";
+}
+.#{$linear-icon-prefix}trailer:before {
+    content: "\e858";
+}
+.#{$linear-icon-prefix}scale-truck:before {
+    content: "\e859";
+}
+.#{$linear-icon-prefix}train:before {
+    content: "\e85a";
+}
+.#{$linear-icon-prefix}ship:before {
+    content: "\e85b";
+}
+.#{$linear-icon-prefix}ship2:before {
+    content: "\e85c";
+}
+.#{$linear-icon-prefix}anchor:before {
+    content: "\e85d";
+}
+.#{$linear-icon-prefix}boat:before {
+    content: "\e85e";
+}
+.#{$linear-icon-prefix}bicycle:before {
+    content: "\e85f";
+}
+.#{$linear-icon-prefix}bicycle2:before {
+    content: "\e860";
+}
+.#{$linear-icon-prefix}dumbbell:before {
+    content: "\e861";
+}
+.#{$linear-icon-prefix}bench-press:before {
+    content: "\e862";
+}
+.#{$linear-icon-prefix}swim:before {
+    content: "\e863";
+}
+.#{$linear-icon-prefix}football:before {
+    content: "\e864";
+}
+.#{$linear-icon-prefix}baseball-bat:before {
+    content: "\e865";
+}
+.#{$linear-icon-prefix}baseball:before {
+    content: "\e866";
+}
+.#{$linear-icon-prefix}tennis:before {
+    content: "\e867";
+}
+.#{$linear-icon-prefix}tennis2:before {
+    content: "\e868";
+}
+.#{$linear-icon-prefix}ping-pong:before {
+    content: "\e869";
+}
+.#{$linear-icon-prefix}hockey:before {
+    content: "\e86a";
+}
+.#{$linear-icon-prefix}8ball:before {
+    content: "\e86b";
+}
+.#{$linear-icon-prefix}bowling:before {
+    content: "\e86c";
+}
+.#{$linear-icon-prefix}bowling-pins:before {
+    content: "\e86d";
+}
+.#{$linear-icon-prefix}golf:before {
+    content: "\e86e";
+}
+.#{$linear-icon-prefix}golf2:before {
+    content: "\e86f";
+}
+.#{$linear-icon-prefix}archery:before {
+    content: "\e870";
+}
+.#{$linear-icon-prefix}slingshot:before {
+    content: "\e871";
+}
+.#{$linear-icon-prefix}soccer:before {
+    content: "\e872";
+}
+.#{$linear-icon-prefix}basketball:before {
+    content: "\e873";
+}
+.#{$linear-icon-prefix}cube:before {
+    content: "\e874";
+}
+.#{$linear-icon-prefix}3d-rotate:before {
+    content: "\e875";
+}
+.#{$linear-icon-prefix}puzzle:before {
+    content: "\e876";
+}
+.#{$linear-icon-prefix}glasses:before {
+    content: "\e877";
+}
+.#{$linear-icon-prefix}glasses2:before {
+    content: "\e878";
+}
+.#{$linear-icon-prefix}accessibility:before {
+    content: "\e879";
+}
+.#{$linear-icon-prefix}wheelchair:before {
+    content: "\e87a";
+}
+.#{$linear-icon-prefix}wall:before {
+    content: "\e87b";
+}
+.#{$linear-icon-prefix}fence:before {
+    content: "\e87c";
+}
+.#{$linear-icon-prefix}wall2:before {
+    content: "\e87d";
+}
+.#{$linear-icon-prefix}icons:before {
+    content: "\e87e";
+}
+.#{$linear-icon-prefix}resize-handle:before {
+    content: "\e87f";
+}
+.#{$linear-icon-prefix}icons2:before {
+    content: "\e880";
+}
+.#{$linear-icon-prefix}select:before {
+    content: "\e881";
+}
+.#{$linear-icon-prefix}select2:before {
+    content: "\e882";
+}
+.#{$linear-icon-prefix}site-map:before {
+    content: "\e883";
+}
+.#{$linear-icon-prefix}earth:before {
+    content: "\e884";
+}
+.#{$linear-icon-prefix}earth-lock:before {
+    content: "\e885";
+}
+.#{$linear-icon-prefix}network:before {
+    content: "\e886";
+}
+.#{$linear-icon-prefix}network-lock:before {
+    content: "\e887";
+}
+.#{$linear-icon-prefix}planet:before {
+    content: "\e888";
+}
+.#{$linear-icon-prefix}happy:before {
+    content: "\e889";
+}
+.#{$linear-icon-prefix}smile:before {
+    content: "\e88a";
+}
+.#{$linear-icon-prefix}grin:before {
+    content: "\e88b";
+}
+.#{$linear-icon-prefix}tongue:before {
+    content: "\e88c";
+}
+.#{$linear-icon-prefix}sad:before {
+    content: "\e88d";
+}
+.#{$linear-icon-prefix}wink:before {
+    content: "\e88e";
+}
+.#{$linear-icon-prefix}dream:before {
+    content: "\e88f";
+}
+.#{$linear-icon-prefix}shocked:before {
+    content: "\e890";
+}
+.#{$linear-icon-prefix}shocked2:before {
+    content: "\e891";
+}
+.#{$linear-icon-prefix}tongue2:before {
+    content: "\e892";
+}
+.#{$linear-icon-prefix}neutral:before {
+    content: "\e893";
+}
+.#{$linear-icon-prefix}happy-grin:before {
+    content: "\e894";
+}
+.#{$linear-icon-prefix}cool:before {
+    content: "\e895";
+}
+.#{$linear-icon-prefix}mad:before {
+    content: "\e896";
+}
+.#{$linear-icon-prefix}grin-evil:before {
+    content: "\e897";
+}
+.#{$linear-icon-prefix}evil:before {
+    content: "\e898";
+}
+.#{$linear-icon-prefix}wow:before {
+    content: "\e899";
+}
+.#{$linear-icon-prefix}annoyed:before {
+    content: "\e89a";
+}
+.#{$linear-icon-prefix}wondering:before {
+    content: "\e89b";
+}
+.#{$linear-icon-prefix}confused:before {
+    content: "\e89c";
+}
+.#{$linear-icon-prefix}zipped:before {
+    content: "\e89d";
+}
+.#{$linear-icon-prefix}grumpy:before {
+    content: "\e89e";
+}
+.#{$linear-icon-prefix}mustache:before {
+    content: "\e89f";
+}
+.#{$linear-icon-prefix}tombstone-hipster:before {
+    content: "\e8a0";
+}
+.#{$linear-icon-prefix}tombstone:before {
+    content: "\e8a1";
+}
+.#{$linear-icon-prefix}ghost:before {
+    content: "\e8a2";
+}
+.#{$linear-icon-prefix}ghost-hipster:before {
+    content: "\e8a3";
+}
+.#{$linear-icon-prefix}halloween:before {
+    content: "\e8a4";
+}
+.#{$linear-icon-prefix}christmas:before {
+    content: "\e8a5";
+}
+.#{$linear-icon-prefix}easter-egg:before {
+    content: "\e8a6";
+}
+.#{$linear-icon-prefix}mustache2:before {
+    content: "\e8a7";
+}
+.#{$linear-icon-prefix}mustache-glasses:before {
+    content: "\e8a8";
+}
+.#{$linear-icon-prefix}pipe:before {
+    content: "\e8a9";
+}
+.#{$linear-icon-prefix}alarm:before {
+    content: "\e8aa";
+}
+.#{$linear-icon-prefix}alarm-add:before {
+    content: "\e8ab";
+}
+.#{$linear-icon-prefix}alarm-snooze:before {
+    content: "\e8ac";
+}
+.#{$linear-icon-prefix}alarm-ringing:before {
+    content: "\e8ad";
+}
+.#{$linear-icon-prefix}bullhorn:before {
+    content: "\e8ae";
+}
+.#{$linear-icon-prefix}hearing:before {
+    content: "\e8af";
+}
+.#{$linear-icon-prefix}volume-high:before {
+    content: "\e8b0";
+}
+.#{$linear-icon-prefix}volume-medium:before {
+    content: "\e8b1";
+}
+.#{$linear-icon-prefix}volume-low:before {
+    content: "\e8b2";
+}
+.#{$linear-icon-prefix}volume:before {
+    content: "\e8b3";
+}
+.#{$linear-icon-prefix}mute:before {
+    content: "\e8b4";
+}
+.#{$linear-icon-prefix}lan:before {
+    content: "\e8b5";
+}
+.#{$linear-icon-prefix}lan2:before {
+    content: "\e8b6";
+}
+.#{$linear-icon-prefix}wifi:before {
+    content: "\e8b7";
+}
+.#{$linear-icon-prefix}wifi-lock:before {
+    content: "\e8b8";
+}
+.#{$linear-icon-prefix}wifi-blocked:before {
+    content: "\e8b9";
+}
+.#{$linear-icon-prefix}wifi-mid:before {
+    content: "\e8ba";
+}
+.#{$linear-icon-prefix}wifi-low:before {
+    content: "\e8bb";
+}
+.#{$linear-icon-prefix}wifi-low2:before {
+    content: "\e8bc";
+}
+.#{$linear-icon-prefix}wifi-alert:before {
+    content: "\e8bd";
+}
+.#{$linear-icon-prefix}wifi-alert-mid:before {
+    content: "\e8be";
+}
+.#{$linear-icon-prefix}wifi-alert-low:before {
+    content: "\e8bf";
+}
+.#{$linear-icon-prefix}wifi-alert-low2:before {
+    content: "\e8c0";
+}
+.#{$linear-icon-prefix}stream:before {
+    content: "\e8c1";
+}
+.#{$linear-icon-prefix}stream-check:before {
+    content: "\e8c2";
+}
+.#{$linear-icon-prefix}stream-error:before {
+    content: "\e8c3";
+}
+.#{$linear-icon-prefix}stream-alert:before {
+    content: "\e8c4";
+}
+.#{$linear-icon-prefix}communication:before {
+    content: "\e8c5";
+}
+.#{$linear-icon-prefix}communication-crossed:before {
+    content: "\e8c6";
+}
+.#{$linear-icon-prefix}broadcast:before {
+    content: "\e8c7";
+}
+.#{$linear-icon-prefix}antenna:before {
+    content: "\e8c8";
+}
+.#{$linear-icon-prefix}satellite:before {
+    content: "\e8c9";
+}
+.#{$linear-icon-prefix}satellite2:before {
+    content: "\e8ca";
+}
+.#{$linear-icon-prefix}mic:before {
+    content: "\e8cb";
+}
+.#{$linear-icon-prefix}mic-mute:before {
+    content: "\e8cc";
+}
+.#{$linear-icon-prefix}mic2:before {
+    content: "\e8cd";
+}
+.#{$linear-icon-prefix}spotlights:before {
+    content: "\e8ce";
+}
+.#{$linear-icon-prefix}hourglass:before {
+    content: "\e8cf";
+}
+.#{$linear-icon-prefix}loading:before {
+    content: "\e8d0";
+}
+.#{$linear-icon-prefix}loading2:before {
+    content: "\e8d1";
+}
+.#{$linear-icon-prefix}loading3:before {
+    content: "\e8d2";
+}
+.#{$linear-icon-prefix}refresh:before {
+    content: "\e8d3";
+}
+.#{$linear-icon-prefix}refresh2:before {
+    content: "\e8d4";
+}
+.#{$linear-icon-prefix}undo:before {
+    content: "\e8d5";
+}
+.#{$linear-icon-prefix}redo:before {
+    content: "\e8d6";
+}
+.#{$linear-icon-prefix}jump2:before {
+    content: "\e8d7";
+}
+.#{$linear-icon-prefix}undo2:before {
+    content: "\e8d8";
+}
+.#{$linear-icon-prefix}redo2:before {
+    content: "\e8d9";
+}
+.#{$linear-icon-prefix}sync:before {
+    content: "\e8da";
+}
+.#{$linear-icon-prefix}repeat-one2:before {
+    content: "\e8db";
+}
+.#{$linear-icon-prefix}sync-crossed:before {
+    content: "\e8dc";
+}
+.#{$linear-icon-prefix}sync2:before {
+    content: "\e8dd";
+}
+.#{$linear-icon-prefix}repeat-one3:before {
+    content: "\e8de";
+}
+.#{$linear-icon-prefix}sync-crossed2:before {
+    content: "\e8df";
+}
+.#{$linear-icon-prefix}return:before {
+    content: "\e8e0";
+}
+.#{$linear-icon-prefix}return2:before {
+    content: "\e8e1";
+}
+.#{$linear-icon-prefix}refund:before {
+    content: "\e8e2";
+}
+.#{$linear-icon-prefix}history:before {
+    content: "\e8e3";
+}
+.#{$linear-icon-prefix}history2:before {
+    content: "\e8e4";
+}
+.#{$linear-icon-prefix}self-timer:before {
+    content: "\e8e5";
+}
+.#{$linear-icon-prefix}clock:before {
+    content: "\e8e6";
+}
+.#{$linear-icon-prefix}clock2:before {
+    content: "\e8e7";
+}
+.#{$linear-icon-prefix}clock3:before {
+    content: "\e8e8";
+}
+.#{$linear-icon-prefix}watch:before {
+    content: "\e8e9";
+}
+.#{$linear-icon-prefix}alarm2:before {
+    content: "\e8ea";
+}
+.#{$linear-icon-prefix}alarm-add2:before {
+    content: "\e8eb";
+}
+.#{$linear-icon-prefix}alarm-remove:before {
+    content: "\e8ec";
+}
+.#{$linear-icon-prefix}alarm-check:before {
+    content: "\e8ed";
+}
+.#{$linear-icon-prefix}alarm-error:before {
+    content: "\e8ee";
+}
+.#{$linear-icon-prefix}timer:before {
+    content: "\e8ef";
+}
+.#{$linear-icon-prefix}timer-crossed:before {
+    content: "\e8f0";
+}
+.#{$linear-icon-prefix}timer2:before {
+    content: "\e8f1";
+}
+.#{$linear-icon-prefix}timer-crossed2:before {
+    content: "\e8f2";
+}
+.#{$linear-icon-prefix}download:before {
+    content: "\e8f3";
+}
+.#{$linear-icon-prefix}upload:before {
+    content: "\e8f4";
+}
+.#{$linear-icon-prefix}download2:before {
+    content: "\e8f5";
+}
+.#{$linear-icon-prefix}upload2:before {
+    content: "\e8f6";
+}
+.#{$linear-icon-prefix}enter-up:before {
+    content: "\e8f7";
+}
+.#{$linear-icon-prefix}enter-down:before {
+    content: "\e8f8";
+}
+.#{$linear-icon-prefix}enter-left:before {
+    content: "\e8f9";
+}
+.#{$linear-icon-prefix}enter-right:before {
+    content: "\e8fa";
+}
+.#{$linear-icon-prefix}exit-up:before {
+    content: "\e8fb";
+}
+.#{$linear-icon-prefix}exit-down:before {
+    content: "\e8fc";
+}
+.#{$linear-icon-prefix}exit-left:before {
+    content: "\e8fd";
+}
+.#{$linear-icon-prefix}exit-right:before {
+    content: "\e8fe";
+}
+.#{$linear-icon-prefix}enter-up2:before {
+    content: "\e8ff";
+}
+.#{$linear-icon-prefix}enter-down2:before {
+    content: "\e900";
+}
+.#{$linear-icon-prefix}enter-vertical:before {
+    content: "\e901";
+}
+.#{$linear-icon-prefix}enter-left2:before {
+    content: "\e902";
+}
+.#{$linear-icon-prefix}enter-right2:before {
+    content: "\e903";
+}
+.#{$linear-icon-prefix}enter-horizontal:before {
+    content: "\e904";
+}
+.#{$linear-icon-prefix}exit-up2:before {
+    content: "\e905";
+}
+.#{$linear-icon-prefix}exit-down2:before {
+    content: "\e906";
+}
+.#{$linear-icon-prefix}exit-left2:before {
+    content: "\e907";
+}
+.#{$linear-icon-prefix}exit-right2:before {
+    content: "\e908";
+}
+.#{$linear-icon-prefix}cli:before {
+    content: "\e909";
+}
+.#{$linear-icon-prefix}bug:before {
+    content: "\e90a";
+}
+.#{$linear-icon-prefix}code:before {
+    content: "\e90b";
+}
+.#{$linear-icon-prefix}file-code:before {
+    content: "\e90c";
+}
+.#{$linear-icon-prefix}file-image:before {
+    content: "\e90d";
+}
+.#{$linear-icon-prefix}file-zip:before {
+    content: "\e90e";
+}
+.#{$linear-icon-prefix}file-audio:before {
+    content: "\e90f";
+}
+.#{$linear-icon-prefix}file-video:before {
+    content: "\e910";
+}
+.#{$linear-icon-prefix}file-preview:before {
+    content: "\e911";
+}
+.#{$linear-icon-prefix}file-charts:before {
+    content: "\e912";
+}
+.#{$linear-icon-prefix}file-stats:before {
+    content: "\e913";
+}
+.#{$linear-icon-prefix}file-spreadsheet:before {
+    content: "\e914";
+}
+.#{$linear-icon-prefix}link:before {
+    content: "\e915";
+}
+.#{$linear-icon-prefix}unlink:before {
+    content: "\e916";
+}
+.#{$linear-icon-prefix}link2:before {
+    content: "\e917";
+}
+.#{$linear-icon-prefix}unlink2:before {
+    content: "\e918";
+}
+.#{$linear-icon-prefix}thumbs-up:before {
+    content: "\e919";
+}
+.#{$linear-icon-prefix}thumbs-down:before {
+    content: "\e91a";
+}
+.#{$linear-icon-prefix}thumbs-up2:before {
+    content: "\e91b";
+}
+.#{$linear-icon-prefix}thumbs-down2:before {
+    content: "\e91c";
+}
+.#{$linear-icon-prefix}thumbs-up3:before {
+    content: "\e91d";
+}
+.#{$linear-icon-prefix}thumbs-down3:before {
+    content: "\e91e";
+}
+.#{$linear-icon-prefix}share:before {
+    content: "\e91f";
+}
+.#{$linear-icon-prefix}share2:before {
+    content: "\e920";
+}
+.#{$linear-icon-prefix}share3:before {
+    content: "\e921";
+}
+.#{$linear-icon-prefix}magnifier:before {
+    content: "\e922";
+}
+.#{$linear-icon-prefix}file-search:before {
+    content: "\e923";
+}
+.#{$linear-icon-prefix}find-replace:before {
+    content: "\e924";
+}
+.#{$linear-icon-prefix}zoom-in:before {
+    content: "\e925";
+}
+.#{$linear-icon-prefix}zoom-out:before {
+    content: "\e926";
+}
+.#{$linear-icon-prefix}loupe:before {
+    content: "\e927";
+}
+.#{$linear-icon-prefix}loupe-zoom-in:before {
+    content: "\e928";
+}
+.#{$linear-icon-prefix}loupe-zoom-out:before {
+    content: "\e929";
+}
+.#{$linear-icon-prefix}cross:before {
+    content: "\e92a";
+}
+.#{$linear-icon-prefix}menu:before {
+    content: "\e92b";
+}
+.#{$linear-icon-prefix}list:before {
+    content: "\e92c";
+}
+.#{$linear-icon-prefix}list2:before {
+    content: "\e92d";
+}
+.#{$linear-icon-prefix}list3:before {
+    content: "\e92e";
+}
+.#{$linear-icon-prefix}menu2:before {
+    content: "\e92f";
+}
+.#{$linear-icon-prefix}list4:before {
+    content: "\e930";
+}
+.#{$linear-icon-prefix}menu3:before {
+    content: "\e931";
+}
+.#{$linear-icon-prefix}exclamation:before {
+    content: "\e932";
+}
+.#{$linear-icon-prefix}question:before {
+    content: "\e933";
+}
+.#{$linear-icon-prefix}check:before {
+    content: "\e934";
+}
+.#{$linear-icon-prefix}cross2:before {
+    content: "\e935";
+}
+.#{$linear-icon-prefix}plus:before {
+    content: "\e936";
+}
+.#{$linear-icon-prefix}minus:before {
+    content: "\e937";
+}
+.#{$linear-icon-prefix}percent:before {
+    content: "\e938";
+}
+.#{$linear-icon-prefix}chevron-up:before {
+    content: "\e939";
+}
+.#{$linear-icon-prefix}chevron-down:before {
+    content: "\e93a";
+}
+.#{$linear-icon-prefix}chevron-left:before {
+    content: "\e93b";
+}
+.#{$linear-icon-prefix}chevron-right:before {
+    content: "\e93c";
+}
+.#{$linear-icon-prefix}chevrons-expand-vertical:before {
+    content: "\e93d";
+}
+.#{$linear-icon-prefix}chevrons-expand-horizontal:before {
+    content: "\e93e";
+}
+.#{$linear-icon-prefix}chevrons-contract-vertical:before {
+    content: "\e93f";
+}
+.#{$linear-icon-prefix}chevrons-contract-horizontal:before {
+    content: "\e940";
+}
+.#{$linear-icon-prefix}arrow-up:before {
+    content: "\e941";
+}
+.#{$linear-icon-prefix}arrow-down:before {
+    content: "\e942";
+}
+.#{$linear-icon-prefix}arrow-left:before {
+    content: "\e943";
+}
+.#{$linear-icon-prefix}arrow-right:before {
+    content: "\e944";
+}
+.#{$linear-icon-prefix}arrow-up-right:before {
+    content: "\e945";
+}
+.#{$linear-icon-prefix}arrows-merge:before {
+    content: "\e946";
+}
+.#{$linear-icon-prefix}arrows-split:before {
+    content: "\e947";
+}
+.#{$linear-icon-prefix}arrow-divert:before {
+    content: "\e948";
+}
+.#{$linear-icon-prefix}arrow-return:before {
+    content: "\e949";
+}
+.#{$linear-icon-prefix}expand:before {
+    content: "\e94a";
+}
+.#{$linear-icon-prefix}contract:before {
+    content: "\e94b";
+}
+.#{$linear-icon-prefix}expand2:before {
+    content: "\e94c";
+}
+.#{$linear-icon-prefix}contract2:before {
+    content: "\e94d";
+}
+.#{$linear-icon-prefix}move:before {
+    content: "\e94e";
+}
+.#{$linear-icon-prefix}tab:before {
+    content: "\e94f";
+}
+.#{$linear-icon-prefix}arrow-wave:before {
+    content: "\e950";
+}
+.#{$linear-icon-prefix}expand3:before {
+    content: "\e951";
+}
+.#{$linear-icon-prefix}expand4:before {
+    content: "\e952";
+}
+.#{$linear-icon-prefix}contract3:before {
+    content: "\e953";
+}
+.#{$linear-icon-prefix}notification:before {
+    content: "\e954";
+}
+.#{$linear-icon-prefix}warning:before {
+    content: "\e955";
+}
+.#{$linear-icon-prefix}notification-circle:before {
+    content: "\e956";
+}
+.#{$linear-icon-prefix}question-circle:before {
+    content: "\e957";
+}
+.#{$linear-icon-prefix}menu-circle:before {
+    content: "\e958";
+}
+.#{$linear-icon-prefix}checkmark-circle:before {
+    content: "\e959";
+}
+.#{$linear-icon-prefix}cross-circle:before {
+    content: "\e95a";
+}
+.#{$linear-icon-prefix}plus-circle:before {
+    content: "\e95b";
+}
+.#{$linear-icon-prefix}circle-minus:before {
+    content: "\e95c";
+}
+.#{$linear-icon-prefix}percent-circle:before {
+    content: "\e95d";
+}
+.#{$linear-icon-prefix}arrow-up-circle:before {
+    content: "\e95e";
+}
+.#{$linear-icon-prefix}arrow-down-circle:before {
+    content: "\e95f";
+}
+.#{$linear-icon-prefix}arrow-left-circle:before {
+    content: "\e960";
+}
+.#{$linear-icon-prefix}arrow-right-circle:before {
+    content: "\e961";
+}
+.#{$linear-icon-prefix}chevron-up-circle:before {
+    content: "\e962";
+}
+.#{$linear-icon-prefix}chevron-down-circle:before {
+    content: "\e963";
+}
+.#{$linear-icon-prefix}chevron-left-circle:before {
+    content: "\e964";
+}
+.#{$linear-icon-prefix}chevron-right-circle:before {
+    content: "\e965";
+}
+.#{$linear-icon-prefix}backward-circle:before {
+    content: "\e966";
+}
+.#{$linear-icon-prefix}first-circle:before {
+    content: "\e967";
+}
+.#{$linear-icon-prefix}previous-circle:before {
+    content: "\e968";
+}
+.#{$linear-icon-prefix}stop-circle:before {
+    content: "\e969";
+}
+.#{$linear-icon-prefix}play-circle:before {
+    content: "\e96a";
+}
+.#{$linear-icon-prefix}pause-circle:before {
+    content: "\e96b";
+}
+.#{$linear-icon-prefix}next-circle:before {
+    content: "\e96c";
+}
+.#{$linear-icon-prefix}last-circle:before {
+    content: "\e96d";
+}
+.#{$linear-icon-prefix}forward-circle:before {
+    content: "\e96e";
+}
+.#{$linear-icon-prefix}eject-circle:before {
+    content: "\e96f";
+}
+.#{$linear-icon-prefix}crop:before {
+    content: "\e970";
+}
+.#{$linear-icon-prefix}frame-expand:before {
+    content: "\e971";
+}
+.#{$linear-icon-prefix}frame-contract:before {
+    content: "\e972";
+}
+.#{$linear-icon-prefix}focus:before {
+    content: "\e973";
+}
+.#{$linear-icon-prefix}transform:before {
+    content: "\e974";
+}
+.#{$linear-icon-prefix}grid:before {
+    content: "\e975";
+}
+.#{$linear-icon-prefix}grid-crossed:before {
+    content: "\e976";
+}
+.#{$linear-icon-prefix}layers:before {
+    content: "\e977";
+}
+.#{$linear-icon-prefix}layers-crossed:before {
+    content: "\e978";
+}
+.#{$linear-icon-prefix}toggle:before {
+    content: "\e979";
+}
+.#{$linear-icon-prefix}rulers:before {
+    content: "\e97a";
+}
+.#{$linear-icon-prefix}ruler:before {
+    content: "\e97b";
+}
+.#{$linear-icon-prefix}funnel:before {
+    content: "\e97c";
+}
+.#{$linear-icon-prefix}flip-horizontal:before {
+    content: "\e97d";
+}
+.#{$linear-icon-prefix}flip-vertical:before {
+    content: "\e97e";
+}
+.#{$linear-icon-prefix}flip-horizontal2:before {
+    content: "\e97f";
+}
+.#{$linear-icon-prefix}flip-vertical2:before {
+    content: "\e980";
+}
+.#{$linear-icon-prefix}angle:before {
+    content: "\e981";
+}
+.#{$linear-icon-prefix}angle2:before {
+    content: "\e982";
+}
+.#{$linear-icon-prefix}subtract:before {
+    content: "\e983";
+}
+.#{$linear-icon-prefix}combine:before {
+    content: "\e984";
+}
+.#{$linear-icon-prefix}intersect:before {
+    content: "\e985";
+}
+.#{$linear-icon-prefix}exclude:before {
+    content: "\e986";
+}
+.#{$linear-icon-prefix}align-center-vertical:before {
+    content: "\e987";
+}
+.#{$linear-icon-prefix}align-right:before {
+    content: "\e988";
+}
+.#{$linear-icon-prefix}align-bottom:before {
+    content: "\e989";
+}
+.#{$linear-icon-prefix}align-left:before {
+    content: "\e98a";
+}
+.#{$linear-icon-prefix}align-center-horizontal:before {
+    content: "\e98b";
+}
+.#{$linear-icon-prefix}align-top:before {
+    content: "\e98c";
+}
+.#{$linear-icon-prefix}square:before {
+    content: "\e98d";
+}
+.#{$linear-icon-prefix}plus-square:before {
+    content: "\e98e";
+}
+.#{$linear-icon-prefix}minus-square:before {
+    content: "\e98f";
+}
+.#{$linear-icon-prefix}percent-square:before {
+    content: "\e990";
+}
+.#{$linear-icon-prefix}arrow-up-square:before {
+    content: "\e991";
+}
+.#{$linear-icon-prefix}arrow-down-square:before {
+    content: "\e992";
+}
+.#{$linear-icon-prefix}arrow-left-square:before {
+    content: "\e993";
+}
+.#{$linear-icon-prefix}arrow-right-square:before {
+    content: "\e994";
+}
+.#{$linear-icon-prefix}chevron-up-square:before {
+    content: "\e995";
+}
+.#{$linear-icon-prefix}chevron-down-square:before {
+    content: "\e996";
+}
+.#{$linear-icon-prefix}chevron-left-square:before {
+    content: "\e997";
+}
+.#{$linear-icon-prefix}chevron-right-square:before {
+    content: "\e998";
+}
+.#{$linear-icon-prefix}check-square:before {
+    content: "\e999";
+}
+.#{$linear-icon-prefix}cross-square:before {
+    content: "\e99a";
+}
+.#{$linear-icon-prefix}menu-square:before {
+    content: "\e99b";
+}
+.#{$linear-icon-prefix}prohibited:before {
+    content: "\e99c";
+}
+.#{$linear-icon-prefix}circle:before {
+    content: "\e99d";
+}
+.#{$linear-icon-prefix}radio-button:before {
+    content: "\e99e";
+}
+.#{$linear-icon-prefix}ligature:before {
+    content: "\e99f";
+}
+.#{$linear-icon-prefix}text-format:before {
+    content: "\e9a0";
+}
+.#{$linear-icon-prefix}text-format-remove:before {
+    content: "\e9a1";
+}
+.#{$linear-icon-prefix}text-size:before {
+    content: "\e9a2";
+}
+.#{$linear-icon-prefix}bold:before {
+    content: "\e9a3";
+}
+.#{$linear-icon-prefix}italic:before {
+    content: "\e9a4";
+}
+.#{$linear-icon-prefix}underline:before {
+    content: "\e9a5";
+}
+.#{$linear-icon-prefix}strikethrough:before {
+    content: "\e9a6";
+}
+.#{$linear-icon-prefix}highlight:before {
+    content: "\e9a7";
+}
+.#{$linear-icon-prefix}text-align-left:before {
+    content: "\e9a8";
+}
+.#{$linear-icon-prefix}text-align-center:before {
+    content: "\e9a9";
+}
+.#{$linear-icon-prefix}text-align-right:before {
+    content: "\e9aa";
+}
+.#{$linear-icon-prefix}text-align-justify:before {
+    content: "\e9ab";
+}
+.#{$linear-icon-prefix}line-spacing:before {
+    content: "\e9ac";
+}
+.#{$linear-icon-prefix}indent-increase:before {
+    content: "\e9ad";
+}
+.#{$linear-icon-prefix}indent-decrease:before {
+    content: "\e9ae";
+}
+.#{$linear-icon-prefix}text-wrap:before {
+    content: "\e9af";
+}
+.#{$linear-icon-prefix}pilcrow:before {
+    content: "\e9b0";
+}
+.#{$linear-icon-prefix}direction-ltr:before {
+    content: "\e9b1";
+}
+.#{$linear-icon-prefix}direction-rtl:before {
+    content: "\e9b2";
+}
+.#{$linear-icon-prefix}page-break:before {
+    content: "\e9b3";
+}
+.#{$linear-icon-prefix}page-break2:before {
+    content: "\e9b4";
+}
+.#{$linear-icon-prefix}sort-alpha-asc:before {
+    content: "\e9b5";
+}
+.#{$linear-icon-prefix}sort-alpha-desc:before {
+    content: "\e9b6";
+}
+.#{$linear-icon-prefix}sort-numeric-asc:before {
+    content: "\e9b7";
+}
+.#{$linear-icon-prefix}sort-numeric-desc:before {
+    content: "\e9b8";
+}
+.#{$linear-icon-prefix}sort-amount-asc:before {
+    content: "\e9b9";
+}
+.#{$linear-icon-prefix}sort-amount-desc:before {
+    content: "\e9ba";
+}
+.#{$linear-icon-prefix}sort-time-asc:before {
+    content: "\e9bb";
+}
+.#{$linear-icon-prefix}sort-time-desc:before {
+    content: "\e9bc";
+}
+.#{$linear-icon-prefix}sigma:before {
+    content: "\e9bd";
+}
+.#{$linear-icon-prefix}pencil-line:before {
+    content: "\e9be";
+}
+.#{$linear-icon-prefix}hand:before {
+    content: "\e9bf";
+}
+.#{$linear-icon-prefix}pointer-up:before {
+    content: "\e9c0";
+}
+.#{$linear-icon-prefix}pointer-right:before {
+    content: "\e9c1";
+}
+.#{$linear-icon-prefix}pointer-down:before {
+    content: "\e9c2";
+}
+.#{$linear-icon-prefix}pointer-left:before {
+    content: "\e9c3";
+}
+.#{$linear-icon-prefix}finger-tap:before {
+    content: "\e9c4";
+}
+.#{$linear-icon-prefix}fingers-tap:before {
+    content: "\e9c5";
+}
+.#{$linear-icon-prefix}reminder:before {
+    content: "\e9c6";
+}
+.#{$linear-icon-prefix}fingers-crossed:before {
+    content: "\e9c7";
+}
+.#{$linear-icon-prefix}fingers-victory:before {
+    content: "\e9c8";
+}
+.#{$linear-icon-prefix}gesture-zoom:before {
+    content: "\e9c9";
+}
+.#{$linear-icon-prefix}gesture-pinch:before {
+    content: "\e9ca";
+}
+.#{$linear-icon-prefix}fingers-scroll-horizontal:before {
+    content: "\e9cb";
+}
+.#{$linear-icon-prefix}fingers-scroll-vertical:before {
+    content: "\e9cc";
+}
+.#{$linear-icon-prefix}fingers-scroll-left:before {
+    content: "\e9cd";
+}
+.#{$linear-icon-prefix}fingers-scroll-right:before {
+    content: "\e9ce";
+}
+.#{$linear-icon-prefix}hand2:before {
+    content: "\e9cf";
+}
+.#{$linear-icon-prefix}pointer-up2:before {
+    content: "\e9d0";
+}
+.#{$linear-icon-prefix}pointer-right2:before {
+    content: "\e9d1";
+}
+.#{$linear-icon-prefix}pointer-down2:before {
+    content: "\e9d2";
+}
+.#{$linear-icon-prefix}pointer-left2:before {
+    content: "\e9d3";
+}
+.#{$linear-icon-prefix}finger-tap2:before {
+    content: "\e9d4";
+}
+.#{$linear-icon-prefix}fingers-tap2:before {
+    content: "\e9d5";
+}
+.#{$linear-icon-prefix}reminder2:before {
+    content: "\e9d6";
+}
+.#{$linear-icon-prefix}gesture-zoom2:before {
+    content: "\e9d7";
+}
+.#{$linear-icon-prefix}gesture-pinch2:before {
+    content: "\e9d8";
+}
+.#{$linear-icon-prefix}fingers-scroll-horizontal2:before {
+    content: "\e9d9";
+}
+.#{$linear-icon-prefix}fingers-scroll-vertical2:before {
+    content: "\e9da";
+}
+.#{$linear-icon-prefix}fingers-scroll-left2:before {
+    content: "\e9db";
+}
+.#{$linear-icon-prefix}fingers-scroll-right2:before {
+    content: "\e9dc";
+}
+.#{$linear-icon-prefix}fingers-scroll-vertical3:before {
+    content: "\e9dd";
+}
+.#{$linear-icon-prefix}border-style:before {
+    content: "\e9de";
+}
+.#{$linear-icon-prefix}border-all:before {
+    content: "\e9df";
+}
+.#{$linear-icon-prefix}border-outer:before {
+    content: "\e9e0";
+}
+.#{$linear-icon-prefix}border-inner:before {
+    content: "\e9e1";
+}
+.#{$linear-icon-prefix}border-top:before {
+    content: "\e9e2";
+}
+.#{$linear-icon-prefix}border-horizontal:before {
+    content: "\e9e3";
+}
+.#{$linear-icon-prefix}border-bottom:before {
+    content: "\e9e4";
+}
+.#{$linear-icon-prefix}border-left:before {
+    content: "\e9e5";
+}
+.#{$linear-icon-prefix}border-vertical:before {
+    content: "\e9e6";
+}
+.#{$linear-icon-prefix}border-right:before {
+    content: "\e9e7";
+}
+.#{$linear-icon-prefix}border-none:before {
+    content: "\e9e8";
+}
+.#{$linear-icon-prefix}ellipsis:before {
+    content: "\e9e9";
+}
+.#{$linear-icon-prefix}uni21:before {
+    content: "\21";
+}
+.#{$linear-icon-prefix}uni22:before {
+    content: "\22";
+}
+.#{$linear-icon-prefix}uni23:before {
+    content: "\23";
+}
+.#{$linear-icon-prefix}uni24:before {
+    content: "\24";
+}
+.#{$linear-icon-prefix}uni25:before {
+    content: "\25";
+}
+.#{$linear-icon-prefix}uni26:before {
+    content: "\26";
+}
+.#{$linear-icon-prefix}uni27:before {
+    content: "\27";
+}
+.#{$linear-icon-prefix}uni28:before {
+    content: "\28";
+}
+.#{$linear-icon-prefix}uni29:before {
+    content: "\29";
+}
+.#{$linear-icon-prefix}uni2a:before {
+    content: "\2a";
+}
+.#{$linear-icon-prefix}uni2b:before {
+    content: "\2b";
+}
+.#{$linear-icon-prefix}uni2c:before {
+    content: "\2c";
+}
+.#{$linear-icon-prefix}uni2d:before {
+    content: "\2d";
+}
+.#{$linear-icon-prefix}uni2e:before {
+    content: "\2e";
+}
+.#{$linear-icon-prefix}uni2f:before {
+    content: "\2f";
+}
+.#{$linear-icon-prefix}uni30:before {
+    content: "\30";
+}
+.#{$linear-icon-prefix}uni31:before {
+    content: "\31";
+}
+.#{$linear-icon-prefix}uni32:before {
+    content: "\32";
+}
+.#{$linear-icon-prefix}uni33:before {
+    content: "\33";
+}
+.#{$linear-icon-prefix}uni34:before {
+    content: "\34";
+}
+.#{$linear-icon-prefix}uni35:before {
+    content: "\35";
+}
+.#{$linear-icon-prefix}uni36:before {
+    content: "\36";
+}
+.#{$linear-icon-prefix}uni37:before {
+    content: "\37";
+}
+.#{$linear-icon-prefix}uni38:before {
+    content: "\38";
+}
+.#{$linear-icon-prefix}uni39:before {
+    content: "\39";
+}
+.#{$linear-icon-prefix}uni3a:before {
+    content: "\3a";
+}
+.#{$linear-icon-prefix}uni3b:before {
+    content: "\3b";
+}
+.#{$linear-icon-prefix}uni3c:before {
+    content: "\3c";
+}
+.#{$linear-icon-prefix}uni3d:before {
+    content: "\3d";
+}
+.#{$linear-icon-prefix}uni3e:before {
+    content: "\3e";
+}
+.#{$linear-icon-prefix}uni3f:before {
+    content: "\3f";
+}
+.#{$linear-icon-prefix}uni40:before {
+    content: "\40";
+}
+.#{$linear-icon-prefix}uni41:before {
+    content: "\41";
+}
+.#{$linear-icon-prefix}uni42:before {
+    content: "\42";
+}
+.#{$linear-icon-prefix}uni43:before {
+    content: "\43";
+}
+.#{$linear-icon-prefix}uni44:before {
+    content: "\44";
+}
+.#{$linear-icon-prefix}uni45:before {
+    content: "\45";
+}
+.#{$linear-icon-prefix}uni46:before {
+    content: "\46";
+}
+.#{$linear-icon-prefix}uni47:before {
+    content: "\47";
+}
+.#{$linear-icon-prefix}uni48:before {
+    content: "\48";
+}
+.#{$linear-icon-prefix}uni49:before {
+    content: "\49";
+}
+.#{$linear-icon-prefix}uni4a:before {
+    content: "\4a";
+}
+.#{$linear-icon-prefix}uni4b:before {
+    content: "\4b";
+}
+.#{$linear-icon-prefix}uni4c:before {
+    content: "\4c";
+}
+.#{$linear-icon-prefix}uni4d:before {
+    content: "\4d";
+}
+.#{$linear-icon-prefix}uni4e:before {
+    content: "\4e";
+}
+.#{$linear-icon-prefix}uni4f:before {
+    content: "\4f";
+}
+.#{$linear-icon-prefix}uni50:before {
+    content: "\50";
+}
+.#{$linear-icon-prefix}uni51:before {
+    content: "\51";
+}
+.#{$linear-icon-prefix}uni52:before {
+    content: "\52";
+}
+.#{$linear-icon-prefix}uni53:before {
+    content: "\53";
+}
+.#{$linear-icon-prefix}uni54:before {
+    content: "\54";
+}
+.#{$linear-icon-prefix}uni55:before {
+    content: "\55";
+}
+.#{$linear-icon-prefix}uni56:before {
+    content: "\56";
+}
+.#{$linear-icon-prefix}uni57:before {
+    content: "\57";
+}
+.#{$linear-icon-prefix}uni58:before {
+    content: "\58";
+}
+.#{$linear-icon-prefix}uni59:before {
+    content: "\59";
+}
+.#{$linear-icon-prefix}uni5a:before {
+    content: "\5a";
+}
+.#{$linear-icon-prefix}uni5b:before {
+    content: "\5b";
+}
+.#{$linear-icon-prefix}uni5c:before {
+    content: "\5c";
+}
+.#{$linear-icon-prefix}uni5d:before {
+    content: "\5d";
+}
+.#{$linear-icon-prefix}uni5e:before {
+    content: "\5e";
+}
+.#{$linear-icon-prefix}uni5f:before {
+    content: "\5f";
+}
+.#{$linear-icon-prefix}uni60:before {
+    content: "\60";
+}
+.#{$linear-icon-prefix}uni61:before {
+    content: "\61";
+}
+.#{$linear-icon-prefix}uni62:before {
+    content: "\62";
+}
+.#{$linear-icon-prefix}uni63:before {
+    content: "\63";
+}
+.#{$linear-icon-prefix}uni64:before {
+    content: "\64";
+}
+.#{$linear-icon-prefix}uni65:before {
+    content: "\65";
+}
+.#{$linear-icon-prefix}uni66:before {
+    content: "\66";
+}
+.#{$linear-icon-prefix}uni67:before {
+    content: "\67";
+}
+.#{$linear-icon-prefix}uni68:before {
+    content: "\68";
+}
+.#{$linear-icon-prefix}uni69:before {
+    content: "\69";
+}
+.#{$linear-icon-prefix}uni6a:before {
+    content: "\6a";
+}
+.#{$linear-icon-prefix}uni6b:before {
+    content: "\6b";
+}
+.#{$linear-icon-prefix}uni6c:before {
+    content: "\6c";
+}
+.#{$linear-icon-prefix}uni6d:before {
+    content: "\6d";
+}
+.#{$linear-icon-prefix}uni6e:before {
+    content: "\6e";
+}
+.#{$linear-icon-prefix}uni6f:before {
+    content: "\6f";
+}
+.#{$linear-icon-prefix}uni70:before {
+    content: "\70";
+}
+.#{$linear-icon-prefix}uni71:before {
+    content: "\71";
+}
+.#{$linear-icon-prefix}uni72:before {
+    content: "\72";
+}
+.#{$linear-icon-prefix}uni73:before {
+    content: "\73";
+}
+.#{$linear-icon-prefix}uni74:before {
+    content: "\74";
+}
+.#{$linear-icon-prefix}uni75:before {
+    content: "\75";
+}
+.#{$linear-icon-prefix}uni76:before {
+    content: "\76";
+}
+.#{$linear-icon-prefix}uni77:before {
+    content: "\77";
+}
+.#{$linear-icon-prefix}uni78:before {
+    content: "\78";
+}
+.#{$linear-icon-prefix}uni79:before {
+    content: "\79";
+}
+.#{$linear-icon-prefix}uni7a:before {
+    content: "\7a";
+}
+.#{$linear-icon-prefix}uni7b:before {
+    content: "\7b";
+}
+.#{$linear-icon-prefix}uni7c:before {
+    content: "\7c";
+}
+.#{$linear-icon-prefix}uni7d:before {
+    content: "\7d";
+}
+.#{$linear-icon-prefix}uni7e:before {
+    content: "\7e";
+}
+.#{$linear-icon-prefix}copyright:before {
+    content: "\a9";
+}

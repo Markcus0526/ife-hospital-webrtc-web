@@ -1,0 +1,5 @@
+1. In order to make sure the integrity and effectiveness of the medical records, Please ask the professional (For example, your attending doctor) to fill in your medical records.
+2. Our system provides translation service. When you want to schedule the international video consultation, please select the translation service so that we can ensure the effectiveness of consultation. Our system will arrange the professional medicine qualified translators to translate your medical records, consultation interpretation and second opinion report.
+3. When you upload your ID card, please ensure that you upload the valid ID cards, for example: resident identity card, passport, military officer certificate, driving license, etc.
+4. When you shoot the real time head image, please ensure that your face is complete which cannot be without the frame and your facial features are clear.
+5. When you upload the related reports and materials, please firstly download the templates. Please fill in the medical record information carefully and then upload. 

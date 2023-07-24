@@ -1,0 +1,686 @@
+// Default Variables
+$my-icon-font-path      : "../fonts/";
+$my-icon-font-family    : "my-icons";
+$my-icon-prefix      	: icon-;
+
+@font-face {
+	font-family: '#{$my-icon-font-family}';
+	src:url('#{$my-icon-font-path}my-icons.eot');
+	src:url('#{$my-icon-font-path}my-icons.eot?#iefix') format('embedded-opentype'),
+		url('#{$my-icon-font-path}my-icons.woff') format('woff'),
+		url('#{$my-icon-font-path}my-icons.ttf') format('truetype'),
+		url('#{$my-icon-font-path}my-icons.svg#my_icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'hc_icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.#{$my-icon-prefix}user-female,
+.#{$my-icon-prefix}user-follow,
+.#{$my-icon-prefix}user-following,
+.#{$my-icon-prefix}user-unfollow,
+.#{$my-icon-prefix}trophy,
+.#{$my-icon-prefix}screen-smartphone,
+.#{$my-icon-prefix}screen-desktop,
+.#{$my-icon-prefix}plane,
+.#{$my-icon-prefix}notebook,
+.#{$my-icon-prefix}moustache,
+.#{$my-icon-prefix}mouse,
+.#{$my-icon-prefix}magnet,
+.#{$my-icon-prefix}energy,
+.#{$my-icon-prefix}emoticon-smile,
+.#{$my-icon-prefix}disc,
+.#{$my-icon-prefix}cursor-move,
+.#{$my-icon-prefix}crop,
+.#{$my-icon-prefix}credit-card,
+.#{$my-icon-prefix}chemistry,
+.#{$my-icon-prefix}user,
+.#{$my-icon-prefix}speedometer,
+.#{$my-icon-prefix}social-youtube,
+.#{$my-icon-prefix}social-twitter,
+.#{$my-icon-prefix}social-tumblr,
+.#{$my-icon-prefix}social-facebook,
+.#{$my-icon-prefix}social-dropbox,
+.#{$my-icon-prefix}social-dribbble,
+.#{$my-icon-prefix}shield,
+.#{$my-icon-prefix}screen-tablet,
+.#{$my-icon-prefix}magic-wand,
+.#{$my-icon-prefix}hourglass,
+.#{$my-icon-prefix}graduation,
+.#{$my-icon-prefix}ghost,
+.#{$my-icon-prefix}game-controller,
+.#{$my-icon-prefix}fire,
+.#{$my-icon-prefix}eyeglasses,
+.#{$my-icon-prefix}envelope-open,
+.#{$my-icon-prefix}envelope-letter,
+.#{$my-icon-prefix}bell,
+.#{$my-icon-prefix}badge,
+.#{$my-icon-prefix}anchor,
+.#{$my-icon-prefix}wallet,
+.#{$my-icon-prefix}vector,
+.#{$my-icon-prefix}speech,
+.#{$my-icon-prefix}puzzle,
+.#{$my-icon-prefix}printer,
+.#{$my-icon-prefix}present,
+.#{$my-icon-prefix}playlist,
+.#{$my-icon-prefix}pin,
+.#{$my-icon-prefix}picture,
+.#{$my-icon-prefix}map,
+.#{$my-icon-prefix}layers,
+.#{$my-icon-prefix}handbag,
+.#{$my-icon-prefix}globe-alt,
+.#{$my-icon-prefix}globe,
+.#{$my-icon-prefix}frame,
+.#{$my-icon-prefix}folder-alt,
+.#{$my-icon-prefix}film,
+.#{$my-icon-prefix}feed,
+.#{$my-icon-prefix}earphones-alt,
+.#{$my-icon-prefix}earphones,
+.#{$my-icon-prefix}drop,
+.#{$my-icon-prefix}drawer,
+.#{$my-icon-prefix}docs,
+.#{$my-icon-prefix}directions,
+.#{$my-icon-prefix}direction,
+.#{$my-icon-prefix}diamond,
+.#{$my-icon-prefix}cup,
+.#{$my-icon-prefix}compass,
+.#{$my-icon-prefix}call-out,
+.#{$my-icon-prefix}call-in,
+.#{$my-icon-prefix}call-end,
+.#{$my-icon-prefix}calculator,
+.#{$my-icon-prefix}bubbles,
+.#{$my-icon-prefix}briefcase,
+.#{$my-icon-prefix}book-open,
+.#{$my-icon-prefix}basket-loaded,
+.#{$my-icon-prefix}basket,
+.#{$my-icon-prefix}bag,
+.#{$my-icon-prefix}action-undo,
+.#{$my-icon-prefix}action-redo,
+.#{$my-icon-prefix}wrench,
+.#{$my-icon-prefix}umbrella,
+.#{$my-icon-prefix}trash,
+.#{$my-icon-prefix}tag,
+.#{$my-icon-prefix}support,
+.#{$my-icon-prefix}size-fullscreen,
+.#{$my-icon-prefix}size-actual,
+.#{$my-icon-prefix}shuffle,
+.#{$my-icon-prefix}share-alt,
+.#{$my-icon-prefix}share,
+.#{$my-icon-prefix}rocket,
+.#{$my-icon-prefix}question,
+.#{$my-icon-prefix}pie-chart,
+.#{$my-icon-prefix}pencil,
+.#{$my-icon-prefix}note,
+.#{$my-icon-prefix}music-tone-alt,
+.#{$my-icon-prefix}music-tone,
+.#{$my-icon-prefix}microphone,
+.#{$my-icon-prefix}loop,
+.#{$my-icon-prefix}logout,
+.#{$my-icon-prefix}login,
+.#{$my-icon-prefix}list,
+.#{$my-icon-prefix}like,
+.#{$my-icon-prefix}home,
+.#{$my-icon-prefix}grid,
+.#{$my-icon-prefix}graph,
+.#{$my-icon-prefix}equalizer,
+.#{$my-icon-prefix}dislike,
+.#{$my-icon-prefix}cursor,
+.#{$my-icon-prefix}control-start,
+.#{$my-icon-prefix}control-rewind,
+.#{$my-icon-prefix}control-play,
+.#{$my-icon-prefix}control-pause,
+.#{$my-icon-prefix}control-forward,
+.#{$my-icon-prefix}control-end,
+.#{$my-icon-prefix}calendar,
+.#{$my-icon-prefix}bulb,
+.#{$my-icon-prefix}bar-chart,
+.#{$my-icon-prefix}arrow-up,
+.#{$my-icon-prefix}arrow-right,
+.#{$my-icon-prefix}arrow-left,
+.#{$my-icon-prefix}arrow-down,
+.#{$my-icon-prefix}ban,
+.#{$my-icon-prefix}bubble,
+.#{$my-icon-prefix}camcorder,
+.#{$my-icon-prefix}camera,
+.#{$my-icon-prefix}check,
+.#{$my-icon-prefix}clock,
+.#{$my-icon-prefix}close,
+.#{$my-icon-prefix}cloud-download,
+.#{$my-icon-prefix}cloud-upload,
+.#{$my-icon-prefix}doc,
+.#{$my-icon-prefix}envelope,
+.#{$my-icon-prefix}eye,
+.#{$my-icon-prefix}flag,
+.#{$my-icon-prefix}folder,
+.#{$my-icon-prefix}heart,
+.#{$my-icon-prefix}info,
+.#{$my-icon-prefix}key,
+.#{$my-icon-prefix}link,
+.#{$my-icon-prefix}lock,
+.#{$my-icon-prefix}lock-open,
+.#{$my-icon-prefix}magnifier,
+.#{$my-icon-prefix}magnifier-add,
+.#{$my-icon-prefix}magnifier-remove,
+.#{$my-icon-prefix}paper-clip,
+.#{$my-icon-prefix}paper-plane,
+.#{$my-icon-prefix}plus,
+.#{$my-icon-prefix}pointer,
+.#{$my-icon-prefix}power,
+.#{$my-icon-prefix}refresh,
+.#{$my-icon-prefix}reload,
+.#{$my-icon-prefix}settings,
+.#{$my-icon-prefix}star,
+.#{$my-icon-prefix}symbol-female,
+.#{$my-icon-prefix}symbol-male,
+.#{$my-icon-prefix}target,
+.#{$my-icon-prefix}volume-1,
+.#{$my-icon-prefix}volume-2,
+.#{$my-icon-prefix}volume-off, 
+.#{$my-icon-prefix}users {
+	font-family: '#{$my-icon-font-family}';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.#{$my-icon-prefix}user-female:before {
+	content: "\e000";
+}
+.#{$my-icon-prefix}user-follow:before {
+	content: "\e002";
+}
+.#{$my-icon-prefix}user-following:before {
+	content: "\e003";
+}
+.#{$my-icon-prefix}user-unfollow:before {
+	content: "\e004";
+}
+.#{$my-icon-prefix}trophy:before {
+	content: "\e006";
+}
+.#{$my-icon-prefix}screen-smartphone:before {
+	content: "\e010";
+}
+.#{$my-icon-prefix}screen-desktop:before {
+	content: "\e011";
+}
+.#{$my-icon-prefix}plane:before {
+	content: "\e012";
+}
+.#{$my-icon-prefix}notebook:before {
+	content: "\e013";
+}
+.#{$my-icon-prefix}moustache:before {
+	content: "\e014";
+}
+.#{$my-icon-prefix}mouse:before {
+	content: "\e015";
+}
+.#{$my-icon-prefix}magnet:before {
+	content: "\e016";
+}
+.#{$my-icon-prefix}energy:before {
+	content: "\e020";
+}
+.#{$my-icon-prefix}emoticon-smile:before {
+	content: "\e021";
+}
+.#{$my-icon-prefix}disc:before {
+	content: "\e022";
+}
+.#{$my-icon-prefix}cursor-move:before {
+	content: "\e023";
+}
+.#{$my-icon-prefix}crop:before {
+	content: "\e024";
+}
+.#{$my-icon-prefix}credit-card:before {
+	content: "\e025";
+}
+.#{$my-icon-prefix}chemistry:before {
+	content: "\e026";
+}
+.#{$my-icon-prefix}user:before {
+	content: "\e005";
+}
+.#{$my-icon-prefix}speedometer:before {
+	content: "\e007";
+}
+.#{$my-icon-prefix}social-youtube:before {
+	content: "\e008";
+}
+.#{$my-icon-prefix}social-twitter:before {
+	content: "\e009";
+}
+.#{$my-icon-prefix}social-tumblr:before {
+	content: "\e00a";
+}
+.#{$my-icon-prefix}social-facebook:before {
+	content: "\e00b";
+}
+.#{$my-icon-prefix}social-dropbox:before {
+	content: "\e00c";
+}
+.#{$my-icon-prefix}social-dribbble:before {
+	content: "\e00d";
+}
+.#{$my-icon-prefix}shield:before {
+	content: "\e00e";
+}
+.#{$my-icon-prefix}screen-tablet:before {
+	content: "\e00f";
+}
+.#{$my-icon-prefix}magic-wand:before {
+	content: "\e017";
+}
+.#{$my-icon-prefix}hourglass:before {
+	content: "\e018";
+}
+.#{$my-icon-prefix}graduation:before {
+	content: "\e019";
+}
+.#{$my-icon-prefix}ghost:before {
+	content: "\e01a";
+}
+.#{$my-icon-prefix}game-controller:before {
+	content: "\e01b";
+}
+.#{$my-icon-prefix}fire:before {
+	content: "\e01c";
+}
+.#{$my-icon-prefix}eyeglasses:before {
+	content: "\e01d";
+}
+.#{$my-icon-prefix}envelope-open:before {
+	content: "\e01e";
+}
+.#{$my-icon-prefix}envelope-letter:before {
+	content: "\e01f";
+}
+.#{$my-icon-prefix}bell:before {
+	content: "\e027";
+}
+.#{$my-icon-prefix}badge:before {
+	content: "\e028";
+}
+.#{$my-icon-prefix}anchor:before {
+	content: "\e029";
+}
+.#{$my-icon-prefix}wallet:before {
+	content: "\e02a";
+}
+.#{$my-icon-prefix}vector:before {
+	content: "\e02b";
+}
+.#{$my-icon-prefix}speech:before {
+	content: "\e02c";
+}
+.#{$my-icon-prefix}puzzle:before {
+	content: "\e02d";
+}
+.#{$my-icon-prefix}printer:before {
+	content: "\e02e";
+}
+.#{$my-icon-prefix}present:before {
+	content: "\e02f";
+}
+.#{$my-icon-prefix}playlist:before {
+	content: "\e030";
+}
+.#{$my-icon-prefix}pin:before {
+	content: "\e031";
+}
+.#{$my-icon-prefix}picture:before {
+	content: "\e032";
+}
+.#{$my-icon-prefix}map:before {
+	content: "\e033";
+}
+.#{$my-icon-prefix}layers:before {
+	content: "\e034";
+}
+.#{$my-icon-prefix}handbag:before {
+	content: "\e035";
+}
+.#{$my-icon-prefix}globe-alt:before {
+	content: "\e036";
+}
+.#{$my-icon-prefix}globe:before {
+	content: "\e037";
+}
+.#{$my-icon-prefix}frame:before {
+	content: "\e038";
+}
+.#{$my-icon-prefix}folder-alt:before {
+	content: "\e039";
+}
+.#{$my-icon-prefix}film:before {
+	content: "\e03a";
+}
+.#{$my-icon-prefix}feed:before {
+	content: "\e03b";
+}
+.#{$my-icon-prefix}earphones-alt:before {
+	content: "\e03c";
+}
+.#{$my-icon-prefix}earphones:before {
+	content: "\e03d";
+}
+.#{$my-icon-prefix}drop:before {
+	content: "\e03e";
+}
+.#{$my-icon-prefix}drawer:before {
+	content: "\e03f";
+}
+.#{$my-icon-prefix}docs:before {
+	content: "\e040";
+}
+.#{$my-icon-prefix}directions:before {
+	content: "\e041";
+}
+.#{$my-icon-prefix}direction:before {
+	content: "\e042";
+}
+.#{$my-icon-prefix}diamond:before {
+	content: "\e043";
+}
+.#{$my-icon-prefix}cup:before {
+	content: "\e044";
+}
+.#{$my-icon-prefix}compass:before {
+	content: "\e045";
+}
+.#{$my-icon-prefix}call-out:before {
+	content: "\e046";
+}
+.#{$my-icon-prefix}call-in:before {
+	content: "\e047";
+}
+.#{$my-icon-prefix}call-end:before {
+	content: "\e048";
+}
+.#{$my-icon-prefix}calculator:before {
+	content: "\e049";
+}
+.#{$my-icon-prefix}bubbles:before {
+	content: "\e04a";
+}
+.#{$my-icon-prefix}briefcase:before {
+	content: "\e04b";
+}
+.#{$my-icon-prefix}book-open:before {
+	content: "\e04c";
+}
+.#{$my-icon-prefix}basket-loaded:before {
+	content: "\e04d";
+}
+.#{$my-icon-prefix}basket:before {
+	content: "\e04e";
+}
+.#{$my-icon-prefix}bag:before {
+	content: "\e04f";
+}
+.#{$my-icon-prefix}action-undo:before {
+	content: "\e050";
+}
+.#{$my-icon-prefix}action-redo:before {
+	content: "\e051";
+}
+.#{$my-icon-prefix}wrench:before {
+	content: "\e052";
+}
+.#{$my-icon-prefix}umbrella:before {
+	content: "\e053";
+}
+.#{$my-icon-prefix}trash:before {
+	content: "\e054";
+}
+.#{$my-icon-prefix}tag:before {
+	content: "\e055";
+}
+.#{$my-icon-prefix}support:before {
+	content: "\e056";
+}
+.#{$my-icon-prefix}size-fullscreen:before {
+	content: "\e057";
+}
+.#{$my-icon-prefix}size-actual:before {
+	content: "\e058";
+}
+.#{$my-icon-prefix}shuffle:before {
+	content: "\e059";
+}
+.#{$my-icon-prefix}share-alt:before {
+	content: "\e05a";
+}
+.#{$my-icon-prefix}share:before {
+	content: "\e05b";
+}
+.#{$my-icon-prefix}rocket:before {
+	content: "\e05c";
+}
+.#{$my-icon-prefix}question:before {
+	content: "\e05d";
+}
+.#{$my-icon-prefix}pie-chart:before {
+	content: "\e05e";
+}
+.#{$my-icon-prefix}pencil:before {
+	content: "\e05f";
+}
+.#{$my-icon-prefix}note:before {
+	content: "\e060";
+}
+.#{$my-icon-prefix}music-tone-alt:before {
+	content: "\e061";
+}
+.#{$my-icon-prefix}music-tone:before {
+	content: "\e062";
+}
+.#{$my-icon-prefix}microphone:before {
+	content: "\e063";
+}
+.#{$my-icon-prefix}loop:before {
+	content: "\e064";
+}
+.#{$my-icon-prefix}logout:before {
+	content: "\e065";
+}
+.#{$my-icon-prefix}login:before {
+	content: "\e066";
+}
+.#{$my-icon-prefix}list:before {
+	content: "\e067";
+}
+.#{$my-icon-prefix}like:before {
+	content: "\e068";
+}
+.#{$my-icon-prefix}home:before {
+	content: "\e069";
+}
+.#{$my-icon-prefix}grid:before {
+	content: "\e06a";
+}
+.#{$my-icon-prefix}graph:before {
+	content: "\e06b";
+}
+.#{$my-icon-prefix}equalizer:before {
+	content: "\e06c";
+}
+.#{$my-icon-prefix}dislike:before {
+	content: "\e06d";
+}
+.#{$my-icon-prefix}cursor:before {
+	content: "\e06e";
+}
+.#{$my-icon-prefix}control-start:before {
+	content: "\e06f";
+}
+.#{$my-icon-prefix}control-rewind:before {
+	content: "\e070";
+}
+.#{$my-icon-prefix}control-play:before {
+	content: "\e071";
+}
+.#{$my-icon-prefix}control-pause:before {
+	content: "\e072";
+}
+.#{$my-icon-prefix}control-forward:before {
+	content: "\e073";
+}
+.#{$my-icon-prefix}control-end:before {
+	content: "\e074";
+}
+.#{$my-icon-prefix}calendar:before {
+	content: "\e075";
+}
+.#{$my-icon-prefix}bulb:before {
+	content: "\e076";
+}
+.#{$my-icon-prefix}bar-chart:before {
+	content: "\e077";
+}
+.#{$my-icon-prefix}arrow-up:before {
+	content: "\e078";
+}
+.#{$my-icon-prefix}arrow-right:before {
+	content: "\e079";
+}
+.#{$my-icon-prefix}arrow-left:before {
+	content: "\e07a";
+}
+.#{$my-icon-prefix}arrow-down:before {
+	content: "\e07b";
+}
+.#{$my-icon-prefix}ban:before {
+	content: "\e07c";
+}
+.#{$my-icon-prefix}bubble:before {
+	content: "\e07d";
+}
+.#{$my-icon-prefix}camcorder:before {
+	content: "\e07e";
+}
+.#{$my-icon-prefix}camera:before {
+	content: "\e07f";
+}
+.#{$my-icon-prefix}check:before {
+	content: "\e080";
+}
+.#{$my-icon-prefix}clock:before {
+	content: "\e081";
+}
+.#{$my-icon-prefix}close:before {
+	content: "\e082";
+}
+.#{$my-icon-prefix}cloud-download:before {
+	content: "\e083";
+}
+.#{$my-icon-prefix}cloud-upload:before {
+	content: "\e084";
+}
+.#{$my-icon-prefix}doc:before {
+	content: "\e085";
+}
+.#{$my-icon-prefix}envelope:before {
+	content: "\e086";
+}
+.#{$my-icon-prefix}eye:before {
+	content: "\e087";
+}
+.#{$my-icon-prefix}flag:before {
+	content: "\e088";
+}
+.#{$my-icon-prefix}folder:before {
+	content: "\e089";
+}
+.#{$my-icon-prefix}heart:before {
+	content: "\e08a";
+}
+.#{$my-icon-prefix}info:before {
+	content: "\e08b";
+}
+.#{$my-icon-prefix}key:before {
+	content: "\e08c";
+}
+.#{$my-icon-prefix}link:before {
+	content: "\e08d";
+}
+.#{$my-icon-prefix}lock:before {
+	content: "\e08e";
+}
+.#{$my-icon-prefix}lock-open:before {
+	content: "\e08f";
+}
+.#{$my-icon-prefix}magnifier:before {
+	content: "\e090";
+}
+.#{$my-icon-prefix}magnifier-add:before {
+	content: "\e091";
+}
+.#{$my-icon-prefix}magnifier-remove:before {
+	content: "\e092";
+}
+.#{$my-icon-prefix}paper-clip:before {
+	content: "\e093";
+}
+.#{$my-icon-prefix}paper-plane:before {
+	content: "\e094";
+}
+.#{$my-icon-prefix}plus:before {
+	content: "\e095";
+}
+.#{$my-icon-prefix}pointer:before {
+	content: "\e096";
+}
+.#{$my-icon-prefix}power:before {
+	content: "\e097";
+}
+.#{$my-icon-prefix}refresh:before {
+	content: "\e098";
+}
+.#{$my-icon-prefix}reload:before {
+	content: "\e099";
+}
+.#{$my-icon-prefix}settings:before {
+	content: "\e09a";
+}
+.#{$my-icon-prefix}star:before {
+	content: "\e09b";
+}
+.#{$my-icon-prefix}symbol-female:before {
+	content: "\e09c";
+}
+.#{$my-icon-prefix}symbol-male:before {
+	content: "\e09d";
+}
+.#{$my-icon-prefix}target:before {
+	content: "\e09e";
+}
+.#{$my-icon-prefix}volume-1:before {
+	content: "\e09f";
+}
+.#{$my-icon-prefix}volume-2:before {
+	content: "\e0a0";
+}
+.#{$my-icon-prefix}volume-off:before {
+	content: "\e0a1";
+}
+.#{$my-icon-prefix}users:before {
+	content: "\e001";
+}

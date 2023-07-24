@@ -1,0 +1,84 @@
+#!/bin/bash
+#
+#	/etc/rc.d/init.d/teleclinic_batch
+#
+# Starts the teleclinic_batch daemon
+#
+# chkconfig: 345 44 56
+# description: execute batch service for teleclinic_batch
+# processname: teleclinic_batch
+
+# Source function library.
+. /lib/lsb/init-functions
+
+[ -x /usr/sbin/teleclinic_batch.sh ] || exit 0
+
+DAEMON=/usr/sbin/teleclinic_batch.sh
+NAME=teleclinic_batch
+LOCK=/var/lock/teleclinic_batch
+RETVAL=0
+
+#
+# See how we were called.
+#
+
+start() {
+	# Check if it is already running
+	if [ ! -f /var/lock/teleclinic_batch ]; then
+	    log_daemon_msg "Starting teleclinic_batch daemon: "
+	    start-stop-daemon --start --exec "$DAEMON"
+	    RETVAL=$?
+	    [ $RETVAL -eq 0 ] && touch "$LOCK"
+	    log_end_msg "$RETVAL"
+	fi
+	return $RETVAL
+}
+
+stop() {
+	log_daemon_msg "Stopping teleclinic_batch daemon: "
+	pkill -f teleclinic_batch.sh
+	pkill -f php
+	RETVAL=$?
+	[ $RETVAL -eq 0 ] && rm -f "$LOCK"
+	log_end_msg "$RETVAL"
+	return $RETVAL
+}
+
+
+restart() {
+	stop
+	start
+}	
+
+reload() {
+	trap "" SIGHUP
+	pkill -HUP teleclinic_batch.sh
+}	
+
+case "$1" in
+    start)
+	start
+	;;
+    stop)
+	stop
+	;;
+    reload)
+	reload
+	;;
+    restart)
+	restart
+	;;
+    condrestart)
+	if [ -f /var/lock/teleclinic_batch ]; then
+	    restart
+	fi
+	;;
+    status)
+	status_of_proc "$DAEMON" "$NAME" && exit 0 || exit $?
+	;;
+    *)
+	echo $"Usage: $0 {start|stop|status|restart|condrestart|reload}"
+	exit 1
+esac
+
+exit $RETVAL

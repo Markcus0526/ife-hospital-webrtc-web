@@ -1,0 +1,28 @@
+/***
+Customized Progress Bars
+***/
+
+.progress {  
+  border: 0; 
+  background-image: none;
+  filter: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;   
+
+  &.progress-sm {
+    height: 12px;
+  }
+}
+
+@if $theme-type == "material-design" {
+    .progress {
+        height: 8px;
+        border-radius: 0 !important;
+
+        &.progress-sm {
+            height: 6px;
+        }
+    }
+}

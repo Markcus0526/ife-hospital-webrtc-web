@@ -1,0 +1,49 @@
+/*=== Language Customize ===*/
+.page-sidebar .page-sidebar-menu>li>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li>a {
+    padding: 10px 0px 10px 15px;
+    font-size: 13px;
+}
+
+.page-sidebar .page-sidebar-menu>li.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.open>a {
+    font-size: 13px;
+}
+
+.page-sidebar .page-sidebar-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
+    font-size: 13px;
+}
+
+.page-sidebar .page-sidebar-menu>li .icon, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li .icon {
+    margin-right: 5px;
+}
+
+.page-sidebar .page-sidebar-menu>li.active>a>.selected, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a>.selected {
+    top: 16px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #ffffff;
+}
+
+.page-sidebar .page-sidebar-menu .sub-menu li>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li>a {
+    padding: 6px 15px 6px 60px;
+    font-size: 13px;
+}
+
+.td-action {
+    width: 200px;
+}
+.td-action-4 {
+    width: 250px;
+}
+
+.dtime-list .state-0, .dtime-list .state-1, .dtime-list .state-2, .dtime-list .state-3 {
+    width: 150px;
+}
+
+.register-form .nav-tabs,
+.register-form .tab-content {
+    width: 700px !important;
+}
+
+.chistory-row {
+    max-width: 900px;
+}

@@ -1,0 +1,20 @@
+/***
+Customized Bootstrap Alerts
+***/
+
+.alert {	
+	&.alert-borderless {
+		border: 0;
+	}
+
+	ul {
+		margin-left: 20px;
+	}
+}
+
+@if $theme-type == "material-design" {  
+	.alert {
+		@include border-radius($general-border-radius);  
+		border-width: 0;                 
+	}
+}

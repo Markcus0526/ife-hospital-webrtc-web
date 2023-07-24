@@ -1,0 +1,252 @@
+/* notification */
+/*Messagebox */
+.divMessageBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100000;
+}
+/*
+.MessageIE{
+        background-image: url("@{base-url}/bg.png");
+        
+}*/
+.MessageBoxContainer {
+    top: 35%;
+    color: white;
+    position: relative;
+    width: 100%;
+    background-color: #232323;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+
+    input {
+        width: 50%;
+        padding: 5px;
+    }
+
+    select {
+        width: 50%;
+        padding: 5px;
+    }
+}
+.MessageBoxMiddle {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    .MsgTitle {
+        letter-spacing: -1px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .pText {
+        font-style: 30px;
+    }
+}
+.MessageBoxButtonSection {
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    button {
+        display: inline-block;
+        margin-right: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+/* End of MessageBox */
+.LoadingBoxContainer {
+    top: 20%;
+    color: white;
+    position: relative;
+    width: 100%;
+    background-color: #232323;
+
+    .MsgTitle {
+        font-size: 26px;
+    }
+
+    .pText {
+        font-style: 30px;
+    }
+}
+.LoadingBoxMiddle {
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 10px;
+}
+#LoadingPoints {
+    position: absolute;
+}
+/* bigBoxes */
+.bigBox {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #004d60;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    width: 390px;
+    height: 150px;
+    color: white;
+    z-index: 99999;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    border-left: 5px solid rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    span {
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        padding: 5px 0 !important;
+        display: block;
+    }
+
+    p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .bigboxicon {
+        font-size: 30px;
+        text-align: left;
+        position: absolute;
+        top: 120px;
+        left: 6px;
+        z-index: 0;
+    }
+
+    .bigboxnumber {
+        width: 100%;
+        text-align: right;
+        font-size: 25px;
+    }
+}
+#divMiniIcons {
+    position: fixed;
+    width: 415px;
+    right: 10px;
+    bottom: 180px;
+    z-index: 9999;
+    float: right;
+
+    .cajita {
+        text-align: center;
+        vertical-align: middle;
+        padding: 4px 6px;
+        color: #FFF;
+        float: right;
+        cursor: pointer;
+        display: block;
+        background-color: #F00;
+        font-size: 17px;
+        margin-left: 4px;
+        margin-top: 5px;
+
+        &:active {
+            top: 1px;
+            left: 1px;
+            position: relative;
+        }
+    }
+}
+.botClose {
+    position: absolute;
+    right: 10px;
+    height: 16px;
+    width: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: .5;
+    display: block;
+    top: 15px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.cajita img {
+    width: 23px;
+    height: 23px;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+/* End of  bigBoxes */
+/* SmallBox */
+#divSmallBoxes {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+.SmallBox {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 420px;
+    color: white;
+    z-index: 99999;
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .foto {
+        font-size: 40px;
+        position: absolute;
+        left: 17px;
+        top: 8px;
+
+        i {
+            font-size: 40px;
+        }
+    }
+
+    .textoFull {
+        width: 93%;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .textoFoto {
+        width: 78%;
+        margin: 3px 20px 3px 80px;
+        float: left;
+    }
+
+    span {
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        display: block;
+        margin: 4px 0;
+    }
+
+    p {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+}
+.miniPic {
+    position: absolute;
+    bottom: 8px;
+    right: 9px;
+}
+.miniIcono {
+    height: 100%;
+    font-size: 20px;
+}

@@ -1,0 +1,457 @@
+
+.interview-room {
+	position: relative;
+
+	header {
+		padding: 5px;
+		border-bottom: solid 1px #ccc;
+
+		strong {
+			display: inline-block;
+			font-weight: normal;
+			color: $brand-primary;
+			height: 35px;
+			line-height: 35px;
+
+			span {
+				font-size: 120%;
+			}
+		}
+	}
+
+	aside {
+		position: absolute;
+		right: 0px;
+		top: 46px;
+		bottom: 0px;
+		width: $room-sidebar-width;
+		border-left: solid 1px #ccc;
+		background: #ededed;
+		padding: 3px;
+
+		h2 {
+			display: block;
+			padding: 10px 10px;
+			color: $brand-primary;
+			font-size: 15px;
+			margin-top: 0px;
+			margin-bottom: 2px;
+			background: #fff;
+			border: solid 1px #ccc;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 10px;
+
+			th {
+				text-align: center;
+				font-weight: normal;
+				background: $brand-primary;
+				color: white;
+			}
+			td {
+				background: white;
+				text-align: center;
+			}
+
+			th, td {
+				padding: 5px;
+				border-top: solid 1px #ccc;
+				border-bottom: solid 1px #ccc;
+				border-left: none;
+				border-right: none;
+			}
+			tr {
+				> *:first-child {
+					border-left: solid 1px #ccc;
+				}
+				> *:last-child {
+					border-right: solid 1px #ccc;
+				}
+			}
+		}
+
+		.chat-panel {
+			display: block;
+			padding: 10px 10px;
+			background: #fff;
+			border: solid 1px #ccc;
+			position: relative;
+		}
+	}
+
+	article {
+		position: absolute;
+		right: $room-sidebar-width;
+		left: 0px;
+		top: 46px;
+		bottom: 0px;
+		background: #3d3c3c;
+		padding: 15px;
+
+		video {
+            position: relative;
+			background: #e5e5e5 url("../img/video_back.png") no-repeat center center;
+
+            &.video-patient {
+                background: #e5e5e5 url("../img/video_back_patient.png") no-repeat center center;
+            }
+            &.video-doctor {
+                background: #e5e5e5 url("../img/video_back_doctor.png") no-repeat center center;
+            }
+            &.video-interpreter {
+                background: #e5e5e5 url("../img/video_back_interpreter.png") no-repeat center center;
+            }
+
+			&.video-small {
+				width: 200px;
+				height: 150px;
+			}
+		}
+
+        .video-bar {
+            text-align: right;
+            font-size: 17px;
+            height: 17px;
+            margin: 0 auto;
+
+            i {
+                cursor: pointer;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+
+            .dropdown-menu {
+                max-width: 22px;
+                min-width: 22px;   
+            }
+        }
+
+		h3 {
+			font-size: 15px;
+			margin-top: 5px;
+			margin-bottom: 10px;
+            color: white;
+		}
+
+		h4 {
+			display: block;
+			margin: 0 auto;
+			font-size: 13px;
+			text-align: right;
+			margin-top: 10px;
+			margin-bottom: 5px;
+            color: white;
+		}
+
+        .media-error {
+            color: $brand-danger;
+        }
+	}
+
+    .sel-quality {
+        display: inline-block;
+        width: 120px;
+        vertical-align: middle;
+    }
+    
+	.btn-start {
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+	}
+
+    .start-warning {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        line-height: 34px;
+        font-size: 16px;
+        height: 34px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: bold;
+    }
+
+    .header-right {
+        float: right;
+        width: 330px;
+    }
+
+    .btn-finish {
+        float: right;
+    }
+
+	.btn-exit {
+		float: right;
+	}
+
+    .alert-waiting-doctor {
+        display: block;
+        color: $brand-danger;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }	
+
+    .btn-mic,
+    .btn-volume {
+        color: white;
+    }
+}
+
+.chat-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    word-break: break-all;
+
+    border: solid 1px #ccc;
+
+    .attach-name {
+        img {
+            border: solid 2px #eee;
+            margin-bottom: 3px;
+        }
+    }
+
+    .message-wrapper {
+        position: relative;
+
+        .button-group {
+            position: absolute;
+            right: 10px;
+            bottom: -24px;
+            list-style: none;
+            z-index: 100;
+            background: #e6e6e6;
+            margin: 0px;
+            border: none;
+            opacity: 0;
+            visibility: hidden;
+            padding: 5px 8px;
+            border-radius: 3px;
+
+            li {
+                display: inline-block;
+                button {
+                    background: #fff;
+                }
+            }
+        }
+
+        &.to-mine {
+            .chat-message {
+                background: lighten($brand-info, 35%);
+            }
+
+            &:hover {
+                .chat-message, .button-group {
+                    background: lighten($brand-info, 30%);
+                }
+            }
+        }
+
+        &.linked {
+            .chat-message {
+                background: lighten($brand-warning, 35%);
+            }
+
+            &:hover {
+                .chat-message, .button-group {
+                    background: lighten($brand-warning, 30%);
+                }
+            }
+        }
+
+        &:hover {
+            .chat-message {
+                background: #e6e6e6;
+            }
+
+            .button-group {
+                opacity: 1;
+                visibility: visible;
+
+                &.editing {
+                    background: #B2DFDB !important;
+                }
+            }
+        }
+    }
+    
+    .message {
+        font-size: 14px;
+
+        /* These are technically the same, but use both */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+
+        a {
+            color: $brand-primary;
+            text-decoration: none;
+        }
+
+        &.me {
+            color: $brand-primary;
+        }
+    }
+
+    .chat-message {
+        border-radius: 2px;
+        display: block;
+        padding: 4px 4px;
+        margin: 0px 10px;
+
+        &.editing {
+            background: #B2DFDB !important;
+
+            .message .time {
+                color: white;
+            }
+        }
+
+        .sending {
+            font-size: 11px;
+            float: right;
+
+            span {
+                display: inline-block;
+                color: $brand-danger;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .chat-message.left {
+        margin-left: 50px;
+    }
+
+    .user-messages-top-icon {
+        font-size: 28px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -3px;
+        right: 5px;
+    }
+
+    a.autolinker {
+        color: #3b88c3;
+        text-decoration: none;
+    }
+
+    .show-hover {
+        opacity: 0;
+    }
+    .message-wrapper:hover {
+        .show-hover {
+            opacity: 1;
+        }
+    }
+
+    .message .unread-mark {
+        float: right;
+        padding-right: 5px;
+
+        .unread {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 1s, opacity 1s, easy;
+
+            &.read {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        .read {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+ 
+    .user-name {
+    	display: inline-block;
+        color: #888;
+        float: left;
+        padding: 5px 4px 4px 8px;
+
+        &.me {
+        	color: $brand-primary;
+        }
+    }
+    .message .time {
+        display: inline-block;
+        float: right;
+        padding-right: 5px;
+        color: #999;
+    }
+
+    .message-link {
+        display: inline-block;
+        font-size: 13px;
+        padding: 1px 3px;
+    }
+}
+
+.input-bar {
+    min-height: 44px;
+	display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-width: 0;
+    background-color: white;
+    /* border-width: 1px will actually create 2 device pixels on retina; */
+    background-size: 0;
+    overflow: visible !important;
+
+    .button-wrapper {
+    	display: inline-block;
+    	vertical-align: middle;
+    }
+
+    textarea {
+	    border: none;
+    	width: 270px;
+	    border: solid 1px #ccc;
+	    font-weight: normal;
+	    display: inline-block;
+	    vertical-align: middle;
+	    padding: 7px;
+
+	    &:focus {
+		    outline: none;
+		}
+	}
+}
+
+.footer-btn-wrap {
+    margin: 0px 3px;
+}

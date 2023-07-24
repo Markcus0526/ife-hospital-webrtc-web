@@ -1,0 +1,102 @@
+/***
+Fontawesome Icons
+***/
+
+[class^="fa-"],
+[class^="glyphicon-"],
+[class^="icon-"],
+[class*=" fa-"],
+[class*=" glyphicon-"],  
+[class*=" icon-"] {
+  display: inline-block; 
+  margin-top: 1px;
+  font-size: $icon-size-normal;
+  *margin-right: .3em;
+  line-height: $icon-size-normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Make font awesome icons fixed width */
+/*
+li [class^="fa-"],
+li [class^="glyphicon-"],
+li [class^="icon-"],
+li [class*=" fa-"],
+li [class*=" glyphicon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em; 
+  text-align: center;
+}
+
+li [class^="glyphicon-"],
+li [class*=" glyphicon-"] {  
+  top: 2px;
+}
+
+li [class^="icon-"],
+li [class*=" icon-"] {   
+  top: 1px;
+  position: relative;
+}
+
+li [class^="fa-"].icon-large,
+li [class^="glyphicon-"].icon-large,
+li [class^="icon-"].icon-large,
+li [class*=" fa-"].icon-large,
+li [class*=" glyphicon-"].icon-large,
+li [class*=" icon-"].icon-large {
+  // increased font size for icon-large 
+  width: 1.5625em;
+}
+*/
+
+/* Icon sizing */
+
+.fa-sm,
+.icon-sm {
+  font-size: 12px;
+}
+
+.fa-lg,
+.icon-lg {
+  font-size: 16px !important;
+} 
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+/* Icon coloring */
+
+.icon-state-default {
+  color: $brand-default;
+}
+
+.icon-state-success {
+  color: $brand-success;
+}
+
+.icon-state-info {
+  color: $brand-info; 
+}
+
+.icon-state-warning {
+  color: $brand-warning;
+}
+
+.icon-state-danger {
+  color: $brand-danger;
+}

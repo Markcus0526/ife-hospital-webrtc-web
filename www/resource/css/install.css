@@ -1,0 +1,32 @@
+p {
+	font-size: 17px;
+}
+
+.main {
+	min-height: 400px;
+	margin-top: 10px;
+}
+
+.masthead {
+	position: relative;
+}
+
+.masthead .logo {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+
+.masthead h1 {
+	text-align: center;
+	border-bottom: dashed #999 1px;
+	padding: 5px 20px 15px 50px;
+	margin: 20px;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.masthead h1 p {
+	font-size: 18px;
+	color: #0b3c7e;
+}

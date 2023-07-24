@@ -1,0 +1,1 @@
+sass -t compressed --watch resource/sass/main.scss:resource/css/main.css resource/sass/layout.scss:resource/css/layout.css

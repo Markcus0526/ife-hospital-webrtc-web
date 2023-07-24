@@ -1,0 +1,77 @@
+/***
+Customized Bootstrap Pagination
+***/
+
+.pagination {
+	display: block;
+	border-radius: 0;
+	margin: 0;
+
+	&:after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+
+	&.pagination-circle {
+	    > li {
+
+	        &:first-child {
+	            > a {
+	            	border-radius: 25px 0 0 25px !important;
+	        	}
+	        }
+
+	        &:last-child {
+	            > a {
+	            	border-radius: 0 25px 25px 0 !important;
+	        	}
+	        }
+	    }
+	}
+
+ 	.active > a,
+	.active > a:hover {
+  		background: #eee;
+ 	 	border-color: #dddddd;
+ 	 	color: #333;
+	}
+
+	> li {
+	    display: inline-block;
+	    margin-left: 5px;
+
+	    > a, 
+	    > span {
+			border-radius: 25px !important;
+			border: none;
+			color: #868c93;
+	    }
+
+	    > span,
+		> span:hover {
+			background: #555;
+			color: #fff;
+		}
+
+		&.counts {
+			float: right;
+			padding: $padding-base-vertical $padding-base-horizontal;
+			margin-right: 0px !important;
+			padding-right: 0px !important;
+
+			em {
+				font-style: normal;
+				font-size: 120%;
+				font-weight: bold;
+			}
+		}
+
+		.btn-per-page {
+			position: relative;
+			display: inline-block;
+			vertical-align: 2px;
+			margin-left: 5px;
+		}
+	}
+}

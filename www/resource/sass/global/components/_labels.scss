@@ -1,0 +1,107 @@
+/***
+Customized Bootstrap Labels
+***/
+
+.label {
+    text-shadow: none !important;
+    font-weight: 300;  
+    font-family: $font-family-primary;   
+
+    &.label-sm {   
+        font-size: 12px;
+        padding: 0px 4px 1px 4px;  
+    }
+
+    h1 &,
+    h2 &,
+    h3 &,
+    h4 &,
+    h5 &,
+    h6 & {
+        font-size:75%;
+    }
+}
+
+/* Labels variants */
+
+
+
+/***
+Iconic labels
+***/
+
+.label.label-icon {
+    padding: 4px 0px 4px 4px;
+    margin-right: 2px;
+    text-align: center !important;
+
+    > i {
+        font-size: 12px;
+        text-align: center !important;
+    }
+
+    .ie8 &,
+    .ie9 & {
+        padding: 3px 0px 3px 3px;
+    }
+}
+
+/***
+Text states
+***/
+
+.text-default {
+    color: $brand-default;
+}
+
+.text-primary {
+    color: $brand-primary;
+}
+
+.text-success {
+    color: $brand-success;
+}
+
+.text-info {
+    color: $brand-info;
+}
+
+.text-warning {
+    color: $brand-warning;
+}
+
+.text-danger {
+    color: $brand-danger;
+}
+
+.label-default {
+    border: solid 1px #aaa;
+    color: #aaa;
+    background-color: #fff;
+}
+
+@if $theme-type == "material-design" {
+    .label {
+        @extend .md-shadow-z-1;  
+        text-transform: uppercase;
+        padding: 2px 6px 4px 6px;
+        font-size: 10px;     
+        font-weight: 600;  
+
+        &.label-sm {  
+            font-size: 10px;
+            font-weight: 600;
+            padding: 3px 6px 3px 6px;
+        }
+    }
+
+    .label.label-icon {
+        padding: 4px 0px 4px 4px !important;
+        font-size: 12px !important;
+        
+        .ie8 &,
+        .ie9 & {
+            padding: 3px 0 3px 3px !important;
+        }
+    }
+}

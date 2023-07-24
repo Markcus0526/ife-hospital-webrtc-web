@@ -1,0 +1,34 @@
+Options FollowSymLinks
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteBase /
+	RewriteRule ^css/(.+)$ resource/css/$1 [QSA,NC,L]
+	RewriteRule ^sass/(.+)$ resource/sass/$1 [QSA,NC,L]
+	RewriteRule ^font/(.+)$ resource/font/$1 [QSA,NC,L]
+	RewriteRule ^img/(.+)$ resource/img/$1 [QSA,NC,L]
+	RewriteRule ^ico/(.+)$ resource/ico/$1 [QSA,NC,L]
+	RewriteRule ^fonts/(.+)$ resource/fonts/$1 [QSA,NC,L]
+	RewriteRule ^js/(.+)$ resource/js/$1 [QSA,NC,L]
+	RewriteRule ^swf/(.+)$ resource/swf/$1 [QSA,NC,L]
+	RewriteRule ^sound/(.+)$ resource/sound/$1 [QSA,NC,L]
+
+	RewriteRule ^avartar/(.+)$ data/avartar/$1 [QSA,NC,L]
+	RewriteRule ^data/avartar/$ img/unknown.png [QSA,NC,L]
+	RewriteCond %{REQUEST_FILENAME} !-s
+	RewriteRule ^data/avartar/(.+)(.png)$ img/unknown.png [QSA,NC,L]
+	RewriteRule ^attach/(.+)/(.+)/(.+)/(.+)$ data/attach/$1/$2/$3 [QSA,NC,L]
+	RewriteRule ^attach/(.+)/(.+)/(.+)$ data/attach/$1/$2/$3 [QSA,NC,L]
+
+	RewriteRule ^$ index.php [QSA,NC,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-s
+	RewriteRule .* index.php [QSA,NC,L]
+
+	RewriteRule ^(.+)/(.+)\.php - [F]
+	RewriteRule ^batch.php - [F]
+	RewriteRule ^config.inc - [F]
+	RewriteRule ^readme.md - [F]
+	RewriteRule ^resource/cert/(.+)/(.+) - [F]
+
+</IfModule>

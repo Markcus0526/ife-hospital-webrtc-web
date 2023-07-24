@@ -1,0 +1,84 @@
+#!/bin/bash
+#
+#	/etc/rc.d/init.d/scs
+#
+# Starts the scs daemon
+#
+# chkconfig: 345 44 56
+# description: execute batch service for scs
+# processname: scs
+
+# Source function library.
+. /lib/lsb/init-functions
+
+[ -x /usr/sbin/scs.sh ] || exit 0
+
+DAEMON=/usr/sbin/scs.sh
+NAME=scs
+LOCK=/var/lock/scs
+RETVAL=0
+
+#
+# See how we were called.
+#
+
+start() {
+	# Check if it is already running
+	if [ ! -f /var/lock/scs ]; then
+	    log_daemon_msg "Starting scs daemon: "
+	    start-stop-daemon --start --exec "$DAEMON"
+	    RETVAL=$?
+	    [ $RETVAL -eq 0 ] && touch "$LOCK"
+	    log_end_msg "$RETVAL"
+	fi
+	return $RETVAL
+}
+
+stop() {
+	log_daemon_msg "Stopping scs daemon: "
+	pkill -f scs.sh
+	pkill -f nodejs
+	RETVAL=$?
+	[ $RETVAL -eq 0 ] && rm -f "$LOCK"
+	log_end_msg "$RETVAL"
+	return $RETVAL
+}
+
+
+restart() {
+	stop
+	start
+}	
+
+reload() {
+	trap "" SIGHUP
+	pkill -HUP scs.sh
+}	
+
+case "$1" in
+    start)
+	start
+	;;
+    stop)
+	stop
+	;;
+    reload)
+	reload
+	;;
+    restart)
+	restart
+	;;
+    condrestart)
+	if [ -f /var/lock/scs ]; then
+	    restart
+	fi
+	;;
+    status)
+	status_of_proc "$DAEMON" "$NAME" && exit 0 || exit $?
+	;;
+    *)
+	echo $"Usage: $0 {start|stop|status|restart|condrestart|reload}"
+	exit 1
+esac
+
+exit $RETVAL
