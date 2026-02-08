@@ -1,3 +1,10 @@
+# IFE-HOSPITAL-WEBRTC-WEB
+---
+
+<img width="1200" height="800" alt="Hospital" src="https://github.com/user-attachments/assets/8ae3e3ac-2397-4f1b-9d15-17a64e78596c" />
+
+--- 
+
 <THINKING>
 I inspected the repository and key files to learn how the project is structured and how to run it.
 
@@ -49,7 +56,8 @@ I will now produce the final README in Markdown following these decisions.
 
 <em>Real-time Video Diagnostics Web System between Doctor, Patient and Interpreter based on WebRTC</em>
 
-<img src="https://img.shields.io/badge/Language-PHP-blue" alt="PHP"> <img src="https://img.shields.io/badge/Node.js-server-green" alt="Node.js"> <img src="https://img.shields.io/badge/FFmpeg-media-orange" alt="FFmpeg">
+<img src="https://img.shields.io/badge/Express-000000.svg?style=flat-square&logo=Express&logoColor=white" alt="Express"> <img src="https://img.shields.io/badge/JSON-000000.svg?style=flat-square&logo=JSON&logoColor=white" alt="JSON"> <img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat-square&logo=npm&logoColor=white" alt="npm"> <img src="https://img.shields.io/badge/Bower-EF5734.svg?style=flat-square&logo=Bower&logoColor=white" alt="Bower"> <img src="https://img.shields.io/badge/Composer-885630.svg?style=flat-square&logo=Composer&logoColor=white" alt="Composer"> <img src="https://img.shields.io/badge/Grunt-FAA918.svg?style=flat-square&logo=Grunt&logoColor=white" alt="Grunt"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=flat-square&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash"> <br>
+<img src="https://img.shields.io/badge/FFmpeg-007808.svg?style=flat-square&logo=FFmpeg&logoColor=white" alt="FFmpeg"> <img src="https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=MySQL&logoColor=white" alt="MySQL"> <img src="https://img.shields.io/badge/XML-005FAD.svg?style=flat-square&logo=XML&logoColor=white" alt="XML"> <img src="https://img.shields.io/badge/Less-1D365D.svg?style=flat-square&logo=Less&logoColor=white" alt="Less"> <img src="https://img.shields.io/badge/PHP-777BB4.svg?style=flat-square&logo=PHP&logoColor=white" alt="PHP"> <img src="https://img.shields.io/badge/Bootstrap-7952B3.svg?style=flat-square&logo=Bootstrap&logoColor=white" alt="Bootstrap"> <img src="https://img.shields.io/badge/CSS-663399.svg?style=flat-square&logo=CSS&logoColor=white" alt="CSS">
 
 ---
 
