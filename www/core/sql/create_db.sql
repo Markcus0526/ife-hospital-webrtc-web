@@ -672,7 +672,7 @@ DROP FUNCTION IF EXISTS `hash_password`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` FUNCTION `hash_password`(data VARCHAR(256)) RETURNS varchar(40) CHARSET utf8
 BEGIN
-DECLARE secret_key VARCHAR(128) DEFAULT 'teleclinic=3b780d30988cf88f61e27fe803a8c4cf27/3qc:2017';
+DECLARE secret_key VARCHAR(128) DEFAULT 'teleclinic=3b780d30988cf88f61e27fe803a8c4cf27/markcus:2017';
 
 DECLARE ipad,opad BINARY(64);
 DECLARE hexkey CHAR(128);

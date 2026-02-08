@@ -164,7 +164,7 @@ class PHPExcel_Calculation_FormulaParser {
 		// Helper variables
 		$tokens1	= $tokens2 	= $stack = array();
 		$inString	= $inPath 	= $inRange 	= $inError = false;
-		$toQuan	= $previousToQuan= $nextToQuan= null;
+		$toMarkcus	= $previousToMarkcus= $nextToMarkcus= null;
 
 		$index	= 1;
 		$value	= '';

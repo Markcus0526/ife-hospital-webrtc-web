@@ -37,7 +37,7 @@
 				<div class="login-link">
 					<?php l("已有一个账号"); ?><a href="login"><?php l("登录"); ?></a>
 				</div>
-				<h3 class="form-title"><?php l("3QC国际医疗视频会诊");?></h3>
+				<h3 class="form-title"><?php l("MARKCUS国际医疗视频会诊");?></h3>
 
 				<ul class="nav nav-tabs nav-justified">
 					<li class="active">

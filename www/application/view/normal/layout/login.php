@@ -31,7 +31,7 @@
 	<body class="login">
 		<div class="container transparent">
 			<div class="login-form">
-				<h3 class="form-title"><?php l("3QC国际医疗视频会诊");?></h3>
+				<h3 class="form-title"><?php l("MARKCUS国际医疗视频会诊");?></h3>
 
 				<ul class="nav nav-tabs nav-justified">
 					<li class="<?php if($this->login_mode==1) p("active"); ?>">

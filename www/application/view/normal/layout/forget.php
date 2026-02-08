@@ -31,7 +31,7 @@
 	<body class="login">
 		<div class="container transparent">
 			<form id="forget_form" class="forget-form" method="post">
-				<h3 class="form-title"><?php l("3QC国际医疗视频会诊");?></h3>
+				<h3 class="form-title"><?php l("MARKCUS国际医疗视频会诊");?></h3>
 
 				<p><?php l("新密码将会发送至你的注册手机");?></h3>
 

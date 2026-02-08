@@ -101,7 +101,7 @@ class Item extends PayPalModel
      * 
      * @return $this
      */
-    public function setQuantity($quantity)
+    public function setMarkcustity($quantity)
     {
         $this->quantity = $quantity;
         return $this;
@@ -112,7 +112,7 @@ class Item extends PayPalModel
      *
      * @return string
      */
-    public function getQuantity()
+    public function getMarkcustity()
     {
         return $this->quantity;
     }

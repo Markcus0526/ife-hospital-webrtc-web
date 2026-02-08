@@ -142,7 +142,7 @@ class paypal extends paybase
 		$item = new \PayPal\Api\Item(); 
 		$item->setName('Interview')
 			->setCurrency('USD')
-			->setQuantity(1)
+			->setMarkcustity(1)
 			->setSku(htmlspecialchars($order_id)) 
 			->setPrice($amount);
 		$itemList = new \PayPal\Api\ItemList();

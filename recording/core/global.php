@@ -1,8 +1,8 @@
 <?php
 	/************************* Copyright Info ***************************
-	*	Project Name:		3QC World Tele Clinic System				*
+	*	Project Name:		MARKCUS World Tele Clinic System				*
 	*	Framework:			MAL MVC Web Framewrok v1.0					*
-	*	Author:				Quan										*
+	*	Author:				Markcus										*
 	*	Date:				2017/10/02									*
 	*																	*
 	*	2017 ©      ALL Rights Reserved. 								*
@@ -20,7 +20,7 @@
 		error_reporting(E_ALL ^ E_NOTICE);
 	}
 
-	define('PRODUCT_NAME',		'3QC全球远程医疗会诊系统');
+	define('PRODUCT_NAME',		'MARKCUS全球远程医疗会诊系统');
 	define('CORE_VERSION',		'1.0');
 
 	define('SITE_BASE',			preg_replace('/\/'. DEFAULT_PHP . '/i', '', $_SERVER["SCRIPT_NAME"]) . "/");
@@ -62,8 +62,8 @@
 	define('ISIE',				ISIE6 | ISIE7 | ISIE8 | ISIE11);
 	define('ISEDGE',			(isset($_SERVER['HTTP_USER_AGENT']) && strstr($_SERVER['HTTP_USER_AGENT'], "Edge")) ? true : false);
 
-	define("MAIL_HEADER", "3QC全球远程医疗会诊系统\n你好！\n");
-	define("MAIL_FOOTER", "--「3QC全球远程医疗会诊系统」--");
+	define("MAIL_HEADER", "MARKCUS全球远程医疗会诊系统\n你好！\n");
+	define("MAIL_FOOTER", "--「MARKCUS全球远程医疗会诊系统」--");
 
 	if (_request("TOKEN") != null)
 		_load_session_from_token(_request("TOKEN"));
@@ -1744,11 +1744,11 @@
     }
 
    	function _hash($string) {
-		return hash_hmac('sha1', $string, 'teleclinic=hashd30988cf88f61e27fe803a8c4cf27/3qc:2017');
+		return hash_hmac('sha1', $string, 'teleclinic=hashd30988cf88f61e27fe803a8c4cf27/markcus:2017');
 	}
 
 	function _password($password) {
-		return hash_hmac('sha1', $password, 'teleclinic=3b780d30988cf88f61e27fe803a8c4cf27/3qc:2017');
+		return hash_hmac('sha1', $password, 'teleclinic=3b780d30988cf88f61e27fe803a8c4cf27/markcus:2017');
 	}	
 
 	function _generate_passkey_text($length = 5) {

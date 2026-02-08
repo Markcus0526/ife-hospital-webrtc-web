@@ -23,8 +23,8 @@
             definitions: {
                 r: {
                     validator: function(chrs, maskset, pos, strict, opts) {
-                        function regexToken(isGroup, isQuantifier) {
-                            this.matches = [], this.isGroup = isGroup || !1, this.isQuantifier = isQuantifier || !1, 
+                        function regexToken(isGroup, isMarkcustifier) {
+                            this.matches = [], this.isGroup = isGroup || !1, this.isMarkcustifier = isMarkcustifier || !1, 
                             this.quantifier = {
                                 min: 1,
                                 max: 1
@@ -78,7 +78,7 @@
                             fromGroup && (regexPart += "(", openGroupCount++);
                             for (var mndx = 0; mndx < token.matches.length; mndx++) {
                                 var matchToken = token.matches[mndx];
-                                if (1 == matchToken.isGroup) isvalid = validateRegexToken(matchToken, !0); else if (1 == matchToken.isQuantifier) {
+                                if (1 == matchToken.isGroup) isvalid = validateRegexToken(matchToken, !0); else if (1 == matchToken.isMarkcustifier) {
                                     var crrntndx = $.inArray(matchToken, token.matches), matchGroup = token.matches[crrntndx - 1], regexPartBak = regexPart;
                                     if (isNaN(matchToken.quantifier.max)) {
                                         for (;matchToken.repeaterPart && matchToken.repeaterPart != regexPart && matchToken.repeaterPart.length > regexPart.length && !(isvalid = validateRegexToken(matchGroup, !0)); ) ;

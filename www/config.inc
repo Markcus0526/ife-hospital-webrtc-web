@@ -12,20 +12,20 @@ define('TIME_ZONE',		'GMT+800');
 define('FRONTEND_APP',		'application');
 
 /* DB related */
-define('DB_HOSTNAME',		'www.3qc.vip');
+define('DB_HOSTNAME',		'www.markcus.vip');
 define('DB_USER',		'root');
 define('DB_PASSWORD',		'yiliaoadmin!2018');
 define('DB_NAME',		'teleclinic');
 define('DB_PORT',		3306);
 
 /* Frontend server related */;
-define('FRONTEND_URL',		'https://www.3qc.vip');
+define('FRONTEND_URL',		'https://www.markcus.vip');
 /* SCS(signaling chat server) related */;
-define('SCS_URL',		'wss://scs.3qc.vip:443');
+define('SCS_URL',		'wss://scs.markcus.vip:443');
 define('ICE_SERVERS',		'[{url:"stun:stun.ideasip.com:3478"},{url:"stun:stun3.l.google.com:19302"},{url:"stun:stun.schlund.de"},{url:"stun:stun4.l.google.com:19302"},{url:"turn:52.83.194.251:3478",username:"yiliao",credential:"yiliaoadmin2018"}]');
 
 /* Recording server related */;
-define('RECORDING_API',		'https://record.3qc.vip/');
+define('RECORDING_API',		'https://record.markcus.vip/');
 
 /* SMS related */;
 define('SMS_ENABLE',		1);
@@ -35,12 +35,12 @@ define('SMS_LIMITTIME',		20);
 /* E-mail related */
 define('MAIL_ENABLE',		1);
 define('MAIL_FROM',		'ylserver@yeah.net');
-define('MAIL_FROMNAME',		'3QC全球远程医疗会诊系统');
+define('MAIL_FROMNAME',		'MARKCUS全球远程医疗会诊系统');
 define('MAIL_SMTP_AUTH',		1);
 define('MAIL_SMTP_USE_SSL',		0);
 define('MAIL_SMTP_SERVER',		'smtp.yeah.net');
 define('MAIL_SMTP_USER',		'ylserver@yeah.net');
-define('MAIL_SMTP_PASSWORD',		'3qcgjylhzxt');
+define('MAIL_SMTP_PASSWORD',		'markcusgjylhzxt');
 define('MAIL_SMTP_PORT',		'25');
 
 /* 安全策略 */
@@ -89,7 +89,7 @@ define('DEBUG_PAY',		0);// 0:使用生产环境证书 1:使用测试环境证书
 define('CHINAPAY_MERCHANTID',		'822221048160184');
 define('CHINAPAY_SIGNCERT_PWD',		'319768');
 /* PayPal在线支付设置 */
-define('PAYPAL_EMAIL_ADDRESS',		'info@3qcc.cn');
+define('PAYPAL_EMAIL_ADDRESS',		'info@markcusc.cn');
 define('PAYPAL_IDENTITY_TOKEN',		'BoDnLYcVPVH8A-0Hw5DFdaCvgKNP1McaUOsPvNTI8DzzL4bAPh0Fnoj6Cbq');
 define('PAYPAL_CERT_ID',		'88UN3HH6W3XB8');
 define('PAYPAL_EWP_PRIVATE_KEY_PWD',		'');

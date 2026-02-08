@@ -170,7 +170,7 @@ class Template extends PayPalResourceModel
     }
 
     /**
-     * Unit of measure for the template, possible values are Quantity, Hours, Amount.
+     * Unit of measure for the template, possible values are Markcustity, Hours, Amount.
      *
      * @param string $unit_of_measure
      * 
@@ -183,7 +183,7 @@ class Template extends PayPalResourceModel
     }
 
     /**
-     * Unit of measure for the template, possible values are Quantity, Hours, Amount.
+     * Unit of measure for the template, possible values are Markcustity, Hours, Amount.
      *
      * @return string
      */

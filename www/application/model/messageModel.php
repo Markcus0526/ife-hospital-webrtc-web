@@ -1,8 +1,8 @@
 <?php
 	/************************* Copyright Info ***************************
-	*	Project Name:		3QC World Tele Clinic System				*
+	*	Project Name:		MARKCUS World Tele Clinic System				*
 	*	Framework:			MAL MVC Web Framewrok v1.0					*
-	*	Author:				Quan										*
+	*	Author:				Markcus										*
 	*	Date:				2017/10/02									*
 	*																	*
 	*	2017 ©      ALL Rights Reserved. 								*
@@ -41,7 +41,7 @@
 				$message->content = _sms_string($mobile, $content);
 				$message->email_title = _sms_string($mobile, $title);
 				$message->email_header = $user->user_name . " : \n";
-				$message->sms_header = "【" . _sms_string($mobile, _ll("3QC远程医疗")) . "】";
+				$message->sms_header = "【" . _sms_string($mobile, _ll("MARKCUS远程医疗")) . "】";
 
 				return $message->insert();	
 			}

@@ -34,7 +34,7 @@
 						<label class="ui-checkbox" for="agree"> 
 							<input type="checkbox" id="agree" name="agree" value="1" class="">
 							<span>
-								<?php l("已同意签订"); ?><a href="javascript:;" id="contract_link" class="active"><?php l("《3QC国际医疗服务合同》"); ?></a>
+								<?php l("已同意签订"); ?><a href="javascript:;" id="contract_link" class="active"><?php l("《MARKCUS国际医疗服务合同》"); ?></a>
 							</span>
 						</label>
 					</div>
@@ -82,7 +82,7 @@
 			 <div class="modal-content">
 				 <div class="modal-header">
 					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					 <h4 class="modal-title"><?php l("《3QC国际医疗服务合同》"); ?></h4>
+					 <h4 class="modal-title"><?php l("《MARKCUS国际医疗服务合同》"); ?></h4>
 				 </div>
 				 <div class="modal-body contract-container">
 					 <?php $this->mInterview->detail_html("contract"); ?>

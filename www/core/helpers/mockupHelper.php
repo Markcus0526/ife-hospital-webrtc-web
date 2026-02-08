@@ -1,8 +1,8 @@
 <?php
 	/************************* Copyright Info ***************************
-	*	Project Name:		3QC World Tele Clinic System				*
+	*	Project Name:		MARKCUS World Tele Clinic System				*
 	*	Framework:			MAL MVC Web Framewrok v1.0					*
-	*	Author:				Quan										*
+	*	Author:				Markcus										*
 	*	Date:				2017/10/02									*
 	*																	*
 	*	2017 ©      ALL Rights Reserved. 								*

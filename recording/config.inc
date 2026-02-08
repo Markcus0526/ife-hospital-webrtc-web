@@ -11,14 +11,14 @@ define('TIME_ZONE',		'GMT+800');
 define('FRONTEND_APP',		'application');
 
 /* DB related */
-define('DB_HOSTNAME',		'www.3qc.vip');
+define('DB_HOSTNAME',		'www.markcus.vip');
 define('DB_USER',		'root');
 define('DB_PASSWORD',		'yiliaoadmin!2018');
 define('DB_NAME',		'teleclinic');
 define('DB_PORT',		3306);
 
 /* SCS(signaling chat server) related */;
-define('SCS_URL',		'wss://scs.3qc.vip:443');
+define('SCS_URL',		'wss://scs.markcus.vip:443');
 define('ICE_SERVERS',		'[{url:"stun:stun1.l.google.com:19302"},{url:"stun:stun2.l.google.com:19302"},{url:"stun:stun3.l.google.com:19302"},{url:"stun:stun4.l.google.com:19302"},{url:"stun:stun.stunprotocol.org:3478"}]');
 
 /* SMS related */;
@@ -30,7 +30,7 @@ define('SMS_LIMITTIME',		20);
 /* E-mail related */
 define('MAIL_ENABLE',		1);
 define('MAIL_FROM',		'quantest@yeah.net');
-define('MAIL_FROMNAME',		'3QC全球远程医疗会诊系统');
+define('MAIL_FROMNAME',		'MARKCUS全球远程医疗会诊系统');
 define('MAIL_SMTP_AUTH',		1);
 define('MAIL_SMTP_USE_SSL',		0);
 define('MAIL_SMTP_SERVER',		'smtp.yeah.net');

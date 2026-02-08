@@ -26,9 +26,9 @@
     }
     function generateMaskSet(opts, multi) {
         function analyseMask(mask) {
-            function maskToken(isGroup, isOptional, isQuantifier, isAlternator) {
+            function maskToken(isGroup, isOptional, isMarkcustifier, isAlternator) {
                 this.matches = [], this.isGroup = isGroup || !1, this.isOptional = isOptional || !1, 
-                this.isQuantifier = isQuantifier || !1, this.isAlternator = isAlternator || !1, 
+                this.isMarkcustifier = isMarkcustifier || !1, this.isAlternator = isAlternator || !1, 
                 this.quantifier = {
                     min: 1,
                     max: 1
@@ -267,7 +267,7 @@
                 return isMatch;
             }
             for (var testPos, testPositions = getTests(pos, ndxIntlzr, tstPs), lvp = getLastValidPosition(), lvTest = getMaskSet().validPositions[lvp] || getTests(0)[0], lvTestAltArr = void 0 != lvTest.alternation ? lvTest.locator[lvTest.alternation].split(",") : [], ndx = 0; ndx < testPositions.length && (testPos = testPositions[ndx], 
-            !(opts.greedy || testPos.match && (testPos.match.optionality === !1 || testPos.match.newBlockMarker === !1) && testPos.match.optionalQuantifier !== !0 && (void 0 == lvTest.alternation || void 0 != testPos.locator[lvTest.alternation] && checkAlternationMatch(testPos, lvTest.alternation, lvTestAltArr)))); ndx++) ;
+            !(opts.greedy || testPos.match && (testPos.match.optionality === !1 || testPos.match.newBlockMarker === !1) && testPos.match.optionalMarkcustifier !== !0 && (void 0 == lvTest.alternation || void 0 != testPos.locator[lvTest.alternation] && checkAlternationMatch(testPos, lvTest.alternation, lvTestAltArr)))); ndx++) ;
             return testPos;
         }
         function getTest(pos) {
@@ -329,14 +329,14 @@
                                 })), matches = currentMatches.concat(malternateMatches), insertStop = !0;
                             } else match = handleMatch(alternateToken.matches[altIndex], [ altIndex ].concat(loopNdx), quantifierRecurse);
                             if (match) return !0;
-                        } else if (match.isQuantifier && quantifierRecurse !== !0) {
+                        } else if (match.isMarkcustifier && quantifierRecurse !== !0) {
                             var qt = match;
                             opts.greedy = opts.greedy && isFinite(qt.quantifier.max);
                             for (var qndx = ndxInitializer.length > 0 && quantifierRecurse !== !0 ? ndxInitializer.shift() : 0; qndx < (isNaN(qt.quantifier.max) ? qndx + 1 : qt.quantifier.max) && pos >= testPos; qndx++) {
                                 var tokenGroup = maskToken.matches[$.inArray(qt, maskToken.matches) - 1];
                                 if (match = handleMatch(tokenGroup, [ qndx ].concat(loopNdx), !0)) {
                                     var latestMatch = matches[matches.length - 1].match;
-                                    latestMatch.optionalQuantifier = qndx > qt.quantifier.min - 1;
+                                    latestMatch.optionalMarkcustifier = qndx > qt.quantifier.min - 1;
                                     var isFirstMatch = 0 == $.inArray(latestMatch, tokenGroup.matches);
                                     if (isFirstMatch) {
                                         if (qndx > qt.quantifier.min - 1) {
@@ -351,7 +351,7 @@
                         } else if (match = ResolveTestFromToken(match, ndxInitializer, loopNdx, quantifierRecurse)) return !0;
                     } else testPos++;
                 }
-                for (var tndx = ndxInitializer.length > 0 ? ndxInitializer.shift() : 0; tndx < maskToken.matches.length; tndx++) if (maskToken.matches[tndx].isQuantifier !== !0) {
+                for (var tndx = ndxInitializer.length > 0 ? ndxInitializer.shift() : 0; tndx < maskToken.matches.length; tndx++) if (maskToken.matches[tndx].isMarkcustifier !== !0) {
                     var match = handleMatch(maskToken.matches[tndx], [ tndx ].concat(loopNdx), quantifierRecurse);
                     if (match && testPos == pos) return match;
                     if (testPos > pos) break;
@@ -593,7 +593,7 @@
             for (pos = lvp + 1; pos < buffer.length; pos++) testPos = getTestTemplate(pos, ndxIntlzr, pos - 1), 
             ndxIntlzr = testPos.locator.slice(), positions[pos] = $.extend(!0, {}, testPos);
             var lvTestAltArr = lvTest && void 0 != lvTest.alternation ? lvTest.locator[lvTest.alternation].split(",") : [];
-            for (pos = bl - 1; pos > lvp && (testPos = positions[pos].match, (testPos.optionality || testPos.optionalQuantifier || lvTest && void 0 != lvTest.alternation && void 0 != positions[pos].locator[lvTest.alternation] && -1 != $.inArray(positions[pos].locator[lvTest.alternation].toString(), lvTestAltArr)) && buffer[pos] == getPlaceholder(pos, testPos)); pos--) bl--;
+            for (pos = bl - 1; pos > lvp && (testPos = positions[pos].match, (testPos.optionality || testPos.optionalMarkcustifier || lvTest && void 0 != lvTest.alternation && void 0 != positions[pos].locator[lvTest.alternation] && -1 != $.inArray(positions[pos].locator[lvTest.alternation].toString(), lvTestAltArr)) && buffer[pos] == getPlaceholder(pos, testPos)); pos--) bl--;
             return returnDefinition ? {
                 l: bl,
                 def: positions[bl] ? positions[bl].match : void 0
@@ -611,7 +611,7 @@
             if ($.isFunction(opts.isComplete)) return opts.isComplete.call($el, buffer, opts);
             if ("*" == opts.repeat) return void 0;
             var complete = !1, lrp = determineLastRequiredPosition(!0), aml = seekPrevious(lrp.l), lvp = getLastValidPosition();
-            if (lvp == aml && (void 0 == lrp.def || lrp.def.newBlockMarker || lrp.def.optionalQuantifier)) {
+            if (lvp == aml && (void 0 == lrp.def || lrp.def.newBlockMarker || lrp.def.optionalMarkcustifier)) {
                 complete = !0;
                 for (var i = 0; aml >= i; i++) {
                     var mask = isMask(i);
@@ -2065,8 +2065,8 @@
             definitions: {
                 r: {
                     validator: function(chrs, maskset, pos, strict, opts) {
-                        function regexToken(isGroup, isQuantifier) {
-                            this.matches = [], this.isGroup = isGroup || !1, this.isQuantifier = isQuantifier || !1, 
+                        function regexToken(isGroup, isMarkcustifier) {
+                            this.matches = [], this.isGroup = isGroup || !1, this.isMarkcustifier = isMarkcustifier || !1, 
                             this.quantifier = {
                                 min: 1,
                                 max: 1
@@ -2120,7 +2120,7 @@
                             fromGroup && (regexPart += "(", openGroupCount++);
                             for (var mndx = 0; mndx < token.matches.length; mndx++) {
                                 var matchToken = token.matches[mndx];
-                                if (1 == matchToken.isGroup) isvalid = validateRegexToken(matchToken, !0); else if (1 == matchToken.isQuantifier) {
+                                if (1 == matchToken.isGroup) isvalid = validateRegexToken(matchToken, !0); else if (1 == matchToken.isMarkcustifier) {
                                     var crrntndx = $.inArray(matchToken, token.matches), matchGroup = token.matches[crrntndx - 1], regexPartBak = regexPart;
                                     if (isNaN(matchToken.quantifier.max)) {
                                         for (;matchToken.repeaterPart && matchToken.repeaterPart != regexPart && matchToken.repeaterPart.length > regexPart.length && !(isvalid = validateRegexToken(matchGroup, !0)); ) ;

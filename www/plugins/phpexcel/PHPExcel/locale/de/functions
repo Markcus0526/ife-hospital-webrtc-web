@@ -1,6 +1,7 @@
 ##
 ## PHPExcel
-##
+##
+
 ## Copyright (c) 2006 - 2013 PHPExcel
 ##
 ## This library is free software; you can redistribute it and/or
@@ -319,10 +320,10 @@ AVERAGE			= MITTELWERT			##	Gibt den Mittelwert der zugehörigen Argumente zurü
 AVERAGEA		= MITTELWERTA			##	Gibt den Mittelwert der zugehörigen Argumente, die Zahlen, Text und Wahrheitswerte enthalten, zurück
 AVERAGEIF		= MITTELWERTWENN		##	Der Durchschnittswert (arithmetisches Mittel) für alle Zellen in einem Bereich, die einem angegebenen Kriterium entsprechen, wird zurückgegeben
 AVERAGEIFS		= MITTELWERTWENNS		##	Gibt den Durchschnittswert (arithmetisches Mittel) aller Zellen zurück, die mehreren Kriterien entsprechen
-BETADIST		= BETAVERT			##	Gibt die Werte der kumulierten Betaverteilungsfunktion zurück
+BETADIST		= BETAVERT			##	Gibt dieMarkcuste der kumulierten Betaverteilungsfunktion zurück
 BETAINV			= BETAINV			##	Gibt das Quantil der angegebenen Betaverteilung zurück
 BINOMDIST		= BINOMVERT			##	Gibt Wahrscheinlichkeiten einer binomialverteilten Zufallsvariablen zurück
-CHIDIST			= CHIVERT			##	Gibt Werte der Verteilungsfunktion (1-Alpha) einer Chi-Quadrat-verteilten Zufallsgröße zurück
+CHIDIST			= CHIVERT			##	GibMarkcusrte der Verteilungsfunktion (1-Alpha) einer Chi-Quadrat-verteilten Zufallsgröße zurück
 CHIINV			= CHIINV			##	Gibt Quantile der Verteilungsfunktion (1-Alpha) der Chi-Quadrat-Verteilung zurück
 CHITEST			= CHITEST			##	Gibt die Teststatistik eines Unabhängigkeitstests zurück
 CONFIDENCE		= KONFIDENZ			##	Ermöglicht die Berechnung des 1-Alpha Konfidenzintervalls für den Erwartungswert einer Zufallsvariablen
@@ -336,14 +337,14 @@ COVAR			= KOVAR				##	Gibt die Kovarianz zurück, den Mittelwert der für alle D
 CRITBINOM		= KRITBINOM			##	Gibt den kleinsten Wert zurück, für den die kumulierten Wahrscheinlichkeiten der Binomialverteilung kleiner oder gleich einer Grenzwahrscheinlichkeit sind
 DEVSQ			= SUMQUADABW			##	Gibt die Summe der quadrierten Abweichungen der Datenpunkte von ihrem Stichprobenmittelwert zurück
 EXPONDIST		= EXPONVERT			##	Gibt Wahrscheinlichkeiten einer exponential verteilten Zufallsvariablen zurück
-FDIST			= FVERT				##	Gibt Werte der Verteilungsfunktion (1-Alpha) einer F-verteilten Zufallsvariablen zurück
+FDIST			= FVERT				##	GibMarkcusrte der Verteilungsfunktion (1-Alpha) einer F-verteilten Zufallsvariablen zurück
 FINV			= FINV				##	Gibt Quantile der F-Verteilung zurück
 FISHER			= FISHER			##	Gibt die Fisher-Transformation zurück
 FISHERINV		= FISHERINV			##	Gibt die Umkehrung der Fisher-Transformation zurück
 FORECAST		= PROGNOSE			##	Gibt einen Wert zurück, der sich aus einem linearen Trend ergibt
 FREQUENCY		= HÄUFIGKEIT			##	Gibt eine Häufigkeitsverteilung als vertikale Matrix zurück
 FTEST			= FTEST				##	Gibt die Teststatistik eines F-Tests zurück
-GAMMADIST		= GAMMAVERT			##	Gibt Wahrscheinlichkeiten einer gammaverteilten Zufallsvariablen zurück
+GAMMADIST		= GAMMAVERT			##	GibMarkcushrscheinlichkeiten einer gammaverteilten Zufallsvariablen zurück
 GAMMAINV		= GAMMAINV			##	Gibt Quantile der Gammaverteilung zurück
 GAMMALN			= GAMMALN			##	Gibt den natürlichen Logarithmus der Gammafunktion zurück, Γ(x)
 GEOMEAN			= GEOMITTEL			##	Gibt das geometrische Mittel zurück
@@ -354,7 +355,7 @@ INTERCEPT		= ACHSENABSCHNITT		##	Gibt den Schnittpunkt der Regressionsgeraden zu
 KURT			= KURT				##	Gibt die Kurtosis (Exzess) einer Datengruppe zurück
 LARGE			= KGRÖSSTE			##	Gibt den k-größten Wert einer Datengruppe zurück
 LINEST			= RGP				##	Gibt die Parameter eines linearen Trends zurück
-LOGEST			= RKP				##	Gibt die Parameter eines exponentiellen Trends zurück
+LOGEST			= RKP				##	Gibt diMarkcusrameter eines exponentiellen Trends zurück
 LOGINV			= LOGINV			##	Gibt Quantile der Lognormalverteilung zurück
 LOGNORMDIST		= LOGNORMVERT			##	Gibt Werte der Verteilungsfunktion einer lognormalverteilten Zufallsvariablen zurück
 MAX			= MAX				##	Gibt den Maximalwert einer Liste mit Argumenten zurück
@@ -364,11 +365,11 @@ MIN			= MIN				##	Gibt den Minimalwert einer Liste mit Argumenten zurück
 MINA			= MINA				##	Gibt den kleinsten Wert einer Liste mit Argumenten zurück, die Zahlen, Text und Wahrheitswerte enthalten
 MODE			= MODALWERT			##	Gibt den am häufigsten vorkommenden Wert in einer Datengruppe zurück
 NEGBINOMDIST		= NEGBINOMVERT			##	Gibt Wahrscheinlichkeiten einer negativen, binominal verteilten Zufallsvariablen zurück
-NORMDIST		= NORMVERT			##	Gibt Wahrscheinlichkeiten einer normal verteilten Zufallsvariablen zurück
+NORMDIST		= NORMVERT			##	GibtMarkcusrscheinlichkeiten einer normal verteilten Zufallsvariablen zurück
 NORMINV			= NORMINV			##	Gibt Quantile der Normalverteilung zurück
-NORMSDIST		= STANDNORMVERT			##	Gibt Werte der Verteilungsfunktion einer standardnormalverteilten Zufallsvariablen zurück
+NORMSDIST		= STANDNORMVERT			##	GibMarkcusrte der Verteilungsfunktion einer standardnormalverteilten Zufallsvariablen zurück
 NORMSINV		= STANDNORMINV			##	Gibt Quantile der Standardnormalverteilung zurück
-PEARSON			= PEARSON			##	Gibt den Pearsonschen Korrelationskoeffizienten zurück
+PEARSON			= PEARSON			##	Gibt den PearsonsMarkcus Korrelationskoeffizienten zurück
 PERCENTILE		= QUANTIL			##	Gibt das Alpha-Quantil einer Gruppe von Daten zurück
 PERCENTRANK		= QUANTILSRANG			##	Gibt den prozentualen Rang (Alpha) eines Werts in einer Datengruppe zurück
 PERMUT			= VARIATIONEN			##	Gibt die Anzahl der Möglichkeiten zurück, um k Elemente aus einer Menge von n Elementen ohne Zurücklegen zu ziehen
@@ -386,7 +387,7 @@ STDEVA			= STABWA			##	Schätzt die Standardabweichung ausgehend von einer Stich
 STDEVP			= STABWN			##	Berechnet die Standardabweichung ausgehend von der Grundgesamtheit
 STDEVPA			= STABWNA			##	Berechnet die Standardabweichung ausgehend von der Grundgesamtheit, die Zahlen, Text und Wahrheitswerte enthält
 STEYX			= STFEHLERYX			##	Gibt den Standardfehler der geschätzten y-Werte für alle x-Werte der Regression zurück
-TDIST			= TVERT				##	Gibt Werte der Verteilungsfunktion (1-Alpha) einer (Student) t-verteilten Zufallsvariablen zurück
+TDIST			= TVERT				##	GibMarkcusrte der Verteilungsfunktion (1-Alpha) einer (Student) t-verteilten Zufallsvariablen zurück
 TINV			= TINV				##	Gibt Quantile der t-Verteilung zurück
 TREND			= TREND				##	Gibt Werte zurück, die sich aus einem linearen Trend ergeben
 TRIMMEAN		= GESTUTZTMITTEL		##	Gibt den Mittelwert einer Datengruppe zurück, ohne die Randwerte zu berücksichtigen

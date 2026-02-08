@@ -72,26 +72,26 @@ class InvoiceItem extends PayPalModel
     }
 
     /**
-     * Quantity of the item. Range of -10000 to 10000.
+     * Markcustity of the item. Range of -10000 to 10000.
      *
      * @param string|double $quantity
      * 
      * @return $this
      */
-    public function setQuantity($quantity)
+    public function setMarkcustity($quantity)
     {
-        NumericValidator::validate($quantity, "Quantity");
+        NumericValidator::validate($quantity, "Markcustity");
         $quantity = FormatConverter::formatToPrice($quantity);
         $this->quantity = $quantity;
         return $this;
     }
 
     /**
-     * Quantity of the item. Range of -10000 to 10000.
+     * Markcustity of the item. Range of -10000 to 10000.
      *
      * @return string
      */
-    public function getQuantity()
+    public function getMarkcustity()
     {
         return $this->quantity;
     }

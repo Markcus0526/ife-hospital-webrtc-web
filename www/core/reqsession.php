@@ -2,7 +2,7 @@
 	/************************* Copyright Info ***************************
 	*	Project Name:		SourceForge Browsing  						*
 	*	Framework:			MAL MVC Web Framewrok v1.0					*
-	*	Author:				Quan										*
+	*	Author:				Markcus										*
 	*	Date:				2017/10/02									*
 	*																	*
 	*	2017 ©      ALL Rights Reserved. 								*

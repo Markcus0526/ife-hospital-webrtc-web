@@ -4,7 +4,7 @@ exports.ssl = true;
 exports.port = 443;
 exports.ssl_key = keyPath + 'ssl/server.key';
 exports.ssl_cert = keyPath + 'ssl/server.crt';
-exports.api_prefix = "https://www.3qc.vip/api/";
+exports.api_prefix = "https://www.markcus.vip/api/";
 
 /*exports.db_host = 'localhost';
 exports.db_user = 'root';

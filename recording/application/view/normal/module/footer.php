@@ -4,7 +4,7 @@
     	<div class="row">
     		<div class="col-xs-6">
 		        <?php $thisyear = date("Y"); ?>
-		        <?php if ($thisyear > 2017) p("2017 - "); p(date("Y")); ?> © 3QC全球远程医疗会诊系统 <?php p(VERSION); ?>
+		        <?php if ($thisyear > 2017) p("2017 - "); p(date("Y")); ?> © MARKCUS全球远程医疗会诊系统 <?php p(VERSION); ?>
 	        </div>
 	        <div class="col-xs-6 text-right">
 	        	<?php if(strlen(CONTACT_TEL) > 0) { ?>
