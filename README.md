@@ -1,4 +1,4 @@
-# IFE-HOSPITAL-WEBRTC-WEB
+# Hospital Management System
 ---
 
 <img width="1200" height="800" alt="Hospital" src="https://github.com/user-attachments/assets/8ae3e3ac-2397-4f1b-9d15-17a64e78596c" />
