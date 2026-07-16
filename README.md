@@ -1,4 +1,23 @@
 # Hospital Management System
+
+# 🏥 ife-hospital-webrtc-web
+
+A secure, production-grade real-time video diagnostics system optimized for the healthcare sector. The application orchestrates immediate peer-to-peer audio and video streaming concurrently across three live parties: Doctor, Patient, and Translator.
+
+## 🚀 Core Architectural Features
+* **WebRTC Multi-Party Conferencing:** Low-latency real-time video streaming running natively inside client browsers without extra plugins.
+* **Complex Signalling Architecture:** Facilitates secure initialization handshakes, STUN/TURN server fallback routes, and dynamic participant drop/reconnect handling.
+* **Session Lifecycle Control:** Secure PHP-driven access routing layers that prevent unauthenticated users from entering active diagnostic rooms.
+
+## 🛠️ Tech Stack
+* **Streaming Engine:** WebRTC API, JavaScript
+* **Backend Automation & Routing:** PHP
+* **Target Industry:** Telehealth, Healthcare IT, Secure Real-Time Communication
+
+---
+💼 **Need a Full-Stack Engineer to build real-time communication tools?**  
+[Message me on Telegram](https://t.me/markcus0526) to jumpstart your application.
+
 ---
 
 <img width="1200" height="800" alt="Hospital" src="https://github.com/user-attachments/assets/8ae3e3ac-2397-4f1b-9d15-17a64e78596c" />
