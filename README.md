@@ -1,6 +1,4 @@
-# Hospital Management System
-
-# 🏥 ife-hospital-webrtc-web
+# 🏥 Hospital Management System
 
 A secure, production-grade real-time video diagnostics system optimized for the healthcare sector. The application orchestrates immediate peer-to-peer audio and video streaming concurrently across three live parties: Doctor, Patient, and Translator.
 
